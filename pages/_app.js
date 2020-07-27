@@ -1,10 +1,21 @@
-import App, {Container} from 'next/app'
 import Navbar from '../components/Navbar';
+import PageContent from '../components/PageContent';
+import {LanguageProvider} from '../contexts/LanguageContext'
+import {ThemeProvider} from "../contexts/ThemeContext";
+
 function MyApp({ Component, pageProps }) {
     return (
         <>
-            <Navbar/>
-            <Component {...pageProps} />
+            <ThemeProvider>
+                <LanguageProvider>
+                    <PageContent>
+                        <Navbar/>
+                        <Component {...pageProps} />
+
+                    </PageContent>
+                </LanguageProvider>
+            </ThemeProvider>
+
         </>
         )
 }
