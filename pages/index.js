@@ -68,16 +68,17 @@ function Index(props) {
         </main>
     )
 }
+export default withStyles(styles)(Index)
 
 
 // get intiial props runs first time on the server,
 // and each consecutive time on the client
-Index.getInitialProps = async (ctx) => {
+// Index.getInitialProps = async (ctx) => {
+//
+//     // const res = await axios.get('https://jsonplaceholder.typicode.com/posts')
+//     // const {data} = res;
+//     // return {posts: data} //must be an object
+//     return {}
+//
+// };
 
-    // const res = await axios.get('https://jsonplaceholder.typicode.com/posts')
-    // const {data} = res;
-    return {} //must be an object
-
-};
-
-export default withStyles(styles)(Index)
