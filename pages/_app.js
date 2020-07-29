@@ -1,20 +1,14 @@
-import Navbar from '../components/Navbar';
-import PageContent from '../components/PageContent';
-import {LanguageProvider} from '../contexts/LanguageContext'
-import {ThemeProvider} from "../contexts/ThemeContext";
+import {GlobalFormProvider} from "../contexts/FormContext";
+import MainNavbar from "../components/MainNavbar";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function MyApp({ Component, pageProps }) {
     return (
         <>
-            <ThemeProvider>
-                <LanguageProvider>
-                    <PageContent>
-                        <Navbar/>
+            <GlobalFormProvider>
+                        <MainNavbar/>
                         <Component {...pageProps} />
-
-                    </PageContent>
-                </LanguageProvider>
-            </ThemeProvider>
+            </GlobalFormProvider>
 
         </>
         )
