@@ -1,9 +1,9 @@
 import React from 'react'
-import SpouceForm from './SpouseForm';
+import SpouseForm from './SpouseForm';
 function FormApp() {
     return (
         <div>
-            <SpouceForm/>
+            <SpouseForm/>
         </div>
     )
 }
