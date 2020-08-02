@@ -81,6 +81,7 @@ export default function ChildrenForm() {
                 <Form onSubmit={(e) => {
                     e.preventDefault();
                     dispatch({ type: "NUMBER_OF_CHILDREN", numberOfChildren: numberOfChildren.length + 1 });
+                    dispatch({type: "CHILDREN_AGE_ARRAY", childrenAgeArray: numberOfChildren})
                     // router.push("/children");
                 }}>
                     <br />
@@ -115,6 +116,9 @@ export default function ChildrenForm() {
                                         placeholder="Age"
                                         aria-label="Age"
                                         aria-describedby="basic-addon2"
+                                        onChange={(e) => {
+                                            // updateNumberOfChildren[index](e.target.value)
+                                        }}
                                     />
                                 </InputGroup>
                             </Col>
