@@ -1,18 +1,11 @@
 import React from 'react';
 import Navbar from 'react-bootstrap/Navbar';
-function MainNavbar(props) {
+function MainNavbar() {
     return (
         <div className="root">
-            <Navbar bg="dark" variant="dark">
+            <Navbar bg="light" variant="light">
                 <Navbar.Brand href="#home">
-                    <img
-                        alt="insurdinary logo"
-                        src="/logo.png"
-                        className="d-inline-block align-top"
-                        height="30"
-                        width="120"
-                    />{' '}
-                    Life Insurance Advice
+                    Insurdinary Insurance Advice
                 </Navbar.Brand>
             </Navbar>
         </div>
