@@ -62,7 +62,9 @@ export default function ChildrenForm() {
                                 className="align-button"
                                 onClick={async (e) => {
                                     e.preventDefault();
-                                    await dispatch({ type: "HAS_CHILDREN", hasChildren: false });
+                                    dispatch({ type: "HAS_CHILDREN", hasChildren: false });
+                                    dispatch({ type: "NUMBER_OF_CHILDREN", numberOfChildren: 0 });
+
                                     updateHasChildren(false)
                                     // router.push("/children");
                                 }}
@@ -101,7 +103,6 @@ export default function ChildrenForm() {
                                 xs={{ span: 3, offset: 3 }}
                                 md={{ span: 3, offset: 3 }}
                                 lg={{ span: 3, offset: 3 }}
-                                key={index}
                                 >
                                 <h5>Child #{index + 1}</h5>
                             </Col>
