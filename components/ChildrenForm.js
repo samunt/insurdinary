@@ -1,7 +1,7 @@
 import React, { useContext, useState } from "react";
 import { useRouter } from "next/router";
 import Button from "react-bootstrap/Button";
-import styles from "./SpouseForm.module.css";
+import styles from "./ChildrenForm.module.css";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
@@ -15,7 +15,9 @@ export default function ChildrenForm() {
     const router = useRouter();
     const dispatch = useContext(DispatchContext);
     const [hasChildren, updateHasChildren] = useState(false);
-    const [numberOfChildren, updateNumberOfChildren] = useState([]);
+    const [numberOfChildren, updateNumberOfChildren] = useState([
+        {childAge: undefined}
+    ]);
 
     return (
             <div>
@@ -75,7 +77,51 @@ export default function ChildrenForm() {
                     </Container>
                 </Form>
                 {hasChildren === true && (
-
+                <Form>
+                    <br/>
+                    <Row>
+                        <Col
+                            xs={{ span: 6, offset: 3 }}
+                            md={{ span: 6, offset: 3 }}
+                            lg={{ span: 6, offset: 3 }}>
+                            <h2 className={styles.header}>How old are your children?</h2>
+                        </Col>
+                    </Row>
+                    <Row>
+                        {numberOfChildren.map((child, index) => (
+                            <Col xs={{ span: 6, offset: 3 }}
+                                 md={{ span: 6, offset: 3 }}
+                                 lg={{ span: 6, offset: 3 }}
+                                 key={index}>
+                                <InputGroup className="mb-3">
+                                    <FormControl
+                                        placeholder="Child's Age"
+                                        aria-label="Child's Age"
+                                        aria-describedby="basic-addon2"
+                                    />
+                                </InputGroup>
+                            </Col>                        ))}
+                    </Row>
+                    <Row>
+                        <Col xs={{ span: 6, offset: 3 }}
+                             md={{ span: 6, offset: 3 }}
+                             lg={{ span: 6, offset: 3 }}>
+                            <Button
+                                className="align-button"
+                                onClick={async (e) => {
+                                    e.preventDefault();
+                                    updateNumberOfChildren(children => [...children, {childAge: undefined}]);
+                                }}
+                                style={{ width: "100%" }}
+                                variant="outline-primary"
+                                type="submit"
+                                size="lg"
+                            >
+                                Add Child
+                            </Button>{" "}
+                        </Col>
+                    </Row>
+                </Form>
                 )}
 
                     </div>
