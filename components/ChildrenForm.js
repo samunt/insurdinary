@@ -48,6 +48,7 @@ export default function ChildrenForm() {
                                 onClick={async () => {
                                     await updateHasChildren(true);
                                     dispatch({ type: "HAS_CHILDREN", hasChildren: true });
+                                    dispatch({type: "NUMBER_OF_CHILDREN", numberOfChildren: 1});
                                 }}
                                 style={{ width: "100%" }}
                                 variant="outline-primary"
@@ -62,10 +63,7 @@ export default function ChildrenForm() {
                                 onClick={async (e) => {
                                     e.preventDefault();
                                     await dispatch({ type: "HAS_CHILDREN", hasChildren: false });
-                                    await dispatch({
-                                        type: "NUMBER_OF_CHILDREN",
-                                        numberOfChildren: 0,
-                                    });
+                                    updateHasChildren(false)
                                     // router.push("/children");
                                 }}
                                 style={{ width: "100%" }}
@@ -80,7 +78,11 @@ export default function ChildrenForm() {
                 </Container>
             </Form>
             {hasChildren === true && (
-                <Form>
+                <Form onSubmit={(e) => {
+                    e.preventDefault();
+                    dispatch({ type: "NUMBER_OF_CHILDREN", numberOfChildren: numberOfChildren.length + 1 });
+                    // router.push("/children");
+                }}>
                     <br />
                     <Row>
                         <Col
@@ -93,20 +95,30 @@ export default function ChildrenForm() {
                     </Row>
                     <Row>
                         {numberOfChildren.map((child, index) => (
+                            <>
                             <Col
-                                xs={{ span: 6, offset: 3 }}
-                                md={{ span: 6, offset: 3 }}
-                                lg={{ span: 6, offset: 3 }}
+                                xs={{ span: 3, offset: 3 }}
+                                md={{ span: 3, offset: 3 }}
+                                lg={{ span: 3, offset: 3 }}
                                 key={index}
+                                >
+                                <h5>Child #{index + 1}</h5>
+                            </Col>
+                            <Col
+                                xs={{ span: 3 }}
+                                md={{ span: 3 }}
+                                lg={{ span: 3 }}
+                                key={index + 20}
                             >
                                 <InputGroup className="mb-3">
                                     <FormControl
-                                        placeholder="Child's Age"
-                                        aria-label="Child's Age"
+                                        placeholder="Age"
+                                        aria-label="Age"
                                         aria-describedby="basic-addon2"
                                     />
                                 </InputGroup>
                             </Col>
+                            </>
                         ))}
                     </Row>
                     <Row>
@@ -119,7 +131,7 @@ export default function ChildrenForm() {
                                 className="align-button"
                                 onClick={async (e) => {
                                     e.preventDefault();
-                                    updateNumberOfChildren((children) => [
+                                    await updateNumberOfChildren((children) => [
                                         ...children,
                                         { childAge: undefined },
                                     ]);
@@ -130,6 +142,22 @@ export default function ChildrenForm() {
                                 size="lg"
                             >
                                 Add Child
+                            </Button>{" "}
+                        </Col>
+                    </Row>
+                    <br/>
+                    <Row>
+                        <Col xs={{ span: 6, offset: 3 }}
+                             md={{ span: 6, offset: 3 }}
+                             lg={{ span: 6, offset: 3 }}
+                        >
+                            <Button
+                                style={{ width: "100%" }}
+                                type="submit"
+                                variant="outline-primary"
+                                size="lg"
+                            >
+                                Next
                             </Button>{" "}
                         </Col>
                     </Row>
