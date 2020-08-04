@@ -1,6 +1,6 @@
 import React from 'react';
 import FormApp from '../components/FormApp'
-function Index(props) {
+function Index() {
     return (
        <div>
            <FormApp/>

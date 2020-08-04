@@ -16,6 +16,8 @@ function SpouseForm() {
     let [spouseAge, updateSpouseAge] = useState("");
     const router = useRouter();
     const dispatch = useContext(DispatchContext);
+    const now = 10;
+    const progressInstance = <ProgressBar now={now} />;
 
     return (
         <div>
@@ -26,7 +28,7 @@ function SpouseForm() {
                     md={{ span: 6, offset: 3 }}
                     lg={{ span: 6, offset: 3 }}
                 >
-                    <ProgressBar variant="success" now={10} />
+                    {progressInstance}
                 </Col>
             </Row>
             <br />

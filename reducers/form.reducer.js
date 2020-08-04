@@ -13,7 +13,7 @@ const reducer = (state, action) => {
             console.log(action.numberOfChildren);
             return ([...state, {numberOfChildren: action.numberOfChildren}]);
         case "CHILDREN_AGE_ARRAY":
-            console.log(action.childrenAgeArray);
+            console.log('children age array',action.childrenAgeArray);
             return ([...state, {childrenAgeArray: action.childrenAgeArray}]);
         default:
             return state

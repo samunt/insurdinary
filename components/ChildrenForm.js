@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useState, useEffect } from "react";
 import { useRouter } from "next/router";
 import Button from "react-bootstrap/Button";
 import styles from "./ChildrenForm.module.css";
@@ -12,12 +12,43 @@ import ProgressBar from "react-bootstrap/ProgressBar";
 import Form from "react-bootstrap/Form";
 
 export default function ChildrenForm() {
-    const router = useRouter();
-    const dispatch = useContext(DispatchContext);
     const [hasChildren, updateHasChildren] = useState(false);
     const [numberOfChildren, updateNumberOfChildren] = useState([
-        { childAge: undefined },
+        { id: 1, age: undefined }
     ]);
+    const now = 15;
+    const progressInstance = <ProgressBar now={now} />;
+    const dispatch = useContext(DispatchContext);
+    const router = useRouter();
+
+    useEffect(() => {
+        console.log("numberOfChildren", numberOfChildren);
+        dispatch({ type: "CHILDREN_AGE_ARRAY", childrenAgeArray: numberOfChildren });
+        dispatch({ type: "NUMBER_OF_CHILDREN", numberOfChildren: numberOfChildren.length });
+    }, [numberOfChildren]);
+
+    // Update numberOfChildren state
+    function updateData(e) {
+        // Grab the id of the input element and the typed value
+        const { id, value } = e.target;
+        // Find the item in the array that has the same id
+        // Convert the grabed id from string to Number
+        const itemIndex = numberOfChildren.findIndex(
+            item => item.id === Number(id)
+        );
+
+        // If the itemIndex is -1 that means it doesn't exist in the array
+        if (itemIndex !== -1) {
+            // Make a copy of the state
+            const children = [...numberOfChildren];
+            // The child item
+            const child = children[itemIndex];
+            // Update the child's age
+            children.splice(itemIndex, 1, { ...child, age: value });
+            // Update the state
+            updateNumberOfChildren(children);
+        }
+    }
 
     return (
         <div>
@@ -28,14 +59,13 @@ export default function ChildrenForm() {
                     md={{ span: 6, offset: 3 }}
                     lg={{ span: 6, offset: 3 }}
                 >
-                    <ProgressBar variant="success" now={20} />
+                    {progressInstance}
                 </Col>
             </Row>
             <br />
             <Form
-                onSubmit={(e) => {
+                onSubmit={e => {
                     e.preventDefault();
-                    // router.push("/children");
                 }}
             >
                 <br />
@@ -47,8 +77,6 @@ export default function ChildrenForm() {
                                 className="align-button"
                                 onClick={async () => {
                                     await updateHasChildren(true);
-                                    dispatch({ type: "HAS_CHILDREN", hasChildren: true });
-                                    dispatch({type: "NUMBER_OF_CHILDREN", numberOfChildren: 1});
                                 }}
                                 style={{ width: "100%" }}
                                 variant="outline-primary"
@@ -60,13 +88,10 @@ export default function ChildrenForm() {
                         <Col xs={6} md={{ span: 6 }} lg={{ span: 3 }}>
                             <Button
                                 className="align-button"
-                                onClick={async (e) => {
+                                onClick={async e => {
                                     e.preventDefault();
-                                    dispatch({ type: "HAS_CHILDREN", hasChildren: false });
-                                    dispatch({ type: "NUMBER_OF_CHILDREN", numberOfChildren: 0 });
-
-                                    updateHasChildren(false)
-                                    // router.push("/children");
+                                    updateHasChildren(false);
+                                    router.push('/secondaryEducationForm')
                                 }}
                                 style={{ width: "100%" }}
                                 variant="outline-primary"
@@ -80,65 +105,64 @@ export default function ChildrenForm() {
                 </Container>
             </Form>
             {hasChildren === true && (
-                <Form onSubmit={(e) => {
-                    e.preventDefault();
-                    dispatch({ type: "NUMBER_OF_CHILDREN", numberOfChildren: numberOfChildren.length + 1 });
-                    dispatch({type: "CHILDREN_AGE_ARRAY", childrenAgeArray: numberOfChildren})
-                    // router.push("/children");
-                }}>
+                <Form
+                    onSubmit={e => {
+                        e.preventDefault();
+                        router.push('/secondaryEducationForm')
+                    }}
+                >
                     <br />
                     <Row>
                         <Col
-                            xs={{ span: 6, offset: 3 }}
+                            xs={{ span: 12 }}
                             md={{ span: 6, offset: 3 }}
                             lg={{ span: 6, offset: 3 }}
                         >
-                            <h2 className={styles.header}>How old are your children?</h2>
+                            <h2>How old are your children?</h2>
                         </Col>
                     </Row>
                     <Row>
                         {numberOfChildren.map((child, index) => (
-                            <>
-                            <Col
-                                xs={{ span: 3, offset: 3 }}
-                                md={{ span: 3, offset: 3 }}
-                                lg={{ span: 3, offset: 3 }}
-                                >
-                                <h5>Child #{index + 1}</h5>
-                            </Col>
-                            <Col
-                                xs={{ span: 3 }}
-                                md={{ span: 3 }}
-                                lg={{ span: 3 }}
-                                key={index + 20}
-                            >
-                                <InputGroup className="mb-3">
-                                    <FormControl
-                                        placeholder="Age"
-                                        aria-label="Age"
-                                        aria-describedby="basic-addon2"
-                                        onChange={(e) => {
-                                            // updateNumberOfChildren[index](e.target.value)
-                                        }}
-                                    />
-                                </InputGroup>
-                            </Col>
-                            </>
+                            <React.Fragment>
+                                    <Col
+                                        xs={{ span: 4, offset: 2 }}
+                                        md={{ span: 3, offset: 3 }}
+                                        lg={{ span: 3, offset: 3 }}
+                                    >
+                                        <h5 className={styles.header}>Child #{index + 1}</h5>
+                                    </Col>
+                                    <Col
+                                        xs={{ span: 4 }}
+                                        md={{ span: 3 }}
+                                        lg={{ span: 3 }}
+                                        key={index + 20}
+                                    >
+                                        <InputGroup className="mb-3">
+                                            <FormControl
+                                                id={index + 1}
+                                                placeholder="Age"
+                                                aria-label="Age"
+                                                aria-describedby="basic-addon2"
+                                                onChange={e => updateData(e)}
+                                            />
+                                        </InputGroup>
+                                    </Col>
+                            </React.Fragment>
                         ))}
                     </Row>
                     <Row>
                         <Col
-                            xs={{ span: 6, offset: 3 }}
+                            xs={{ span: 8, offset: 2 }}
                             md={{ span: 6, offset: 3 }}
                             lg={{ span: 6, offset: 3 }}
                         >
                             <Button
                                 className="align-button"
-                                onClick={async (e) => {
+                                onClick={e => {
                                     e.preventDefault();
-                                    await updateNumberOfChildren((children) => [
-                                        ...children,
-                                        { childAge: undefined },
+                                    updateNumberOfChildren([
+                                        ...numberOfChildren,
+                                        { id: numberOfChildren.length + 1, age: undefined }
                                     ]);
                                 }}
                                 style={{ width: "100%" }}
@@ -150,11 +174,12 @@ export default function ChildrenForm() {
                             </Button>{" "}
                         </Col>
                     </Row>
-                    <br/>
+                    <br />
                     <Row>
-                        <Col xs={{ span: 6, offset: 3 }}
-                             md={{ span: 6, offset: 3 }}
-                             lg={{ span: 6, offset: 3 }}
+                        <Col
+                            xs={{ span: 8, offset: 2 }}
+                            md={{ span: 6, offset: 3 }}
+                            lg={{ span: 6, offset: 3 }}
                         >
                             <Button
                                 style={{ width: "100%" }}
