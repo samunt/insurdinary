@@ -17,16 +17,16 @@ function SpouseForm() {
     const router = useRouter();
     const dispatch = useContext(DispatchContext);
     const now = 10;
-    const progressInstance = <ProgressBar now={now} />;
+    const progressInstance = <ProgressBar style={{height: '0.5rem'}} now={now} />;
 
     return (
         <div>
             <br />
             <Row>
                 <Col
-                    xs={{ span: 6, offset: 3 }}
-                    md={{ span: 6, offset: 3 }}
-                    lg={{ span: 6, offset: 3 }}
+                    xs={{ span: 10, offset: 1 }}
+                    md={{ span: 10, offset: 1 }}
+                    lg={{ span: 10, offset: 1 }}
                 >
                     {progressInstance}
                 </Col>

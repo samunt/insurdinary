@@ -17,7 +17,7 @@ export default function ChildrenForm() {
         { id: 1, age: undefined }
     ]);
     const now = 15;
-    const progressInstance = <ProgressBar now={now} />;
+    const progressInstance = <ProgressBar style={{height: '0.5rem'}} now={now} />;
     const dispatch = useContext(DispatchContext);
     const router = useRouter();
 
@@ -55,9 +55,9 @@ export default function ChildrenForm() {
             <br />
             <Row>
                 <Col
-                    xs={{ span: 6, offset: 3 }}
-                    md={{ span: 6, offset: 3 }}
-                    lg={{ span: 6, offset: 3 }}
+                    xs={{ span: 10, offset: 1 }}
+                    md={{ span: 10, offset: 1 }}
+                    lg={{ span: 10, offset: 1 }}
                 >
                     {progressInstance}
                 </Col>
@@ -91,7 +91,7 @@ export default function ChildrenForm() {
                                 onClick={async e => {
                                     e.preventDefault();
                                     updateHasChildren(false);
-                                    router.push('/secondaryEducationForm')
+                                    router.push('/dob')
                                 }}
                                 style={{ width: "100%" }}
                                 variant="outline-primary"
@@ -108,7 +108,7 @@ export default function ChildrenForm() {
                 <Form
                     onSubmit={e => {
                         e.preventDefault();
-                        router.push('/secondaryEducationForm')
+                        router.push('/secondaryEducation')
                     }}
                 >
                     <br />
@@ -118,7 +118,7 @@ export default function ChildrenForm() {
                             md={{ span: 6, offset: 3 }}
                             lg={{ span: 6, offset: 3 }}
                         >
-                            <h2>How old are your children?</h2>
+                            <h2 className={styles.header}>How old are your children?</h2>
                         </Col>
                     </Row>
                     <Row>
