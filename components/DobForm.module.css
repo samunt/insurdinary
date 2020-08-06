@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+.header {
+    text-align: center;
+    padding: 10px;
+    font-family: Lato, sans-serif;
+}
+
+
+.progress {
+    height: 0.75rem !important;
+}
+
+.dobCSS {
+    border-radius: 5px !important;
+    border: 1px solid #007BFF !important;
+    width: 100% !important;
+    height: 3em !important;
+    font-size: 1.2em !important;
+    text-align: center !important;
+}
+
+.react-datepicker-wrapper {
+    display: flex !important;
+}
+

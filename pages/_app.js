@@ -1,6 +1,7 @@
 import {GlobalFormProvider} from "../contexts/FormContext";
 import MainNavbar from "../components/MainNavbar";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import "react-datepicker/dist/react-datepicker.css";
 
 function MyApp({ Component, pageProps }) {
     return (

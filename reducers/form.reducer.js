@@ -15,6 +15,12 @@ const reducer = (state, action) => {
         case "CHILDREN_AGE_ARRAY":
             console.log('children age array',action.childrenAgeArray);
             return ([...state, {childrenAgeArray: action.childrenAgeArray}]);
+        case "PAY_FOR_COLLEGE":
+            console.log('pay for college', action.payForCollege);
+            return ([...state, {payForCollege: action.payForCollege}]);
+        case "DATE_OF_BIRTH":
+            console.log('pay for college', action.dob);
+            return ([...state, {dob: action.dob}]);
         default:
             return state
     }

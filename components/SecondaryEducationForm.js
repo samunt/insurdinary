@@ -6,10 +6,7 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import { DispatchContext } from "../contexts/FormContext";
-import FormControl from "react-bootstrap/FormControl";
-import InputGroup from "react-bootstrap/InputGroup";
 import ProgressBar from "react-bootstrap/ProgressBar";
-import Form from "react-bootstrap/Form";
 
 export default function SecondaryEducationForm() {
     const router = useRouter();
@@ -40,7 +37,9 @@ export default function SecondaryEducationForm() {
                     <Col xs={6} md={{ span: 6 }} lg={{ span: 3, offset: 3 }}>
                         <Button
                             className="align-button"
-                            onClick={async () => {
+                            onClick={ () => {
+                                dispatch({ type: "PAY_FOR_COLLEGE", payForCollege: true });
+                                router.push('/dob');
                             }}
                             style={{ width: "100%" }}
                             variant="outline-primary"
@@ -52,7 +51,9 @@ export default function SecondaryEducationForm() {
                     <Col xs={6} md={{ span: 6 }} lg={{ span: 3 }}>
                         <Button
                             className="align-button"
-                            onClick={async (e) => {
+                            onClick={ () => {
+                                dispatch({ type: "PAY_FOR_COLLEGE", payForCollege: false });
+                                router.push('/dob');
                             }}
                             style={{ width: "100%" }}
                             variant="outline-primary"

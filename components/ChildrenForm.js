@@ -77,6 +77,8 @@ export default function ChildrenForm() {
                                 className="align-button"
                                 onClick={async () => {
                                     await updateHasChildren(true);
+                                    dispatch({ type: "HAS_CHILDREN", hasChildren: true });
+
                                 }}
                                 style={{ width: "100%" }}
                                 variant="outline-primary"
@@ -90,7 +92,8 @@ export default function ChildrenForm() {
                                 className="align-button"
                                 onClick={async e => {
                                     e.preventDefault();
-                                    updateHasChildren(false);
+                                    await updateHasChildren(false);
+                                    dispatch({ type: "HAS_CHILDREN", hasChildren: false });
                                     router.push('/dob')
                                 }}
                                 style={{ width: "100%" }}
@@ -108,6 +111,9 @@ export default function ChildrenForm() {
                 <Form
                     onSubmit={e => {
                         e.preventDefault();
+                        dispatch({ type: "HAS_CHILDREN", hasChildren: true });
+                        dispatch({ type: "NUMBER_OF_CHILDREN", numberOfChildren: numberOfChildren.length });
+                        dispatch({ type: "CHILDREN_AGE_ARRAY", childrenAgeArray: numberOfChildren });
                         router.push('/secondaryEducation')
                     }}
                 >
