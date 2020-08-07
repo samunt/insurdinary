@@ -20,15 +20,11 @@
     "/_polyfills": [
       "static/runtime/polyfills.js"
     ],
-    "/children": [
+    "/familyIncome": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
     "/healthCondition": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
-    ],
-    "/tobacco": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ]

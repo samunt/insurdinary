@@ -30,7 +30,6 @@ const reducer = (state, action) => {
         case "HEALTH_CONDITION":
             console.log('health', action.health);
             return ([...state, {health: action.health}]);
-
         default:
             return state
     }
