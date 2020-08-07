@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, {useContext, useEffect, useState} from "react";
 import { useRouter } from "next/router";
 import Button from "react-bootstrap/Button";
 import styles from "./SpouseForm.module.css";
@@ -18,6 +18,10 @@ function SpouseForm() {
     const dispatch = useContext(DispatchContext);
     const now = 10;
     const progressInstance = <ProgressBar style={{height: '0.5rem'}} now={now} />;
+
+    useEffect(() => {
+        dispatch({ type: "ADD_SPOUSE", spouse: hasSpouse });
+        }, [hasSpouse]);
 
     return (
         <div>
@@ -47,9 +51,8 @@ function SpouseForm() {
                         <Col xs={6} md={{ span: 6 }} lg={{ span: 3, offset: 3 }}>
                             <Button
                                 className="align-button"
-                                onClick={async () => {
-                                    await updateHasSpouse(true);
-                                    dispatch({ type: "ADD_SPOUSE", spouse: hasSpouse });
+                                onClick={ () => {
+                                    updateHasSpouse(true);
                                 }}
                                 style={{ width: "100%" }}
                                 variant="outline-primary"
@@ -61,10 +64,9 @@ function SpouseForm() {
                         <Col xs={6} md={{ span: 6 }} lg={{ span: 3 }}>
                             <Button
                                 className="align-button"
-                                onClick={async (e) => {
+                                onClick={ (e) => {
                                     e.preventDefault();
-                                    await updateHasSpouse(false);
-                                    dispatch({ type: "ADD_SPOUSE", spouse: hasSpouse });
+                                    updateHasSpouse(false);
                                     router.push("/children");
                                 }}
                                 style={{ width: "100%" }}

@@ -10,6 +10,9 @@ import FormControl from "react-bootstrap/FormControl";
 import InputGroup from "react-bootstrap/InputGroup";
 import ProgressBar from "react-bootstrap/ProgressBar";
 import Form from "react-bootstrap/Form";
+import {ArrowLeftCircleFill, Trash} from 'react-bootstrap-icons';
+import Navbar from "react-bootstrap/Navbar";
+
 
 export default function ChildrenForm() {
     const [hasChildren, updateHasChildren] = useState(false);
@@ -22,7 +25,6 @@ export default function ChildrenForm() {
     const router = useRouter();
 
     useEffect(() => {
-        console.log("numberOfChildren", numberOfChildren);
         dispatch({ type: "CHILDREN_AGE_ARRAY", childrenAgeArray: numberOfChildren });
         dispatch({ type: "NUMBER_OF_CHILDREN", numberOfChildren: numberOfChildren.length });
     }, [numberOfChildren]);
@@ -48,6 +50,23 @@ export default function ChildrenForm() {
             // Update the state
             updateNumberOfChildren(children);
         }
+    }
+
+    function deleteChild(e) {
+        const { id } = e.target;
+        // Find the item in the array that has the same id
+        // Convert the grabed id from string to Number
+        const itemIndex = numberOfChildren.findIndex(
+            item => item.id === Number(id)
+        );
+        console.log('ITEM INDEX', itemIndex);
+        // Make a copy of the state
+        const children = [...numberOfChildren];
+        // remove the child from the array
+        children.splice(itemIndex, 1);
+        console.log('===>', children);
+        // Update the state
+        updateNumberOfChildren(children);
     }
 
     return (
@@ -110,6 +129,7 @@ export default function ChildrenForm() {
             {hasChildren === true && (
                 <Form
                     onSubmit={e => {
+                        console.log('SUBMIT')
                         e.preventDefault();
                         dispatch({ type: "HAS_CHILDREN", hasChildren: true });
                         dispatch({ type: "NUMBER_OF_CHILDREN", numberOfChildren: numberOfChildren.length });
@@ -129,11 +149,12 @@ export default function ChildrenForm() {
                     </Row>
                     <Row>
                         {numberOfChildren.map((child, index) => (
-                            <React.Fragment>
+                            <React.Fragment key={index + 40}>
                                     <Col
                                         xs={{ span: 4, offset: 2 }}
                                         md={{ span: 3, offset: 3 }}
                                         lg={{ span: 3, offset: 3 }}
+                                        key={index + 30}
                                     >
                                         <h5 className={styles.header}>Child #{index + 1}</h5>
                                     </Col>
@@ -146,6 +167,7 @@ export default function ChildrenForm() {
                                         <InputGroup className="mb-3">
                                             <FormControl
                                                 id={index + 1}
+                                                key={index + 60}
                                                 placeholder="Age"
                                                 aria-label="Age"
                                                 aria-describedby="basic-addon2"
@@ -153,6 +175,27 @@ export default function ChildrenForm() {
                                             />
                                         </InputGroup>
                                     </Col>
+                                {index > 0 ? (
+                                    <Col
+                                        xs={{ span: 1 }}
+                                        md={{ span: 1 }}
+                                        lg={{ span: 1 }}
+                                        key={index + 50}
+                                    >
+                                        <Trash
+                                            size={30}
+                                            id={index + 1}
+                                            onClick={(e) => {
+                                                deleteChild(e);
+                                                console.log('delete')
+                                        }}/>
+                                    </Col>
+                                ) : (
+                                    <Col>
+                                    </Col>
+                                )}
+
+
                             </React.Fragment>
                         ))}
                     </Row>

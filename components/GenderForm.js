@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import { useRouter } from "next/router";
 import Button from "react-bootstrap/Button";
 import styles from "./GenderForm.module.css";
@@ -11,6 +11,7 @@ import ProgressBar from "react-bootstrap/ProgressBar";
 export default function GenderForm() {
     const router = useRouter();
     const dispatch = useContext(DispatchContext);
+    const [sex, setSex] = useState();
     const now = 40;
     const progressInstance = <ProgressBar style={{height: '0.5rem'}} now={now} />;
     return (
@@ -26,13 +27,16 @@ export default function GenderForm() {
                 </Col>
             </Row>
             <br />
-            <h2 className={styles.header}>What is your gender?</h2>
+            <h2 className={styles.header}>What is your sex?</h2>
             <Container>
                 <Row>
                     <Col xs={6} md={{ span: 6 }} lg={{ span: 3, offset: 3 }}>
                         <Button
                             className="align-button"
                             onClick={async () => {
+                                await setSex('Male');
+                                dispatch({ type: "SEX", sexForm: sex });
+                                router.push('/tobacco');
                             }}
                             style={{ width: "100%" }}
                             variant="outline-primary"
@@ -44,7 +48,10 @@ export default function GenderForm() {
                     <Col xs={6} md={{ span: 6 }} lg={{ span: 3 }}>
                         <Button
                             className="align-button"
-                            onClick={async (e) => {
+                            onClick={async () => {
+                                await setSex('Female');
+                                dispatch({ type: "SEX", sexForm: sex });
+                                router.push('/tobacco');
                             }}
                             style={{ width: "100%" }}
                             variant="outline-primary"

@@ -21,6 +21,9 @@ const reducer = (state, action) => {
         case "DATE_OF_BIRTH":
             console.log('pay for college', action.dob);
             return ([...state, {dob: action.dob}]);
+        case "SEX":
+            console.log('sex', action.sexForm);
+            return ([...state, {sex: action.sexForm}]);
         default:
             return state
     }
