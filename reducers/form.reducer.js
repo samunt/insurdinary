@@ -24,6 +24,13 @@ const reducer = (state, action) => {
         case "SEX":
             console.log('sex', action.sexForm);
             return ([...state, {sex: action.sexForm}]);
+        case "TOBACCO":
+            console.log('tobacco', action.tobacco);
+            return ([...state, {tobacco: action.tobacco}]);
+        case "HEALTH_CONDITION":
+            console.log('health', action.health);
+            return ([...state, {health: action.health}]);
+
         default:
             return state
     }

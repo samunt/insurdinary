@@ -38,8 +38,8 @@ export default function TobaccoForm() {
                         <Button
                             className="align-button"
                             onClick={ () => {
-                                // dispatch({ type: "PAY_FOR_COLLEGE", payForCollege: true });
-                                // router.push('/dob');
+                                dispatch({ type: "TOBACCO", tobacco: true });
+                                router.push('/healthCondition');
                             }}
                             style={{ width: "100%" }}
                             variant="outline-primary"
@@ -52,8 +52,8 @@ export default function TobaccoForm() {
                         <Button
                             className="align-button"
                             onClick={ () => {
-                                // dispatch({ type: "PAY_FOR_COLLEGE", payForCollege: false });
-                                // router.push('/dob');
+                                dispatch({ type: "TOBACCO", tobacco: false });
+                                router.push('/healthCondition');
                             }}
                             style={{ width: "100%" }}
                             variant="outline-primary"
