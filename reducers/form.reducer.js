@@ -1,8 +1,12 @@
 const reducer = (state, action) => {
     switch(action.type){
         case "ADD_SPOUSE":
-            console.log(action.spouse);
-            return ([...state, {spouse: action.spouse}]);
+            const key = "spouse";
+            if (state.some(obj => key in obj)) {
+                return state.map(obj => key in obj ? {[key]: action[key]} : obj)
+            } else {
+                return [...state, {[key]: action[key]}]
+            }
         case "SPOUSE_AGE":
             console.log(action.spouseAge);
             return ([...state, {spouseAge: action.spouseAge}]);

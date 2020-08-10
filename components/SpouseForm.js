@@ -5,7 +5,7 @@ import styles from "./SpouseForm.module.css";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import { DispatchContext } from "../contexts/FormContext";
+import {DispatchContext, FormContext} from "../contexts/FormContext";
 import FormControl from "react-bootstrap/FormControl";
 import InputGroup from "react-bootstrap/InputGroup";
 import ProgressBar from "react-bootstrap/ProgressBar";
@@ -16,6 +16,7 @@ function SpouseForm() {
     let [spouseAge, updateSpouseAge] = useState("");
     const router = useRouter();
     const dispatch = useContext(DispatchContext);
+    const form = useContext(FormContext);
     const now = 10;
     const progressInstance = <ProgressBar style={{height: '0.5rem'}} now={now} />;
 
@@ -23,6 +24,7 @@ function SpouseForm() {
         dispatch({ type: "ADD_SPOUSE", spouse: hasSpouse });
         }, [hasSpouse]);
 
+    console.log('FORM', form);
     return (
         <div>
             <br />
