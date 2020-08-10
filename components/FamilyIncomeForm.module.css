@@ -10,3 +10,7 @@
 .progress {
     height: 0.75rem !important;
 }
+
+.h5 {
+    float: right;
+}

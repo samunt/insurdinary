@@ -12,7 +12,7 @@ import ProgressBar from "react-bootstrap/ProgressBar";
 import Form from "react-bootstrap/Form";
 
 function SpouseForm() {
-    let [hasSpouse, updateHasSpouse] = useState(false);
+    let [hasSpouse, updateHasSpouse] = useState('');
     let [spouseAge, updateSpouseAge] = useState("");
     const router = useRouter();
     const dispatch = useContext(DispatchContext);

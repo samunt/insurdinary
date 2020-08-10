@@ -20,6 +20,10 @@ const reducer = (state, action) => {
             return {...state, tobacco: action.tobacco};
         case "HEALTH_CONDITION":
             return {...state, health: action.health};
+        case "YOUR_INCOME":
+            return {...state, yourIncome: action.yourIncome};
+        case "SPOUSE_INCOME":
+            return {...state, spouseIncome: action.spouseIncome};
         default:
             return state
     }
