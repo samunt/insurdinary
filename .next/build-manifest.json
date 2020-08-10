@@ -20,7 +20,11 @@
     "/_polyfills": [
       "static/runtime/polyfills.js"
     ],
-    "/rentOrOwn": [
+    "/familyIncome": [
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
+    ],
+    "/lifeInsurance": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ]

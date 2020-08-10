@@ -131,6 +131,7 @@ export default function rentOrOwnForm() {
                                         style={{ width: "100%" }}
                                         variant="outline-primary"
                                         size="lg"
+                                        onClick={router.push('/lifeInsurance')}
                                     >
                                         Next
                                     </Button>{" "}
@@ -201,6 +202,7 @@ export default function rentOrOwnForm() {
                                         style={{ width: "100%" }}
                                         variant="outline-primary"
                                         size="lg"
+                                        onClick={router.push('/lifeInsurance')}
                                     >
                                         Next
                                     </Button>{" "}

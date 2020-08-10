@@ -32,6 +32,12 @@ const reducer = (state, action) => {
             return {...state, mortgageCurrentBalance: action.mortgageCurrentBalance};
         case "MORTGAGE_MONTHLY_PAYMENT":
             return {...state, mortgageMonthlyPayment: action.mortgageMonthlyPayment};
+        case "LIFE_INSURANCE":
+            return {...state, lifeInsurance: action.lifeInsurance};
+        case "LIFE_INSURANCE_EMPLOYER":
+            return {...state, lifeInsuranceEmployer: action.lifeInsuranceEmployer};
+        case "LIFE_INSURANCE_PERSONAL":
+            return {...state, lifeInsurancePersonal: action.lifeInsurancePersonal};
         default:
             return state
     }
