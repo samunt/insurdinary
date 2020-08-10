@@ -23,6 +23,10 @@ export default function rentOrOwnForm() {
 
     useEffect(() => {
         dispatch({ type: "LIFE_INSURANCE", lifeInsurance: lifeInsurance });
+        if (lifeInsurance === false) {
+            dispatch({ type: "LIFE_INSURANCE_EMPLOYER", lifeInsuranceEmployer: 0 });
+            dispatch({ type: "LIFE_INSURANCE_PERSONAL", lifeInsurancePersonal: 0 });
+        }
     }, [lifeInsurance]);
 
     useEffect(() => {
@@ -67,6 +71,7 @@ export default function rentOrOwnForm() {
                             className="align-button"
                             onClick={() => {
                                 setLifeInsurance(false);
+                                router.push('/savings');
                             }}
                             style={{ width: "100%" }}
                             variant="outline-primary"
@@ -146,6 +151,7 @@ export default function rentOrOwnForm() {
                                         style={{ width: "100%" }}
                                         variant="outline-primary"
                                         size="lg"
+                                        onClick={()=> {router.push('/savings')}}
                                     >
                                         Next
                                     </Button>{" "}
