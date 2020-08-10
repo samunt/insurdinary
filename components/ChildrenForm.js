@@ -10,8 +10,7 @@ import FormControl from "react-bootstrap/FormControl";
 import InputGroup from "react-bootstrap/InputGroup";
 import ProgressBar from "react-bootstrap/ProgressBar";
 import Form from "react-bootstrap/Form";
-import {ArrowLeftCircleFill, Trash} from 'react-bootstrap-icons';
-import Navbar from "react-bootstrap/Navbar";
+import {Trash} from 'react-bootstrap-icons';
 
 
 export default function ChildrenForm() {
@@ -26,7 +25,7 @@ export default function ChildrenForm() {
 
     useEffect(() => {
         dispatch({ type: "CHILDREN_AGE_ARRAY", childrenAgeArray: numberOfChildren });
-        dispatch({ type: "NUMBER_OF_CHILDREN", numberOfChildren: numberOfChildren.length });
+        dispatch({ type: "NUMBER_OF_CHILDREN", numberOfChildren: numberOfChildren.length - 1 });
     }, [numberOfChildren]);
 
     // Update numberOfChildren state
@@ -219,7 +218,7 @@ export default function ChildrenForm() {
                                 type="submit"
                                 size="lg"
                             >
-                                Add Child
+                                Add Additional Child
                             </Button>{" "}
                         </Col>
                     </Row>

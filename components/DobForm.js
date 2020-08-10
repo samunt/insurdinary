@@ -6,11 +6,8 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import { DispatchContext } from "../contexts/FormContext";
-import FormControl from "react-bootstrap/FormControl";
-import InputGroup from "react-bootstrap/InputGroup";
 import ProgressBar from "react-bootstrap/ProgressBar";
 import Form from "react-bootstrap/Form";
-import FormGroup from "react-bootstrap/FormGroup";
 import DatePicker from "react-datepicker";
 
 
@@ -39,7 +36,12 @@ export default function DobForm() {
                 </Col>
             </Row>
             <Container>
-                <Form>
+                <Form onSubmit={(e) => {
+                    e.preventDefault();
+                    console.log('form submit dob', startDate)
+                    dispatch({ type: "DOB", dob: startDate });
+                    router.push('/gender');
+                }}>
                     <Row>
                         <Col xs={12} md={{ span: 6, offset: 3 }} lg={{ span: 6, offset: 3 }}>
                             <DatePicker
@@ -54,13 +56,10 @@ export default function DobForm() {
                         <Col xs={12} md={{ span: 6, offset: 3 }} lg={{ span: 6, offset: 3 }}>
                             <Button
                                 className="align-button"
-                                onClick={ () => {
-                                    dispatch({ type: "DOB", dob: startDate });
-                                    router.push('/gender');
-                                }}
                                 style={{ width: "100%" }}
                                 variant="outline-primary"
                                 size="lg"
+                                type="submit"
                             >
                                 Next
                             </Button>{" "}

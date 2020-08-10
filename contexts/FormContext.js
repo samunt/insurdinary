@@ -1,9 +1,7 @@
 import React, {createContext} from 'react';
 import {useLocalStorageReducer} from "../hooks/useLocalStorageReducer";
 import formReducer from "../reducers/form.reducer"
-const defaultForm = [
-    {}
-];
+const defaultForm = {};
 export const FormContext = createContext();
 export const DispatchContext = createContext();
 

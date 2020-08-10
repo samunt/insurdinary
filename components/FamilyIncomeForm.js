@@ -31,7 +31,11 @@ export default function FamilyIncomeForm() {
             </Row>
             <br />
             <Row>
-                <Col>
+                <Col
+                    xs={{ span: 10, offset: 1 }}
+                    md={{ span: 10, offset: 1 }}
+                    lg={{ span: 10, offset: 1 }}
+                >
                     <h2 className={styles.header}>What is your family's annual income (before taxes)? </h2>
                 </Col>
             </Row>

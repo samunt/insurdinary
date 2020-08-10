@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, {useContext, useEffect, useState} from "react";
 import { useRouter } from "next/router";
 import Button from "react-bootstrap/Button";
 import styles from "./GenderForm.module.css";
@@ -8,12 +8,17 @@ import Col from "react-bootstrap/Col";
 import { DispatchContext } from "../contexts/FormContext";
 import ProgressBar from "react-bootstrap/ProgressBar";
 
+
 export default function GenderForm() {
     const router = useRouter();
     const dispatch = useContext(DispatchContext);
     const [sex, setSex] = useState();
     const now = 40;
     const progressInstance = <ProgressBar style={{height: '0.5rem'}} now={now} />;
+    useEffect(() => {
+        dispatch({ type: "SEX", sex: sex });
+    }, [sex]);
+
     return (
         <div>
             <br />
@@ -33,9 +38,8 @@ export default function GenderForm() {
                     <Col xs={6} md={{ span: 6 }} lg={{ span: 3, offset: 3 }}>
                         <Button
                             className="align-button"
-                            onClick={async () => {
-                                await setSex('Male');
-                                dispatch({ type: "SEX", sexForm: sex });
+                            onClick={() => {
+                                setSex('Male');
                                 router.push('/tobacco');
                             }}
                             style={{ width: "100%" }}
@@ -48,9 +52,9 @@ export default function GenderForm() {
                     <Col xs={6} md={{ span: 6 }} lg={{ span: 3 }}>
                         <Button
                             className="align-button"
-                            onClick={async () => {
-                                await setSex('Female');
-                                dispatch({ type: "SEX", sexForm: sex });
+                            onClick={ () => {
+                                setSex('Female');
+                                dispatch({ type: "SEX", sex: sex });
                                 router.push('/tobacco');
                             }}
                             style={{ width: "100%" }}
