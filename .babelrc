@@ -1,6 +1,7 @@
 {
   "plugins": [
     ["styled-components", { "ssr": true, "displayName": true, "preprocess": false } ],
+    ["jsx-control-statements"]
   ],
   "presets": ["next/babel"]
 }

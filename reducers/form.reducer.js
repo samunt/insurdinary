@@ -19,11 +19,19 @@ const reducer = (state, action) => {
         case "TOBACCO":
             return {...state, tobacco: action.tobacco};
         case "HEALTH_CONDITION":
-            return {...state, health: action.health};
+            return {...state, healthCondition: action.healthCondition};
         case "YOUR_INCOME":
             return {...state, yourIncome: action.yourIncome};
         case "SPOUSE_INCOME":
             return {...state, spouseIncome: action.spouseIncome};
+        case "RENT_OR_OWN":
+            return {...state, rentOrOwn: action.rentOrOwn};
+        case "MONTHLY_RENT":
+            return {...state, monthlyRent: action.monthlyRent};
+        case "MORTGAGE_CURRENT_BALANCE":
+            return {...state, mortgageCurrentBalance: action.mortgageCurrentBalance};
+        case "MORTGAGE_MONTHLY_PAYMENT":
+            return {...state, mortgageMonthlyPayment: action.mortgageMonthlyPayment};
         default:
             return state
     }

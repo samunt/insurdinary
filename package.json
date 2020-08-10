@@ -29,6 +29,7 @@
     "uuid": "^8.3.0"
   },
   "devDependencies": {
+    "babel-plugin-jsx-control-statements": "^4.1.0",
     "babel-plugin-styled-components": "^1.10.7"
   }
 }

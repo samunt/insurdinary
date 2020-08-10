@@ -38,7 +38,7 @@ export default function TobaccoForm() {
                         <Button
                             className="align-button"
                             onClick={ () => {
-                                dispatch({ type: "HEALTH_CONDITION", health: true });
+                                dispatch({ type: "HEALTH_CONDITION", healthCondition: true });
                                 router.push('/familyIncome');
                             }}
                             style={{ width: "100%" }}
@@ -52,7 +52,7 @@ export default function TobaccoForm() {
                         <Button
                             className="align-button"
                             onClick={ () => {
-                                dispatch({ type: "HEALTH_CONDITION", health: false });
+                                dispatch({ type: "HEALTH_CONDITION", healthCondition: false });
                                 router.push('/familyIncome');
                             }}
                             style={{ width: "100%" }}

@@ -1,8 +1,8 @@
 import React from 'react';
-import rentOrOwnForm from "../components/rentOrOwnForm";
+import RentOrOwnForm from "../components/RentOrOwnForm";
 
 export default function rentOrOwn() {
     return (
-        <rentOrOwnForm/>
+        <RentOrOwnForm/>
     )
 }

@@ -2,7 +2,6 @@ import React, { useContext, useState, useEffect } from "react";
 import { useRouter } from "next/router";
 import Button from "react-bootstrap/Button";
 import styles from "./FamilyIncomeForm.module.css";
-import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import {DispatchContext, FormContext} from "../contexts/FormContext";
@@ -49,10 +48,7 @@ export default function FamilyIncomeForm() {
                     <h2 className={styles.header}>What is your family's annual income (before taxes)? </h2>
                 </Col>
             </Row>
-            <Form onSubmit={(e) => {
-                e.preventDefault;
-                router.push("/rentOrOwn")
-            }}>
+            <Form>
                 <Row>
                     <Col
                         xs={{ span: 4 }}
@@ -117,9 +113,12 @@ export default function FamilyIncomeForm() {
                     >
                         <Button
                             style={{ width: "100%" }}
-                            type="submit"
                             variant="outline-primary"
                             size="lg"
+                            onClick={(e) => {
+                                e.preventDefault;
+                                router.push("/rentOrOwn")
+                            }}
                         >
                             Next
                         </Button>{" "}
