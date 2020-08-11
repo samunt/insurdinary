@@ -26,19 +26,61 @@ export default function MonthlyExpensesForm() {
     // progress
     const now = 95;
     const progressInstance = <ProgressBar style={{height: '0.5rem'}} now={now} />;
+
+    // localstorage stuff for mortgage and rent
     form = JSON.parse(window.localStorage.getItem('form'));
     mortgageCurr = form.mortgageCurrentBalance;
     mortgageMonthly = form.mortgageMonthlyPayment;
     rent = form.monthlyRent;
     mortgageCombined = mortgageCurr + mortgageMonthly;
 
-
+    // local state setup
     const [expenseMortgageAndRent, setExpenseMortgageAndRent] = useState(rent > 0 ? rent : mortgageCombined);
-    const [expenseGroceriesRestaurantsAlcohol, setExpenseGroceriesRestaurantsAlcohol] = useState('');
-    const [expenseShoppingFitnessGrooming, setExpenseShoppingFitnessGrooming] = useState('');
-    const [expenseCarsTaxisPublicTransit, setExpenseCarsTaxisPublicTransit] = useState('');
-    const [expenseChildcareEducation, setExpenseChildcareEducation] = useState('');
-    const [expenseDiscretionaryTravelRecGifts, setExpenseDiscretionaryTravelRecGifts] = useState('');
+    const [expenseHousingBillsUtilities, setExpenseHousingBillsUtilities] = useState(1000);
+    const [expenseGroceriesRestaurantsAlcohol, setExpenseGroceriesRestaurantsAlcohol] = useState(700);
+    const [expensePhoneInternetCable, setExpensePhoneInternetCable] = useState(100);
+    const [expenseShoppingFitnessGrooming, setExpenseShoppingFitnessGrooming] = useState(700);
+    const [expenseCarsTaxisPublicTransit, setExpenseCarsTaxisPublicTransit] = useState(450);
+    const [expenseChildcareEducation, setExpenseChildcareEducation] = useState(0);
+    const [expenseDiscretionaryTravelRecGifts, setExpenseDiscretionaryTravelRecGifts] = useState(450);
+
+
+    //effects for context api
+    useEffect(() => {
+        dispatch({ type: "EXPENSE_MORTGAGE_RENT", expenseMortgageAndRent: expenseMortgageAndRent });
+    }, [expenseMortgageAndRent]);
+
+    useEffect(() => {
+        dispatch({ type: "EXPENSE_HOUSING_BILLS_UTILITIES", expenseHousingBillsUtilities: expenseHousingBillsUtilities });
+    }, [expenseHousingBillsUtilities]);
+
+    useEffect(() => {
+        dispatch({ type: "EXPENSE_GROCERIES_RESTAURANTS_ALCOHOL", expenseGroceriesRestaurantsAlcohol: expenseGroceriesRestaurantsAlcohol });
+    }, [expenseGroceriesRestaurantsAlcohol]);
+
+    useEffect(() => {
+        dispatch({ type: "EXPENSE_PHONE_INTERNET_CABLE", expensePhoneInternetCable: expensePhoneInternetCable });
+    }, [expensePhoneInternetCable]);
+
+    useEffect(() => {
+        dispatch({ type: "EXPENSE_SHOPPING_FITNESS_GROOMING", expenseShoppingFitnessGrooming: expenseShoppingFitnessGrooming });
+    }, [expenseShoppingFitnessGrooming]);
+
+    useEffect(() => {
+        dispatch({ type: "EXPENSE_CARS_TAXIS_TRANSIT", expenseCarsTaxisPublicTransit: expenseCarsTaxisPublicTransit });
+    }, [expenseCarsTaxisPublicTransit]);
+
+    useEffect(() => {
+        dispatch({ type: "EXPENSE_CHILDCARE_EDUCATION", expenseChildcareEducation: expenseChildcareEducation });
+    }, [expenseChildcareEducation]);
+
+    useEffect(() => {
+        dispatch({ type: "EXPENSE_DISCRETIONARY_TRAVEL_REC_GIFTS", expenseDiscretionaryTravelRecGifts: expenseDiscretionaryTravelRecGifts });
+    }, [expenseDiscretionaryTravelRecGifts]);
+
+
+
+
 
     return (
         <div>
@@ -114,8 +156,9 @@ export default function MonthlyExpensesForm() {
                             placeholder="Housing/utilities"
                             aria-label="Housing/utilities"
                             aria-describedby="basic-addon2"
-                            defaultValue={1000}
+                            defaultValue={expenseHousingBillsUtilities}
                             onChange={(e) => {
+                                setExpenseHousingBillsUtilities(e.target.value)
                             }}
                         />
                     </InputGroup>
@@ -143,8 +186,9 @@ export default function MonthlyExpensesForm() {
                             placeholder="Home Internet Cable"
                             aria-label="Home Internet Cable"
                             aria-describedby="basic-addon2"
-                            defaultValue={100}
+                            defaultValue={expensePhoneInternetCable}
                             onChange={(e) => {
+                                setExpensePhoneInternetCable(e.target.value)
                             }}
                         />
                     </InputGroup>
@@ -172,8 +216,9 @@ export default function MonthlyExpensesForm() {
                             placeholder="Groceries"
                             aria-label="Groceries"
                             aria-describedby="basic-addon2"
-                            defaultValue={700}
+                            defaultValue={expenseGroceriesRestaurantsAlcohol}
                             onChange={(e) => {
+                                setExpenseGroceriesRestaurantsAlcohol(e.target.value)
                             }}
                         />
                     </InputGroup>
@@ -201,8 +246,9 @@ export default function MonthlyExpensesForm() {
                             placeholder="Shopping, fitness & grooming"
                             aria-label="Shopping, fitness & grooming"
                             aria-describedby="basic-addon2"
-                            defaultValue={700}
+                            defaultValue={expenseShoppingFitnessGrooming}
                             onChange={(e) => {
+                                setExpenseShoppingFitnessGrooming(e.target.value)
                             }}
                         />
                     </InputGroup>
@@ -230,8 +276,9 @@ export default function MonthlyExpensesForm() {
                             placeholder="Cars, taxis, public transit"
                             aria-label="Cars, taxis, public transit"
                             aria-describedby="basic-addon2"
-                            defaultValue={450}
+                            defaultValue={expenseCarsTaxisPublicTransit}
                             onChange={(e) => {
+                                setExpenseCarsTaxisPublicTransit(e.target.value);
                             }}
                         />
                     </InputGroup>
@@ -259,8 +306,9 @@ export default function MonthlyExpensesForm() {
                             placeholder="Childcare & education"
                             aria-label="Childcare & education"
                             aria-describedby="basic-addon2"
-                            defaultValue={0}
+                            defaultValue={expenseChildcareEducation}
                             onChange={(e) => {
+                                setExpenseChildcareEducation(e.target.value)
                             }}
                         />
                     </InputGroup>
@@ -288,8 +336,9 @@ export default function MonthlyExpensesForm() {
                             placeholder="Discretionary"
                             aria-label="Discretionary"
                             aria-describedby="basic-addon2"
-                            defaultValue={450}
+                            defaultValue={expenseDiscretionaryTravelRecGifts}
                             onChange={(e) => {
+                                setExpenseDiscretionaryTravelRecGifts(e.target.value)
                             }}
                         />
                     </InputGroup>

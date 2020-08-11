@@ -8,9 +8,6 @@
       <change afterPath="$PROJECT_DIR$/../react-hooks-forms/.idea/react-hooks-forms.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../react-hooks-forms/.idea/vcs.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../react-hooks-forms/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/MonthlyExpensesForm.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/MonthlyExpensesForm.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/monthlyExpenses.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../angulartest/.idea/angulartest.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../angulartest/.idea/misc.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../angulartest/.idea/modules.xml" beforeDir="false" />
@@ -38,8 +35,7 @@
       <change beforePath="$PROJECT_DIR$/../react-context/src/styles/FormStyles.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../react-context/src/styles/NavBarStyles.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../react-hooks/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../react-hooks/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/RentOrOwnForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/RentOrOwnForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/MonthlyExpensesForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/MonthlyExpensesForm.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../react-reducer-example/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../react-reducer-example/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../reactCourse" beforeDir="false" afterPath="$PROJECT_DIR$/../reactCourse" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../router-project-dogs" beforeDir="false" afterPath="$PROJECT_DIR$/../router-project-dogs" afterDir="false" />
@@ -111,8 +107,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/components/MonthlyExpensesForm.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="343">
-              <caret line="319" column="43" selection-start-line="319" selection-start-column="43" selection-end-line="319" selection-end-column="43" />
+            <state relative-caret-position="234">
+              <caret line="55" lean-forward="true" selection-start-line="55" selection-end-line="55" />
               <folding>
                 <element signature="e#0#61#0" expanded="true" />
               </folding>
@@ -123,8 +119,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/components/DebtForm.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1530">
-              <caret line="102" selection-start-line="102" selection-end-line="280" />
+            <state relative-caret-position="254">
+              <caret line="40" selection-start-line="37" selection-end-line="40" />
               <folding>
                 <element signature="e#0#61#0" expanded="true" />
                 <element signature="e#3909#13324#0" />
@@ -179,16 +175,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>div</find>
-      <find>numberOfChildren</find>
-      <find>&lt;&gt;</find>
-      <find>secondary</find>
-      <find>dispa</find>
-      <find>input</find>
-      <find>react-datepicker-wrapper</find>
-      <find>react-datepicker__input-container</find>
-      <find>formcon</find>
-      <find>(e)</find>
       <find>state</find>
       <find>add child</find>
       <find>sexf</find>
@@ -209,6 +195,16 @@
       <find>setMonthlyPayment</find>
       <find>next</find>
       <find>currentBalance</find>
+      <find>expenseMortgageAndRent</find>
+      <find>shopping</find>
+      <find>childcare</find>
+      <find>dis</find>
+      <find>disc</find>
+      <find>childca</find>
+      <find>taxis</find>
+      <find>groom</find>
+      <find>phone</find>
+      <find>alco</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -368,12 +364,12 @@
       <workItem from="1595450232905" duration="16885000" />
       <workItem from="1596042210599" duration="109000" />
       <workItem from="1596042935114" duration="731000" />
-      <workItem from="1596049029317" duration="73358000" />
+      <workItem from="1596049029317" duration="74183000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="91083000" />
+    <option name="totallyTimeSpent" value="91908000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -851,17 +847,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/components/DebtForm.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1530">
-          <caret line="102" selection-start-line="102" selection-end-line="280" />
-          <folding>
-            <element signature="e#0#61#0" expanded="true" />
-            <element signature="e#3909#13324#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.dom.d.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
@@ -876,10 +861,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/components/DebtForm.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="254">
+          <caret line="40" selection-start-line="37" selection-end-line="40" />
+          <folding>
+            <element signature="e#0#61#0" expanded="true" />
+            <element signature="e#3909#13324#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/components/MonthlyExpensesForm.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="343">
-          <caret line="319" column="43" selection-start-line="319" selection-start-column="43" selection-end-line="319" selection-end-column="43" />
+        <state relative-caret-position="234">
+          <caret line="55" lean-forward="true" selection-start-line="55" selection-end-line="55" />
           <folding>
             <element signature="e#0#61#0" expanded="true" />
           </folding>
