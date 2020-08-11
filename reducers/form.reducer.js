@@ -1,5 +1,11 @@
 const reducer = (state, action) => {
     switch(action.type){
+        case "ID":
+            if (state.id) {
+                return state
+            } else {
+                return {...state, id: action.id}
+            }
         case "ADD_SPOUSE":
             return {...state, spouse: action.spouse};
         case "SPOUSE_AGE":

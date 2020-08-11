@@ -9,7 +9,7 @@ import { DispatchContext } from "../contexts/FormContext";
 import ProgressBar from "react-bootstrap/ProgressBar";
 import InputGroup from "react-bootstrap/InputGroup";
 import FormControl from "react-bootstrap/FormControl";
-
+import { v4 as uuid } from 'uuid';
 export default function PersonalInformationForm() {
     const router = useRouter();
     const dispatch = useContext(DispatchContext);
@@ -17,6 +17,8 @@ export default function PersonalInformationForm() {
     const [nameLast, setNameLast] = useState('');
     const [nameEmail, setNameEmail] = useState('');
     const [namePhone, setNamePhone] = useState('');
+
+    dispatch({ type: "ID", id: uuid() });
 
     useEffect(() => {
             dispatch({ type: "NAME_FIRST", nameFirst: nameFirst });

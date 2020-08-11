@@ -20,12 +20,11 @@ export default function MonthlyExpensesForm() {
     // hooks definitions
     const router = useRouter();
     const dispatch = useContext(DispatchContext);
-    const form = useContext(FormContext)
+    const form = useContext(FormContext);
 
     // progress
     const now = 95;
     const progressInstance = <ProgressBar style={{height: '0.5rem'}} now={now} />;
-    // form = JSON.parse(window.localStorage.getItem('form'));
     mortgageCurr = parseInt(form.mortgageCurrentBalance);
     mortgageMonthly = parseInt(form.mortgageMonthlyPayment);
     rent = form.monthlyRent;

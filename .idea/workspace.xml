@@ -35,7 +35,13 @@
       <change beforePath="$PROJECT_DIR$/../react-context/src/styles/FormStyles.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../react-context/src/styles/NavBarStyles.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../react-hooks/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../react-hooks/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/server/static/development/pages/monthlyExpenses.js" beforeDir="false" afterPath="$PROJECT_DIR$/.next/server/static/development/pages/monthlyExpenses.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/development/pages/monthlyExpenses.js" beforeDir="false" afterPath="$PROJECT_DIR$/.next/static/development/pages/monthlyExpenses.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/runtime/webpack.js" beforeDir="false" afterPath="$PROJECT_DIR$/.next/static/runtime/webpack.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/MonthlyExpensesForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/MonthlyExpensesForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/PersonalInformationForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/PersonalInformationForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reducers/form.reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/reducers/form.reducer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../react-reducer-example/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../react-reducer-example/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../reactCourse" beforeDir="false" afterPath="$PROJECT_DIR$/../reactCourse" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../router-project-dogs" beforeDir="false" afterPath="$PROJECT_DIR$/../router-project-dogs" afterDir="false" />
@@ -87,31 +93,22 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/hooks/useLocalStorageReducer.js">
+        <entry file="file://$PROJECT_DIR$/components/PersonalInformationForm.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="16" selection-start-line="16" selection-start-column="4" selection-end-line="18" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/reducers/form.reducer.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="232">
-              <caret line="83" column="65" selection-start-line="83" selection-start-column="65" selection-end-line="83" selection-end-column="65" />
+            <state relative-caret-position="207">
+              <caret line="20" column="41" selection-start-line="20" selection-start-column="41" selection-end-line="20" selection-end-column="41" />
+              <folding>
+                <element signature="e#0#61#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/components/MonthlyExpensesForm.js">
+        <entry file="file://$PROJECT_DIR$/reducers/form.reducer.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="128">
-              <caret line="27" selection-start-line="27" selection-end-line="27" />
-              <folding>
-                <element signature="e#0#61#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="90">
+              <caret line="6" column="48" selection-start-line="6" selection-start-column="48" selection-end-line="6" selection-end-column="48" />
             </state>
           </provider>
         </entry>
@@ -120,8 +117,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>setEmployerLifeInsurance</find>
-      <find>setPersonalLifeInsurance</find>
       <find>setLifeInsurance</find>
       <find>onClick</find>
       <find>No</find>
@@ -150,6 +145,8 @@
       <find>e.target.value</find>
       <find>e.tar</find>
       <find>e.targ</find>
+      <find>console.</find>
+      <find>uui</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -194,13 +191,11 @@
         <option value="$PROJECT_DIR$/components/PersonalInformationForm.module.css" />
         <option value="$PROJECT_DIR$/pages/formApp.js" />
         <option value="$PROJECT_DIR$/pages/spouseForm.js" />
-        <option value="$PROJECT_DIR$/components/PersonalInformationForm.js" />
         <option value="$PROJECT_DIR$/pages/index.js" />
         <option value="$PROJECT_DIR$/pages/_app.js" />
         <option value="$PROJECT_DIR$/components/MonthlyExpenses.module.css" />
         <option value="$PROJECT_DIR$/components/MonthlyExpenses.js" />
         <option value="$PROJECT_DIR$/pages/monthlyExpenses.js" />
-        <option value="$PROJECT_DIR$/reducers/form.reducer.js" />
         <option value="$PROJECT_DIR$/components/DebtForm.js" />
         <option value="$PROJECT_DIR$/components/SavingsForm.js" />
         <option value="$PROJECT_DIR$/components/LifeInsuranceForm.js" />
@@ -209,6 +204,8 @@
         <option value="$PROJECT_DIR$/components/FamilyIncomeForm.js" />
         <option value="$PROJECT_DIR$/components/ChildrenForm.js" />
         <option value="$PROJECT_DIR$/components/MonthlyExpensesForm.js" />
+        <option value="$PROJECT_DIR$/components/PersonalInformationForm.js" />
+        <option value="$PROJECT_DIR$/reducers/form.reducer.js" />
       </list>
     </option>
   </component>
@@ -309,12 +306,12 @@
       <workItem from="1595450232905" duration="16885000" />
       <workItem from="1596042210599" duration="109000" />
       <workItem from="1596042935114" duration="731000" />
-      <workItem from="1596049029317" duration="77443000" />
+      <workItem from="1596049029317" duration="77966000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="95168000" />
+    <option name="totallyTimeSpent" value="95691000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -329,7 +326,7 @@
     <frame x="13" y="23" width="876" height="777" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23157895" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23157895" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="TypeScript" />
@@ -342,7 +339,7 @@
       <window_info anchor="bottom" id="TODO" order="6" weight="0.329927" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.329927" />
+      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.329927" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -391,27 +388,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/components/ChildrenForm.module.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/SpouseForm.module.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/TobaccoForm.module.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pages/secondaryEducation.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -684,16 +660,6 @@
     <entry file="file://$PROJECT_DIR$/hooks/useInputState.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/components/PersonalInformationForm.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="18" column="51" selection-start-line="18" selection-start-column="51" selection-end-line="18" selection-end-column="51" />
-          <folding>
-            <element signature="e#0#61#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/components/LifeInsuranceForm.module.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -809,20 +775,43 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/reducers/form.reducer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="83" column="65" selection-start-line="83" selection-start-column="65" selection-end-line="83" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/components/MonthlyExpensesForm.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
+        <state relative-caret-position="405">
           <caret line="27" selection-start-line="27" selection-end-line="27" />
           <folding>
             <element signature="e#0#61#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yarn.lock">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="28" column="8" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/PersonalInformationForm.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="20" column="41" selection-start-line="20" selection-start-column="41" selection-end-line="20" selection-end-column="41" />
+          <folding>
+            <element signature="e#0#61#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/reducers/form.reducer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="48" selection-start-line="6" selection-start-column="48" selection-end-line="6" selection-end-column="48" />
         </state>
       </provider>
     </entry>
