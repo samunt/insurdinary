@@ -2,7 +2,6 @@ import React, {useContext, useEffect, useState} from "react";
 import { useRouter } from "next/router";
 import Button from "react-bootstrap/Button";
 import styles from "./MonthlyExpensesForm.module.css";
-import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import { DispatchContext } from "../contexts/FormContext";
@@ -113,7 +112,7 @@ export default function MonthlyExpensesForm() {
                     md={{ span: 8, offset: 3 }}
                     lg={{ span: 8, offset: 2 }}
                 >
-                    <h2 className={styles.header}>What are your monthly expenses</h2>
+                    <h2 className={styles.header}>What are your monthly expenses?</h2>
                     <br/>
                     <h4>Below, we’ve estimated your family’s expenses based on the spending patterns of millions of Canadians.
                         If any of these estimates seem too high or too low, please edit them.</h4>
@@ -434,6 +433,7 @@ export default function MonthlyExpensesForm() {
                     </Button>{" "}
                 </Col>
             </Row>
+            <br/>
         </div>
     )
 }
