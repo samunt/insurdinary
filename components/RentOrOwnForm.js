@@ -29,16 +29,18 @@ export default function rentOrOwnForm() {
 
     useEffect(() => {
         dispatch({ type: "MONTHLY_RENT", monthlyRent: monthlyRent });
+        dispatch({ type: "MORTGAGE_CURRENT_BALANCE", mortgageCurrentBalance: 0 });
+        dispatch({ type: "MORTGAGE_MONTHLY_PAYMENT", mortgageMonthlyPayment: 0 });
     }, [monthlyRent]);
 
     useEffect(() => {
-        console.log('SET CURR BAL')
         dispatch({ type: "MORTGAGE_CURRENT_BALANCE", mortgageCurrentBalance: currentBalance });
+        dispatch({ type: "MONTHLY_RENT", monthlyRent: 0 });
     }, [currentBalance]);
 
     useEffect(() => {
-        console.log('MORTGAGE MONTHLY')
         dispatch({ type: "MORTGAGE_MONTHLY_PAYMENT", mortgageMonthlyPayment: monthlyPayment });
+        dispatch({ type: "MONTHLY_RENT", monthlyRent: 0 });
     }, [monthlyPayment]);
 
     return (
