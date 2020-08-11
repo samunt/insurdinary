@@ -6,31 +6,30 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import { DispatchContext } from "../contexts/FormContext";
+import { FormContext } from "../contexts/FormContext";
 import ProgressBar from "react-bootstrap/ProgressBar";
 import InputGroup from "react-bootstrap/InputGroup";
 import FormControl from "react-bootstrap/FormControl";
 
 export default function MonthlyExpensesForm() {
     // localstorage keys
-    let form;
     let rent;
     let mortgageCurr;
     let mortgageMonthly;
     let mortgageCombined;
-    let startVal;
 
     // hooks definitions
     const router = useRouter();
     const dispatch = useContext(DispatchContext);
+    const form = useContext(FormContext)
 
     // progress
     const now = 95;
     const progressInstance = <ProgressBar style={{height: '0.5rem'}} now={now} />;
-
-    // localstorage stuff for mortgage and rent
-    form = JSON.parse(window.localStorage.getItem('form'));
-    mortgageCurr = form.mortgageCurrentBalance;
-    mortgageMonthly = form.mortgageMonthlyPayment;
+    console.log('FORM=====>',form);
+    // form = JSON.parse(window.localStorage.getItem('form'));
+    mortgageCurr = parseInt(form.mortgageCurrentBalance);
+    mortgageMonthly = parseInt(form.mortgageMonthlyPayment);
     rent = form.monthlyRent;
     mortgageCombined = mortgageCurr + mortgageMonthly;
 
@@ -43,12 +42,18 @@ export default function MonthlyExpensesForm() {
     const [expenseCarsTaxisPublicTransit, setExpenseCarsTaxisPublicTransit] = useState(450);
     const [expenseChildcareEducation, setExpenseChildcareEducation] = useState(0);
     const [expenseDiscretionaryTravelRecGifts, setExpenseDiscretionaryTravelRecGifts] = useState(450);
+    const [expenseOther, setExpenseOther] = useState(0);
+
     // calculate total expenses
-    const total = expenseMortgageAndRent + expenseHousingBillsUtilities + expenseGroceriesRestaurantsAlcohol + expensePhoneInternetCable + expenseShoppingFitnessGrooming + expenseCarsTaxisPublicTransit + expenseChildcareEducation + expenseDiscretionaryTravelRecGifts;
+    let total = expenseMortgageAndRent + expenseHousingBillsUtilities + expenseGroceriesRestaurantsAlcohol + expensePhoneInternetCable + expenseShoppingFitnessGrooming + expenseCarsTaxisPublicTransit + expenseChildcareEducation + expenseDiscretionaryTravelRecGifts + expenseOther;
     // use total as default state
     const [expenseTotal, setExpenseTotal] = useState(total);
 
     //effects for context api
+    useEffect(() => {
+        setExpenseTotal(expenseMortgageAndRent + expenseHousingBillsUtilities + expenseGroceriesRestaurantsAlcohol + expensePhoneInternetCable + expenseShoppingFitnessGrooming + expenseCarsTaxisPublicTransit + expenseChildcareEducation + expenseDiscretionaryTravelRecGifts + expenseOther);
+    });
+
     useEffect(() => {
         dispatch({ type: "EXPENSE_MORTGAGE_RENT", expenseMortgageAndRent: expenseMortgageAndRent });
     }, [expenseMortgageAndRent]);
@@ -82,6 +87,10 @@ export default function MonthlyExpensesForm() {
     }, [expenseDiscretionaryTravelRecGifts]);
 
     useEffect(() => {
+        dispatch({ type: "EXPENSE_OTHER", expenseOther: expenseOther });
+    }, [expenseOther]);
+
+    useEffect(() => {
         dispatch({ type: "EXPENSE_TOTAL", expenseTotal: expenseTotal });
     }, [expenseTotal]);
 
@@ -105,6 +114,9 @@ export default function MonthlyExpensesForm() {
                     lg={{ span: 8, offset: 2 }}
                 >
                     <h2 className={styles.header}>What are your monthly expenses</h2>
+                    <br/>
+                    <h4>Below, we’ve estimated your family’s expenses based on the spending patterns of millions of Canadians.
+                        If any of these estimates seem too high or too low, please edit them.</h4>
                 </Col>
             </Row>
             <br/>
@@ -131,7 +143,7 @@ export default function MonthlyExpensesForm() {
                             aria-label="Mortgage and rent"
                             aria-describedby="basic-addon2"
                             onChange={(e) => {
-                                setExpenseMortgageAndRent(e.target.value);
+                                setExpenseMortgageAndRent(parseInt(e.target.value));
                             }}
                         />
                     </InputGroup>
@@ -161,7 +173,7 @@ export default function MonthlyExpensesForm() {
                             aria-describedby="basic-addon2"
                             defaultValue={expenseHousingBillsUtilities}
                             onChange={(e) => {
-                                setExpenseHousingBillsUtilities(e.target.value)
+                                setExpenseHousingBillsUtilities(parseInt(e.target.value))
                             }}
                         />
                     </InputGroup>
@@ -191,7 +203,7 @@ export default function MonthlyExpensesForm() {
                             aria-describedby="basic-addon2"
                             defaultValue={expensePhoneInternetCable}
                             onChange={(e) => {
-                                setExpensePhoneInternetCable(e.target.value)
+                                setExpensePhoneInternetCable(parseInt(e.target.value))
                             }}
                         />
                     </InputGroup>
@@ -221,7 +233,7 @@ export default function MonthlyExpensesForm() {
                             aria-describedby="basic-addon2"
                             defaultValue={expenseGroceriesRestaurantsAlcohol}
                             onChange={(e) => {
-                                setExpenseGroceriesRestaurantsAlcohol(e.target.value)
+                                setExpenseGroceriesRestaurantsAlcohol(parseInt(e.target.value))
                             }}
                         />
                     </InputGroup>
@@ -251,7 +263,7 @@ export default function MonthlyExpensesForm() {
                             aria-describedby="basic-addon2"
                             defaultValue={expenseShoppingFitnessGrooming}
                             onChange={(e) => {
-                                setExpenseShoppingFitnessGrooming(e.target.value)
+                                setExpenseShoppingFitnessGrooming(parseInt(e.target.value))
                             }}
                         />
                     </InputGroup>
@@ -281,7 +293,7 @@ export default function MonthlyExpensesForm() {
                             aria-describedby="basic-addon2"
                             defaultValue={expenseCarsTaxisPublicTransit}
                             onChange={(e) => {
-                                setExpenseCarsTaxisPublicTransit(e.target.value);
+                                setExpenseCarsTaxisPublicTransit(parseInt(e.target.value))
                             }}
                         />
                     </InputGroup>
@@ -311,7 +323,7 @@ export default function MonthlyExpensesForm() {
                             aria-describedby="basic-addon2"
                             defaultValue={expenseChildcareEducation}
                             onChange={(e) => {
-                                setExpenseChildcareEducation(e.target.value)
+                                setExpenseChildcareEducation(parseInt(e.target.value))
                             }}
                         />
                     </InputGroup>
@@ -341,7 +353,7 @@ export default function MonthlyExpensesForm() {
                             aria-describedby="basic-addon2"
                             defaultValue={expenseDiscretionaryTravelRecGifts}
                             onChange={(e) => {
-                                setExpenseDiscretionaryTravelRecGifts(e.target.value)
+                                setExpenseDiscretionaryTravelRecGifts(parseInt(e.target.value))
                             }}
                         />
                     </InputGroup>
@@ -369,8 +381,9 @@ export default function MonthlyExpensesForm() {
                             placeholder="Other"
                             aria-label="Other"
                             aria-describedby="basic-addon2"
-                            defaultValue={0}
+                            defaultValue={expenseOther}
                             onChange={(e) => {
+                                setExpenseOther(parseInt(e.target.value))
                             }}
                         />
                     </InputGroup>
@@ -399,9 +412,7 @@ export default function MonthlyExpensesForm() {
                             placeholder=""
                             aria-label=""
                             aria-describedby="basic-addon2"
-                            onChange={(e) => {
-                                setExpenseTotal(e.target.value)
-                            }}
+                            defaultValue={form.expenseTotal}
                         />
                     </InputGroup>
                 </Col>
