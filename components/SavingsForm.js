@@ -107,7 +107,7 @@ export default function SavingsForm() {
                                             aria-label="Retirment Savings"
                                             aria-describedby="basic-addon2"
                                             onChange={(e) => {
-                                                setHasRetirementSavings(e.target.value)
+                                                setHasRetirementSavings(parseInt(e.target.value))
                                             }}
                                         />
                                     </InputGroup>
@@ -135,7 +135,7 @@ export default function SavingsForm() {
                                             placeholder="Non Retirement Savings"
                                             aria-label="Non Retirement Savings"
                                             aria-describedby="basic-addon2"
-                                            onChange={(e) => {setHasNonRetirementSavings(e.target.value)}}
+                                            onChange={(e) => {setHasNonRetirementSavings(parseInt(e.target.value))}}
                                         />
                                     </InputGroup>
                                 </Col>

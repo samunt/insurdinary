@@ -115,7 +115,7 @@ export default function rentOrOwnForm() {
                                             aria-label="Rent"
                                             aria-describedby="basic-addon2"
                                             onChange={(e) => {
-                                                setMonthlyRent(e.target.value)
+                                                setMonthlyRent(parseInt(e.target.value))
                                             }}
                                         />
                                     </InputGroup>
@@ -167,7 +167,7 @@ export default function rentOrOwnForm() {
                                             placeholder="Balance"
                                             aria-label="Balance"
                                             aria-describedby="basic-addon2"
-                                            onChange={(e) => setCurrentBalance(e.target.value)}
+                                            onChange={(e) => setCurrentBalance(parseInt(e.target.value))}
                                         />
                                     </InputGroup>
                                 </Col>
@@ -187,7 +187,7 @@ export default function rentOrOwnForm() {
                                             placeholder="Monthly Payment"
                                             aria-label="Monthly Payment"
                                             aria-describedby="basic-addon2"
-                                            onChange={(e) => setMonthlyPayment(e.target.value)}
+                                            onChange={(e) => setMonthlyPayment(parseInt(e.target.value))}
                                         />
                                     </InputGroup>
                                 </Col>

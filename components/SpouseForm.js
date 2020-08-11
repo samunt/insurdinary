@@ -108,7 +108,7 @@ function SpouseForm() {
                                     </InputGroup.Prepend>
                                     <FormControl
                                         onChange={(e) => {
-                                            updateSpouseAge(e.target.value);
+                                            updateSpouseAge(parseInt(e.target.value));
                                         }}
                                     />
                                 </InputGroup>

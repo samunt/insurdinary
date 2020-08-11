@@ -36,151 +36,60 @@
       <change beforePath="$PROJECT_DIR$/../react-context/src/styles/NavBarStyles.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../react-hooks/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../react-hooks/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/server/static/development/pages/debt.js" beforeDir="false" afterPath="$PROJECT_DIR$/.next/server/static/development/pages/debt.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/server/static/development/pages/monthlyExpenses.js" beforeDir="false" afterPath="$PROJECT_DIR$/.next/server/static/development/pages/monthlyExpenses.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/development/pages/debt.js" beforeDir="false" afterPath="$PROJECT_DIR$/.next/static/development/pages/debt.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/development/pages/monthlyExpenses.js" beforeDir="false" afterPath="$PROJECT_DIR$/.next/static/development/pages/monthlyExpenses.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/runtime/webpack.js" beforeDir="false" afterPath="$PROJECT_DIR$/.next/static/runtime/webpack.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/webpack/041c7c4c324c7cbb49f5.hot-update.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/webpack/05286ec52ee68f420c9d.hot-update.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/webpack/06a03925085b39c26d56.hot-update.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/webpack/074d6b6f22b16612c0b6.hot-update.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/webpack/0a82342608c2fdd8f4c8.hot-update.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/webpack/0d3b81de50d202e9ffbe.hot-update.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/webpack/10be5ed547a1ccfe6421.hot-update.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/webpack/122391aa584815faaf34.hot-update.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/webpack/1d1383044f6ef565d4c4.hot-update.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/webpack/2162aaf75cdc36c9802f.hot-update.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/webpack/25cb56959ff4f7d20ed5.hot-update.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/webpack/3242ab45ff8d1748013c.hot-update.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/webpack/338799b7922df6763c1d.hot-update.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/webpack/34cc0b595248b456b77c.hot-update.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/webpack/34d710b692199c02dc82.hot-update.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/webpack/37492b0722f95070f50b.hot-update.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/webpack/385cad7abe5415e4163a.hot-update.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/webpack/3b4aa7c8d54653829e25.hot-update.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/webpack/3b8723cca69e00fc293a.hot-update.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/webpack/41d0dfeda9332a14cd1e.hot-update.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/webpack/432ebe0c471b951cd0dd.hot-update.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/webpack/44807f448579df5693a6.hot-update.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/webpack/48935d8863522247ae7e.hot-update.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/webpack/48a7b5b9d7fd89ac7600.hot-update.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/webpack/4f28338c16a4dd7f2980.hot-update.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/webpack/57f3ea359caf92880693.hot-update.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/webpack/5901f4b33c55050ed36c.hot-update.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/webpack/5b61c63a4675b0d5c8a7.hot-update.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/webpack/5bfe752e90a49310ca89.hot-update.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/webpack/5c37d1f46951b1286c88.hot-update.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/webpack/5cec2de02f8d7916987f.hot-update.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/webpack/5d8043ef22fb021fc7d8.hot-update.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/webpack/5fb6aaa7670078f67bb2.hot-update.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/webpack/6687be4aadac25c5c7b1.hot-update.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/webpack/66cfbcdd4e1d9057cc5a.hot-update.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/webpack/67acb3480bbafd9ba843.hot-update.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/webpack/69dc50d46a254c7846af.hot-update.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/webpack/6a7a7dfd320606322e7b.hot-update.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/webpack/6da82a0a08c915619f6e.hot-update.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/webpack/6e1455c90745171d95fc.hot-update.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/webpack/6f2ba59f6645896bc99d.hot-update.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/webpack/76f5ffef054142ebd584.hot-update.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/webpack/776c74697b369e027f5d.hot-update.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/webpack/779e0f392957073ba82a.hot-update.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/webpack/78cc71b71bd2af2e0444.hot-update.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/webpack/83c3df85776f02690ab8.hot-update.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/webpack/85e82491aa8cb06aeab0.hot-update.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/webpack/8b63d7440e61f566c66b.hot-update.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/webpack/8f1fd4d7567b2385097e.hot-update.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/webpack/9452f175d934a5b7974c.hot-update.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/webpack/96ebd6df7637806a353b.hot-update.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/webpack/9758d078eeb87025d702.hot-update.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/webpack/991bda1ba5d7890a7527.hot-update.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/webpack/99492931ae6541008c09.hot-update.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/webpack/9a6c96c4b423b484b923.hot-update.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/webpack/9b2de6fc913da8d874c9.hot-update.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/webpack/a0ec35e7b829e0af43eb.hot-update.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/webpack/a1644794b35c0a04fb6c.hot-update.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/webpack/a62d5a355e412c4a5c01.hot-update.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/webpack/b5ec244022cf10ce175a.hot-update.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/webpack/b8ffd4cb7e90bde4bc43.hot-update.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/webpack/beb4fb5d463694173830.hot-update.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/webpack/bec4338390613e724197.hot-update.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/webpack/bf791488af99611a7449.hot-update.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/webpack/d01d8d7ca763750361b2.hot-update.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/webpack/d18d3a546344cb8301f3.hot-update.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/webpack/d2fd9808b41e89f394f1.hot-update.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/webpack/d39f0d2557be8f9e19cd.hot-update.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/webpack/d540fa68d0a70c9c5a52.hot-update.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/webpack/da68daddc105e265d8df.hot-update.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/webpack/db6bf54a77c197879b31.hot-update.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/webpack/dd5b1bff434a84ddabd5.hot-update.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/webpack/ddd3a153cab978f007b0.hot-update.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/webpack/e2c192c02a95d15f55f2.hot-update.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/webpack/e43238f84fb4d824a39a.hot-update.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/webpack/eab5bbe535e840d56fe9.hot-update.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/webpack/f1942f899af35be31b4a.hot-update.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/webpack/f37a39ae7ec53455d8a9.hot-update.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/webpack/f9d775dab2c08108df37.hot-update.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/webpack/fbb7cebdd9f0768cb4e8.hot-update.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/webpack/ff25d08a18c3ca4210f6.hot-update.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/webpack/static/development/pages/_app.js.8b63d7440e61f566c66b.hot-update.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/webpack/static/development/pages/_app.js.ff25d08a18c3ca4210f6.hot-update.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/webpack/static/development/pages/debt.js.8b63d7440e61f566c66b.hot-update.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/webpack/static/development/pages/debt.js.ff25d08a18c3ca4210f6.hot-update.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/webpack/static/development/pages/monthlyExpenses.js.041c7c4c324c7cbb49f5.hot-update.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/webpack/static/development/pages/monthlyExpenses.js.05286ec52ee68f420c9d.hot-update.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/webpack/static/development/pages/monthlyExpenses.js.074d6b6f22b16612c0b6.hot-update.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/webpack/static/development/pages/monthlyExpenses.js.0d3b81de50d202e9ffbe.hot-update.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/webpack/static/development/pages/monthlyExpenses.js.122391aa584815faaf34.hot-update.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/webpack/static/development/pages/monthlyExpenses.js.2162aaf75cdc36c9802f.hot-update.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/webpack/static/development/pages/monthlyExpenses.js.25cb56959ff4f7d20ed5.hot-update.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/webpack/static/development/pages/monthlyExpenses.js.3242ab45ff8d1748013c.hot-update.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/webpack/static/development/pages/monthlyExpenses.js.338799b7922df6763c1d.hot-update.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/webpack/static/development/pages/monthlyExpenses.js.34cc0b595248b456b77c.hot-update.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/webpack/static/development/pages/monthlyExpenses.js.34d710b692199c02dc82.hot-update.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/webpack/static/development/pages/monthlyExpenses.js.3b4aa7c8d54653829e25.hot-update.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/webpack/static/development/pages/monthlyExpenses.js.41d0dfeda9332a14cd1e.hot-update.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/webpack/static/development/pages/monthlyExpenses.js.432ebe0c471b951cd0dd.hot-update.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/webpack/static/development/pages/monthlyExpenses.js.48935d8863522247ae7e.hot-update.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/webpack/static/development/pages/monthlyExpenses.js.48a7b5b9d7fd89ac7600.hot-update.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/webpack/static/development/pages/monthlyExpenses.js.4f28338c16a4dd7f2980.hot-update.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/webpack/static/development/pages/monthlyExpenses.js.5901f4b33c55050ed36c.hot-update.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/webpack/static/development/pages/monthlyExpenses.js.5bfe752e90a49310ca89.hot-update.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/webpack/static/development/pages/monthlyExpenses.js.5cec2de02f8d7916987f.hot-update.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/webpack/static/development/pages/monthlyExpenses.js.5d8043ef22fb021fc7d8.hot-update.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/webpack/static/development/pages/monthlyExpenses.js.6687be4aadac25c5c7b1.hot-update.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/webpack/static/development/pages/monthlyExpenses.js.67acb3480bbafd9ba843.hot-update.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/webpack/static/development/pages/monthlyExpenses.js.69dc50d46a254c7846af.hot-update.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/webpack/static/development/pages/monthlyExpenses.js.6e1455c90745171d95fc.hot-update.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/webpack/static/development/pages/monthlyExpenses.js.776c74697b369e027f5d.hot-update.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/webpack/static/development/pages/monthlyExpenses.js.779e0f392957073ba82a.hot-update.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/webpack/static/development/pages/monthlyExpenses.js.78cc71b71bd2af2e0444.hot-update.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/webpack/static/development/pages/monthlyExpenses.js.83c3df85776f02690ab8.hot-update.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/webpack/static/development/pages/monthlyExpenses.js.85e82491aa8cb06aeab0.hot-update.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/webpack/static/development/pages/monthlyExpenses.js.8b63d7440e61f566c66b.hot-update.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/webpack/static/development/pages/monthlyExpenses.js.8f1fd4d7567b2385097e.hot-update.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/webpack/static/development/pages/monthlyExpenses.js.9452f175d934a5b7974c.hot-update.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/webpack/static/development/pages/monthlyExpenses.js.96ebd6df7637806a353b.hot-update.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/webpack/static/development/pages/monthlyExpenses.js.991bda1ba5d7890a7527.hot-update.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/webpack/static/development/pages/monthlyExpenses.js.99492931ae6541008c09.hot-update.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/webpack/static/development/pages/monthlyExpenses.js.a0ec35e7b829e0af43eb.hot-update.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/webpack/static/development/pages/monthlyExpenses.js.a62d5a355e412c4a5c01.hot-update.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/webpack/static/development/pages/monthlyExpenses.js.b5ec244022cf10ce175a.hot-update.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/webpack/static/development/pages/monthlyExpenses.js.beb4fb5d463694173830.hot-update.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/webpack/static/development/pages/monthlyExpenses.js.bec4338390613e724197.hot-update.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/webpack/static/development/pages/monthlyExpenses.js.bf791488af99611a7449.hot-update.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/webpack/static/development/pages/monthlyExpenses.js.d01d8d7ca763750361b2.hot-update.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/webpack/static/development/pages/monthlyExpenses.js.d18d3a546344cb8301f3.hot-update.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/webpack/static/development/pages/monthlyExpenses.js.d39f0d2557be8f9e19cd.hot-update.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/webpack/static/development/pages/monthlyExpenses.js.db6bf54a77c197879b31.hot-update.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/webpack/static/development/pages/monthlyExpenses.js.dd5b1bff434a84ddabd5.hot-update.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/webpack/static/development/pages/monthlyExpenses.js.e2c192c02a95d15f55f2.hot-update.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/webpack/static/development/pages/monthlyExpenses.js.e43238f84fb4d824a39a.hot-update.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/webpack/static/development/pages/monthlyExpenses.js.eab5bbe535e840d56fe9.hot-update.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/webpack/static/development/pages/monthlyExpenses.js.f1942f899af35be31b4a.hot-update.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/webpack/static/development/pages/monthlyExpenses.js.f9d775dab2c08108df37.hot-update.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/webpack/static/development/pages/monthlyExpenses.js.ff25d08a18c3ca4210f6.hot-update.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/webpack/static/development/pages/rentOrOwn.js.6a7a7dfd320606322e7b.hot-update.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/MonthlyExpensesForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/MonthlyExpensesForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/build-manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/react-loadable-manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/server/pages-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/.next/server/pages-manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/server/static/development/pages/debt.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/server/static/development/pages/monthlyExpenses.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/chunks/0.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/development/_buildManifest.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/development/_ssgManifest.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/development/dll/dll_f9de5cbc314a1e41f91e.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/development/dll/dll_f9de5cbc314a1e41f91e.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/development/pages/_app.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/development/pages/_error.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/development/pages/debt.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/development/pages/monthlyExpenses.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/runtime/amp.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/runtime/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/runtime/polyfills.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/runtime/react-refresh.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/runtime/webpack.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/webpack/07a1abc1898fb4d23380.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/webpack/1efe3da903f5ddb9df05.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/webpack/20ebb01375614604781e.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/webpack/2be4f9b2136ad7de644d.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/webpack/4fedcdd316a6efaf171d.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/webpack/5cd01213922eeefd7aba.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/webpack/766f96697471e9611cd7.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/webpack/7b1e8419ce6b5b25437d.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/webpack/7f5cf09587eea66f08fb.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/webpack/887ca9fdb92292b62600.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/webpack/a09e41efe65a60e912d5.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/webpack/a17daaf6c9f80db8e20f.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/webpack/b1f2bde0d272c067c21d.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/webpack/b4ae083bcc3de77f2a6f.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/webpack/c5adc168e17c90dff257.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/webpack/c7e611ee6b7f6c50e901.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/webpack/df77ab1cb0fa4ebf568d.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/webpack/e44fa7e4147e1b3cbbe9.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/webpack/e4e98ce9893ac91cd7b8.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/webpack/ea0c38ce200ea69507c2.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/webpack/f3d86a313fc3186a436a.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/webpack/fda159a9832be89888e6.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/webpack/static/development/pages/monthlyExpenses.js.20ebb01375614604781e.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/webpack/static/development/pages/monthlyExpenses.js.2be4f9b2136ad7de644d.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/webpack/static/development/pages/monthlyExpenses.js.7f5cf09587eea66f08fb.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/webpack/static/development/pages/monthlyExpenses.js.887ca9fdb92292b62600.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/webpack/static/development/pages/monthlyExpenses.js.b1f2bde0d272c067c21d.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/webpack/static/development/pages/monthlyExpenses.js.f3d86a313fc3186a436a.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/ChildrenForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/ChildrenForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/DebtForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/DebtForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/FamilyIncomeForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/FamilyIncomeForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/LifeInsuranceForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/LifeInsuranceForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/RentOrOwnForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/RentOrOwnForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/SavingsForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/SavingsForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/SpouseForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/SpouseForm.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../react-reducer-example/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../react-reducer-example/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../reactCourse" beforeDir="false" afterPath="$PROJECT_DIR$/../reactCourse" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../router-project-dogs" beforeDir="false" afterPath="$PROJECT_DIR$/../router-project-dogs" afterDir="false" />
@@ -249,11 +158,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/components/MonthlyExpensesForm.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
-              <caret line="117" column="23" selection-start-line="117" selection-start-column="23" selection-end-line="117" selection-end-column="23" />
+            <state relative-caret-position="295">
+              <caret line="129" column="22" selection-start-line="129" selection-start-column="22" selection-end-line="129" selection-end-column="22" />
               <folding>
                 <element signature="e#0#61#0" expanded="true" />
               </folding>
@@ -264,54 +173,80 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/components/DebtForm.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="254">
-              <caret line="40" selection-start-line="37" selection-end-line="40" />
+            <state relative-caret-position="-134">
+              <caret line="254" column="86" selection-start-line="254" selection-start-column="86" selection-end-line="254" selection-end-column="86" />
               <folding>
                 <element signature="e#0#61#0" expanded="true" />
-                <element signature="e#3909#13324#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pages/monthlyExpenses.js">
+        <entry file="file://$PROJECT_DIR$/components/SavingsForm.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
+            <state relative-caret-position="128">
+              <caret line="137" column="114" selection-start-line="137" selection-start-column="114" selection-end-line="137" selection-end-column="114" />
               <folding>
-                <element signature="e#0#26#0" expanded="true" />
+                <element signature="e#0#61#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pages/lifeInsurance.js">
+        <entry file="file://$PROJECT_DIR$/components/LifeInsuranceForm.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" selection-end-line="8" />
+            <state relative-caret-position="137">
+              <caret line="137" column="101" selection-start-line="137" selection-start-column="96" selection-end-line="137" selection-end-column="101" />
               <folding>
-                <element signature="e#0#26#0" expanded="true" />
+                <element signature="e#0#61#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/components/MonthlyExpensesForm.module.css">
+        <entry file="file://$PROJECT_DIR$/components/RentOrOwnForm.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+            <state relative-caret-position="137">
+              <caret line="117" column="77" selection-start-line="117" selection-start-column="72" selection-end-line="117" selection-end-column="77" />
+              <folding>
+                <element signature="e#0#61#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/components/LifeInsuranceForm.module.css">
+        <entry file="file://$PROJECT_DIR$/components/SpouseForm.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" selection-end-line="16" />
+            <state relative-caret-position="233">
+              <caret line="110" column="85" selection-start-line="110" selection-start-column="85" selection-end-line="110" selection-end-column="85" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/components/FamilyIncomeForm.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="137">
+              <caret line="72" column="89" selection-start-line="72" selection-start-column="89" selection-end-line="72" selection-end-column="89" />
+              <folding>
+                <element signature="e#0#63#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/components/ChildrenForm.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="461">
+              <caret line="65" selection-start-line="65" selection-end-line="65" />
+              <folding>
+                <element signature="e#0#63#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -320,8 +255,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>health</find>
-      <find>hasLifeInsurance</find>
       <find>setEmployerLifeInsurance</find>
       <find>setPersonalLifeInsurance</find>
       <find>setLifeInsurance</find>
@@ -349,7 +282,9 @@
       <find>alco</find>
       <find>other</find>
       <find>total</find>
+      <find>e.target.value</find>
       <find>e.targ</find>
+      <find>e.tar</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -376,26 +311,20 @@
         <option value="$PROJECT_DIR$/pages/familyIncome.js" />
         <option value="$PROJECT_DIR$/components/FormApp.js" />
         <option value="$PROJECT_DIR$/contexts/FormContext.js" />
-        <option value="$PROJECT_DIR$/components/ChildrenForm.js" />
         <option value="$PROJECT_DIR$/components/DobForm.js" />
         <option value="$PROJECT_DIR$/components/GenderForm.js" />
         <option value="$PROJECT_DIR$/components/FamilyIncomeForm.module.css" />
-        <option value="$PROJECT_DIR$/components/SpouseForm.js" />
         <option value="$PROJECT_DIR$/components/rentOrOwnForm.module.css" />
         <option value="$PROJECT_DIR$/components/rentOrOwnForm.js" />
         <option value="$PROJECT_DIR$/pages/rentOrOwn.js" />
-        <option value="$PROJECT_DIR$/components/FamilyIncomeForm.js" />
         <option value="$PROJECT_DIR$/.babelrc" />
         <option value="$PROJECT_DIR$/components/RentOrOwnForm.module.css" />
         <option value="$PROJECT_DIR$/components/HealthConditionForm.js" />
         <option value="$PROJECT_DIR$/pages/lifeInsurance.js" />
         <option value="$PROJECT_DIR$/components/LifeInsuranceForm.module.css" />
         <option value="$PROJECT_DIR$/pages/savings.js" />
-        <option value="$PROJECT_DIR$/components/LifeInsuranceForm.js" />
         <option value="$PROJECT_DIR$/pages/debt.js" />
         <option value="$PROJECT_DIR$/components/DebtForm.module.css" />
-        <option value="$PROJECT_DIR$/components/SavingsForm.js" />
-        <option value="$PROJECT_DIR$/components/DebtForm.js" />
         <option value="$PROJECT_DIR$/pages/personalInfo.js" />
         <option value="$PROJECT_DIR$/components/PersonalInformationForm.module.css" />
         <option value="$PROJECT_DIR$/pages/formApp.js" />
@@ -403,12 +332,18 @@
         <option value="$PROJECT_DIR$/components/PersonalInformationForm.js" />
         <option value="$PROJECT_DIR$/pages/index.js" />
         <option value="$PROJECT_DIR$/pages/_app.js" />
-        <option value="$PROJECT_DIR$/components/RentOrOwnForm.js" />
         <option value="$PROJECT_DIR$/components/MonthlyExpenses.module.css" />
         <option value="$PROJECT_DIR$/components/MonthlyExpenses.js" />
         <option value="$PROJECT_DIR$/pages/monthlyExpenses.js" />
         <option value="$PROJECT_DIR$/reducers/form.reducer.js" />
         <option value="$PROJECT_DIR$/components/MonthlyExpensesForm.js" />
+        <option value="$PROJECT_DIR$/components/DebtForm.js" />
+        <option value="$PROJECT_DIR$/components/SavingsForm.js" />
+        <option value="$PROJECT_DIR$/components/LifeInsuranceForm.js" />
+        <option value="$PROJECT_DIR$/components/RentOrOwnForm.js" />
+        <option value="$PROJECT_DIR$/components/SpouseForm.js" />
+        <option value="$PROJECT_DIR$/components/FamilyIncomeForm.js" />
+        <option value="$PROJECT_DIR$/components/ChildrenForm.js" />
       </list>
     </option>
   </component>
@@ -509,12 +444,12 @@
       <workItem from="1595450232905" duration="16885000" />
       <workItem from="1596042210599" duration="109000" />
       <workItem from="1596042935114" duration="731000" />
-      <workItem from="1596049029317" duration="76685000" />
+      <workItem from="1596049029317" duration="77118000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="94410000" />
+    <option name="totallyTimeSpent" value="94843000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -700,13 +635,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/components/SpouseForm.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="429">
-          <caret line="75" selection-start-line="75" selection-end-line="76" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/components/SecondaryEducationForm.module.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -718,16 +646,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="3" column="30" selection-start-line="3" selection-start-column="30" selection-end-line="3" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/ChildrenForm.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="240" column="26" lean-forward="true" selection-start-line="224" selection-start-column="20" selection-end-line="240" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#63#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -748,16 +666,6 @@
           <caret line="8" selection-end-line="8" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/FamilyIncomeForm.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="91" column="21" lean-forward="true" selection-start-line="80" selection-start-column="19" selection-end-line="91" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#63#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -841,26 +749,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="16" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/SavingsForm.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="10" selection-end-column="54" />
-          <folding>
-            <element signature="e#0#61#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/LifeInsuranceForm.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="30" selection-start-line="23" selection-end-line="30" />
-          <folding>
-            <element signature="e#0#61#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -955,16 +843,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/components/RentOrOwnForm.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="57" column="18" selection-start-line="47" selection-start-column="12" selection-end-line="57" selection-end-column="18" />
-          <folding>
-            <element signature="e#0#61#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pages/lifeInsurance.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -999,17 +877,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/components/DebtForm.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="40" selection-start-line="37" selection-end-line="40" />
-          <folding>
-            <element signature="e#0#61#0" expanded="true" />
-            <element signature="e#3909#13324#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/reducers/form.reducer.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="232">
@@ -1019,10 +886,77 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/components/MonthlyExpensesForm.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="117" column="23" selection-start-line="117" selection-start-column="23" selection-end-line="117" selection-end-column="23" />
+        <state relative-caret-position="295">
+          <caret line="129" column="22" selection-start-line="129" selection-start-column="22" selection-end-line="129" selection-end-column="22" />
           <folding>
             <element signature="e#0#61#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/DebtForm.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-134">
+          <caret line="254" column="86" selection-start-line="254" selection-start-column="86" selection-end-line="254" selection-end-column="86" />
+          <folding>
+            <element signature="e#0#61#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/SavingsForm.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="137" column="114" selection-start-line="137" selection-start-column="114" selection-end-line="137" selection-end-column="114" />
+          <folding>
+            <element signature="e#0#61#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/LifeInsuranceForm.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="137">
+          <caret line="137" column="101" selection-start-line="137" selection-start-column="96" selection-end-line="137" selection-end-column="101" />
+          <folding>
+            <element signature="e#0#61#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/RentOrOwnForm.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="137">
+          <caret line="117" column="77" selection-start-line="117" selection-start-column="72" selection-end-line="117" selection-end-column="77" />
+          <folding>
+            <element signature="e#0#61#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/SpouseForm.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="233">
+          <caret line="110" column="85" selection-start-line="110" selection-start-column="85" selection-end-line="110" selection-end-column="85" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/FamilyIncomeForm.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="137">
+          <caret line="72" column="89" selection-start-line="72" selection-start-column="89" selection-end-line="72" selection-end-column="89" />
+          <folding>
+            <element signature="e#0#63#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/ChildrenForm.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="461">
+          <caret line="65" selection-start-line="65" selection-end-line="65" />
+          <folding>
+            <element signature="e#0#63#0" expanded="true" />
           </folding>
         </state>
       </provider>

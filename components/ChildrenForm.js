@@ -63,7 +63,6 @@ export default function ChildrenForm() {
         const children = [...numberOfChildren];
         // remove the child from the array
         children.splice(itemIndex, 1);
-        console.log('===>', children);
         // Update the state
         updateNumberOfChildren(children);
     }

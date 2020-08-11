@@ -70,7 +70,7 @@ export default function FamilyIncomeForm() {
                                 placeholder="Your Income"
                                 aria-label="Your Income"
                                 aria-describedby="basic-addon2"
-                                onChange={(e) => {setYourIncome(e.target.value)}}
+                                onChange={(e) => {setYourIncome(parseInt(e.target.value))}}
                             />
                         </InputGroup>
                     </Col>
@@ -98,7 +98,7 @@ export default function FamilyIncomeForm() {
                                 placeholder="Spouse Income"
                                 aria-label="Spouse Income"
                                 aria-describedby="basic-addon2"
-                                onChange={(e) => {setSpouseIncome(e.target.value)}}
+                                onChange={(e) => {setSpouseIncome(parseInt(e.target.value))}}
                             />
                         </InputGroup>
                     </Col>

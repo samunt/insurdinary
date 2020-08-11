@@ -107,7 +107,7 @@ export default function rentOrOwnForm() {
                                             aria-label="Employer Life Insurance"
                                             aria-describedby="basic-addon2"
                                             onChange={(e) => {
-                                                setLifeInsuranceEmployer(e.target.value)
+                                                setLifeInsuranceEmployer(parseInt(e.target.value))
                                             }}
                                         />
                                     </InputGroup>
@@ -135,7 +135,7 @@ export default function rentOrOwnForm() {
                                             placeholder="Personal Life Insurance"
                                             aria-label="Personal Life Insurance"
                                             aria-describedby="basic-addon2"
-                                            onChange={(e) => {setLifeInsurancePersonal(e.target.value)}}
+                                            onChange={(e) => {setLifeInsurancePersonal(parseInt(e.target.value))}}
                                         />
                                     </InputGroup>
                                 </Col>

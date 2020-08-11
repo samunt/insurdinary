@@ -136,7 +136,7 @@ export default function DebtForm() {
                                             aria-label="Credit card"
                                             aria-describedby="basic-addon2"
                                             onChange={(e) => {
-                                                setDebtCreditCard(e.target.value)
+                                                setDebtCreditCard(parseInt(e.target.value))
                                             }}
                                         />
                                     </InputGroup>
@@ -165,7 +165,7 @@ export default function DebtForm() {
                                             aria-label="Student loans"
                                             aria-describedby="basic-addon2"
                                             onChange={(e) => {
-                                                setDebtStudentLoan(e.target.value)
+                                                setDebtStudentLoan(parseInt(e.target.value))
                                             }}
                                         />
                                     </InputGroup>
@@ -194,7 +194,7 @@ export default function DebtForm() {
                                             aria-label="Home equity loans"
                                             aria-describedby="basic-addon2"
                                             onChange={(e) => {
-                                                setDebtHomeEquity(e.target.value)
+                                                setDebtHomeEquity(parseInt(e.target.value))
                                             }}
                                         />
                                     </InputGroup>
@@ -223,7 +223,7 @@ export default function DebtForm() {
                                             aria-label="Lines of credit"
                                             aria-describedby="basic-addon2"
                                             onChange={(e) => {
-                                                setDebtLineOfCredit(e.target.value)
+                                                setDebtLineOfCredit(parseInt(e.target.value))
                                             }}
                                         />
                                     </InputGroup>
@@ -252,7 +252,7 @@ export default function DebtForm() {
                                             aria-label="Other debt"
                                             aria-describedby="basic-addon2"
                                             onChange={(e) => {
-                                                setDebtOther(e.target.value)
+                                                setDebtOther(parseInt(e.target.value))
                                             }}
                                         />
                                     </InputGroup>
