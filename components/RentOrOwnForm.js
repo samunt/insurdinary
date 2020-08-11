@@ -22,6 +22,7 @@ export default function rentOrOwnForm() {
 
     const now = 65;
     const progressInstance = <ProgressBar style={{height: '0.5rem'}} now={now} />;
+
     useEffect(() => {
         dispatch({ type: "RENT_OR_OWN", rentOrOwn: rentOrOwn });
     }, [rentOrOwn]);
@@ -61,9 +62,9 @@ export default function rentOrOwnForm() {
                     <Col xs={6} md={{ span: 6 }} lg={{ span: 3, offset: 3 }}>
                         <Button
                             className="align-button"
-                            onClick={() => {
-                                setRentOrOwn('Rent');
-                            }}
+                            onClick={() =>
+                                setRentOrOwn('Rent')
+                            }
                             style={{ width: "100%" }}
                             variant="outline-primary"
                             size="lg"
@@ -74,9 +75,9 @@ export default function rentOrOwnForm() {
                     <Col xs={6} md={{ span: 6 }} lg={{ span: 3 }}>
                         <Button
                             className="align-button"
-                            onClick={ () => {
-                                setRentOrOwn('Own');
-                            }}
+                            onClick={ () =>
+                                setRentOrOwn('Own')
+                            }
                             style={{ width: "100%" }}
                             variant="outline-primary"
                             size="lg"
