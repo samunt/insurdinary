@@ -64,6 +64,24 @@ const reducer = (state, action) => {
             return {...state, nameEmail: action.nameEmail};
         case "NAME_PHONE":
             return {...state, namePhone: action.namePhone};
+        case "EXPENSE_MORTGAGE_RENT":
+            return {...state, expenseMortgageAndRent: action.expenseMortgageAndRent};
+        case "EXPENSE_HOUSING_BILLS_UTILITIES":
+            return {...state, expenseHousingBillsUtilities: action.expenseHousingBillsUtilities};
+        case "EXPENSE_GROCERIES_RESTAURANTS_ALCOHOL":
+            return {...state, expenseGroceriesRestaurantsAlcohol: action.expenseGroceriesRestaurantsAlcohol};
+        case "EXPENSE_PHONE_INTERNET_CABLE":
+            return {...state, expensePhoneInternetCable: action.expensePhoneInternetCable};
+        case "EXPENSE_SHOPPING_FITNESS_GROOMING":
+            return {...state, expenseShoppingFitnessGrooming: action.expenseShoppingFitnessGrooming};
+        case "EXPENSE_CARS_TAXIS_TRANSIT":
+            return {...state, expenseCarsTaxisPublicTransit: action.expenseCarsTaxisPublicTransit};
+        case "EXPENSE_CHILDCARE_EDUCATION":
+            return {...state, expenseChildcareEducation: action.expenseChildcareEducation};
+        case "EXPENSE_DISCRETIONARY_TRAVEL_REC_GIFTS":
+            return {...state, expenseDiscretionaryTravelRecGifts: action.expenseDiscretionaryTravelRecGifts};
+        case "EXPENSE_TOTAL":
+            return {...state, expenseTotal: action.expenseTotal};
         default:
             return state
     }

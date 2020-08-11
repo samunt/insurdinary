@@ -43,7 +43,10 @@ export default function MonthlyExpensesForm() {
     const [expenseCarsTaxisPublicTransit, setExpenseCarsTaxisPublicTransit] = useState(450);
     const [expenseChildcareEducation, setExpenseChildcareEducation] = useState(0);
     const [expenseDiscretionaryTravelRecGifts, setExpenseDiscretionaryTravelRecGifts] = useState(450);
-
+    // calculate total expenses
+    const total = expenseMortgageAndRent + expenseHousingBillsUtilities + expenseGroceriesRestaurantsAlcohol + expensePhoneInternetCable + expenseShoppingFitnessGrooming + expenseCarsTaxisPublicTransit + expenseChildcareEducation + expenseDiscretionaryTravelRecGifts;
+    // use total as default state
+    const [expenseTotal, setExpenseTotal] = useState(total);
 
     //effects for context api
     useEffect(() => {
@@ -78,9 +81,9 @@ export default function MonthlyExpensesForm() {
         dispatch({ type: "EXPENSE_DISCRETIONARY_TRAVEL_REC_GIFTS", expenseDiscretionaryTravelRecGifts: expenseDiscretionaryTravelRecGifts });
     }, [expenseDiscretionaryTravelRecGifts]);
 
-
-
-
+    useEffect(() => {
+        dispatch({ type: "EXPENSE_TOTAL", expenseTotal: expenseTotal });
+    }, [expenseTotal]);
 
     return (
         <div>
@@ -397,6 +400,7 @@ export default function MonthlyExpensesForm() {
                             aria-label=""
                             aria-describedby="basic-addon2"
                             onChange={(e) => {
+                                setExpenseTotal(e.target.value)
                             }}
                         />
                     </InputGroup>
