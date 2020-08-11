@@ -71,6 +71,7 @@ export default function SavingsForm() {
                             className="align-button"
                             onClick={() => {
                                 setHasSavings(false);
+                                router.push('/debt');
                             }}
                             style={{ width: "100%" }}
                             variant="outline-primary"
@@ -150,6 +151,7 @@ export default function SavingsForm() {
                                         style={{ width: "100%" }}
                                         variant="outline-primary"
                                         size="lg"
+                                        onClick={()=>router.push('/debt')}
                                     >
                                         Next
                                     </Button>{" "}

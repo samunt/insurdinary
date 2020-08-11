@@ -44,6 +44,18 @@ const reducer = (state, action) => {
             return {...state, hasRetirementSavings: action.hasRetirementSavings};
         case "HAS_NON_RETIREMENT_SAVINGS":
             return {...state, hasNonRetirementSavings: action.hasNonRetirementSavings};
+        case "HAS_DEBT":
+            return {...state, debt: action.debt};
+        case "DEBT_CREDIT_CARD":
+            return {...state, debtCreditCard: action.debtCreditCard};
+        case "DEBT_STUDENT_LOAN":
+            return {...state, debtStudentLoan: action.debtStudentLoan};
+        case "DEBT_HOME_EQUITY":
+            return {...state, debtHomeEquity: action.debtHomeEquity};
+        case "DEBT_LINE_OF_CREDIT":
+            return {...state, debtLineOfCredit: action.debtLineOfCredit};
+        case "DEBT_OTHER":
+            return {...state, debtOther: action.debtOther};
         default:
             return state
     }
