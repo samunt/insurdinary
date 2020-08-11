@@ -88,9 +88,10 @@ export default function DebtForm() {
                     <Col xs={6} md={{ span: 6 }} lg={{ span: 3 }}>
                         <Button
                             className="align-button"
-                            onClick={ () =>
-                                setDebt(false)
-                            }
+                            onClick={ () => {
+                                setDebt(false);
+                                router.push('/monthlyExpenses');
+                            }}
                             style={{ width: "100%" }}
                             variant="outline-primary"
                             size="lg"
@@ -255,6 +256,23 @@ export default function DebtForm() {
                                             }}
                                         />
                                     </InputGroup>
+                                </Col>
+                            </Row>
+                            <br/>
+                            <Row>
+                                <Col
+                                    xs={{ span: 8, offset: 2 }}
+                                    md={{ span: 6, offset: 3 }}
+                                    lg={{ span: 6, offset: 3 }}
+                                >
+                                    <Button
+                                        style={{ width: "100%" }}
+                                        variant="outline-primary"
+                                        size="lg"
+                                        onClick={()=> {router.push('/monthlyExpenses')}}
+                                    >
+                                        Next
+                                    </Button>{" "}
                                 </Col>
                             </Row>
                         </>
