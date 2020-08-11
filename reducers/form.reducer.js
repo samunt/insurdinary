@@ -56,6 +56,14 @@ const reducer = (state, action) => {
             return {...state, debtLineOfCredit: action.debtLineOfCredit};
         case "DEBT_OTHER":
             return {...state, debtOther: action.debtOther};
+        case "NAME_FIRST":
+            return {...state, nameFirst: action.nameFirst};
+        case "NAME_LAST":
+            return {...state, nameLast: action.nameLast};
+        case "NAME_EMAIL":
+            return {...state, nameEmail: action.nameEmail};
+        case "NAME_PHONE":
+            return {...state, namePhone: action.namePhone};
         default:
             return state
     }

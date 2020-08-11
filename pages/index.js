@@ -1,11 +1,10 @@
 import React from 'react';
-import FormApp from '../components/FormApp'
-import { BrowserRouter } from "react-router-dom";
+import PersonalInformaionForm from '../components/PersonalInformationForm'
 
 function Index() {
     return (
        <div>
-           <FormApp/>
+           <PersonalInformaionForm/>
        </div>
     )
 }

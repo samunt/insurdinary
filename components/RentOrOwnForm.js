@@ -29,18 +29,16 @@ export default function rentOrOwnForm() {
 
     useEffect(() => {
         dispatch({ type: "MONTHLY_RENT", monthlyRent: monthlyRent });
-        dispatch({ type: "MORTGAGE_CURRENT_BALANCE", mortgageCurrentBalance: 0 });
-        dispatch({ type: "MORTGAGE_MONTHLY_PAYMENT", mortgageMonthlyPayment: 0 });
     }, [monthlyRent]);
 
     useEffect(() => {
-        dispatch({ type: "MORTGAGE_CURRENT_BALANCE", currentBalance: currentBalance });
-        dispatch({ type: "MONTHLY_RENT", monthlyRent: 0 });
+        console.log('SET CURR BAL')
+        dispatch({ type: "MORTGAGE_CURRENT_BALANCE", mortgageCurrentBalance: currentBalance });
     }, [currentBalance]);
 
     useEffect(() => {
-        dispatch({ type: "MORTGAGE_MONTHLY_PAYMENT", monthlyPayment: monthlyPayment });
-        dispatch({ type: "MONTHLY_RENT", monthlyRent: 0 });
+        console.log('MORTGAGE MONTHLY')
+        dispatch({ type: "MORTGAGE_MONTHLY_PAYMENT", mortgageMonthlyPayment: monthlyPayment });
     }, [monthlyPayment]);
 
     return (
@@ -167,7 +165,7 @@ export default function rentOrOwnForm() {
                                             placeholder="Balance"
                                             aria-label="Balance"
                                             aria-describedby="basic-addon2"
-                                            onChange={(e) => {setCurrentBalance(e.target.value)}}
+                                            onChange={(e) => setCurrentBalance(e.target.value)}
                                         />
                                     </InputGroup>
                                 </Col>
@@ -187,7 +185,7 @@ export default function rentOrOwnForm() {
                                             placeholder="Monthly Payment"
                                             aria-label="Monthly Payment"
                                             aria-describedby="basic-addon2"
-                                            onChange={(e) => {setMonthlyPayment(e.target.value)}}
+                                            onChange={(e) => setMonthlyPayment(e.target.value)}
                                         />
                                     </InputGroup>
                                 </Col>
