@@ -25,7 +25,6 @@ export default function MonthlyExpensesForm() {
     // progress
     const now = 95;
     const progressInstance = <ProgressBar style={{height: '0.5rem'}} now={now} />;
-    console.log('FORM=====>',form);
     // form = JSON.parse(window.localStorage.getItem('form'));
     mortgageCurr = parseInt(form.mortgageCurrentBalance);
     mortgageMonthly = parseInt(form.mortgageMonthlyPayment);
