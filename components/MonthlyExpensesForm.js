@@ -435,8 +435,8 @@ export default function MonthlyExpensesForm() {
                                     form: form
                                 }
                             })
-                                .then(function (response) {
-                                    console.log(response);
+                                .then(function (res) {
+                                    console.log(res);
                                 })
                                 .catch(function (error) {
                                     console.log(error);
