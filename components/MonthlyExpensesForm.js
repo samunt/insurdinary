@@ -411,7 +411,7 @@ export default function MonthlyExpensesForm() {
                             placeholder=""
                             aria-label=""
                             aria-describedby="basic-addon2"
-                            // defaultValue={form.expenseTotal}
+                            defaultValue={form.expenseTotal}
                         />
                     </InputGroup>
                 </Col>
