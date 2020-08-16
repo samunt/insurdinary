@@ -8,6 +8,12 @@
       <change afterPath="$PROJECT_DIR$/../react-hooks-forms/.idea/react-hooks-forms.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../react-hooks-forms/.idea/vcs.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../react-hooks-forms/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.firebaserc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database.rules.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/firebase.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/firebase.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/serviceAccount.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../angulartest/.idea/angulartest.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../angulartest/.idea/misc.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../angulartest/.idea/modules.xml" beforeDir="false" />
@@ -36,12 +42,183 @@
       <change beforePath="$PROJECT_DIR$/../react-context/src/styles/NavBarStyles.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../react-hooks/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../react-hooks/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/build-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/.next/build-manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/cache/autodll-webpack-plugin/development_instance_0_3ffad920122acd364a53efb423a58a0a/stats.json" beforeDir="false" afterPath="$PROJECT_DIR$/.next/cache/autodll-webpack-plugin/development_instance_0_3ffad920122acd364a53efb423a58a0a/stats.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/cache/autodll-webpack-plugin/package.json.hash" beforeDir="false" afterPath="$PROJECT_DIR$/.next/cache/autodll-webpack-plugin/package.json.hash" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/server/pages-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/.next/server/pages-manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/server/static/development/pages/debt.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/server/static/development/pages/index.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.next/server/static/development/pages/monthlyExpenses.js" beforeDir="false" afterPath="$PROJECT_DIR$/.next/server/static/development/pages/monthlyExpenses.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/development/pages/debt.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/development/pages/index.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.next/static/development/pages/monthlyExpenses.js" beforeDir="false" afterPath="$PROJECT_DIR$/.next/static/development/pages/monthlyExpenses.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.next/static/runtime/webpack.js" beforeDir="false" afterPath="$PROJECT_DIR$/.next/static/runtime/webpack.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/webpack/1f5d61d03b4cfb314495.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/webpack/259b633dfbda53e51158.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/webpack/2d5cb42b972ef6b13f83.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/webpack/31648ed07cddc9e7dbf2.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/webpack/347b005017d991e1a0de.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/webpack/3f7cee52f30cb9fca6c5.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/webpack/4575a8d480570a5dd8c2.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/webpack/531e7f8b552f2dece4f1.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/webpack/5759b275fc3c35193e22.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/webpack/5a4c4acc6aa64645e46b.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/webpack/6ee3f063f9b4931b6771.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/webpack/71e3a3f703518abeb57a.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/webpack/b88369ae18890d7830b0.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/webpack/be8cb568990ad38926bc.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/webpack/c5adc168e17c90dff257.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/webpack/c927a7bce5cfa1a9b7eb.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/webpack/cacd2f4eb3ecf828d636.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/webpack/d6cd22418a1e60a401cc.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/webpack/dcc635b7803a89678234.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/webpack/eb49575c1bad1ec95856.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/webpack/f258d12c040ff7050d9b.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/webpack/fba3f8860d48e1e864e6.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/webpack/static/development/pages/_app.js.5a4c4acc6aa64645e46b.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/webpack/static/development/pages/_app.js.eb49575c1bad1ec95856.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/webpack/static/development/pages/debt.js.5a4c4acc6aa64645e46b.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/webpack/static/development/pages/debt.js.eb49575c1bad1ec95856.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/webpack/static/development/pages/monthlyExpenses.js.347b005017d991e1a0de.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/webpack/static/development/pages/monthlyExpenses.js.5759b275fc3c35193e22.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/webpack/static/development/pages/monthlyExpenses.js.5a4c4acc6aa64645e46b.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/webpack/static/development/pages/monthlyExpenses.js.c927a7bce5cfa1a9b7eb.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/webpack/static/development/pages/monthlyExpenses.js.dcc635b7803a89678234.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/webpack/static/development/pages/monthlyExpenses.js.eb49575c1bad1ec95856.hot-update.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/components/MonthlyExpensesForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/MonthlyExpensesForm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/PersonalInformationForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/PersonalInformationForm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reducers/form.reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/reducers/form.reducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/compat-data/data/corejs2-built-ins.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@babel/compat-data/data/corejs2-built-ins.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/compat-data/data/native-modules.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@babel/compat-data/data/native-modules.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/compat-data/data/plugin-bugfixes.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@babel/compat-data/data/plugin-bugfixes.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/compat-data/data/plugins.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@babel/compat-data/data/plugins.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/compat-data/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@babel/compat-data/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/core/lib/config/caching.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@babel/core/lib/config/caching.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/core/lib/config/config-chain.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@babel/core/lib/config/config-chain.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/core/lib/config/config-descriptors.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@babel/core/lib/config/config-descriptors.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/core/lib/config/files/configuration.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@babel/core/lib/config/files/configuration.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/core/lib/config/files/index-browser.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@babel/core/lib/config/files/index-browser.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/core/lib/config/files/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@babel/core/lib/config/files/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/core/lib/config/files/package.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@babel/core/lib/config/files/package.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/core/lib/config/files/plugins.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@babel/core/lib/config/files/plugins.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/core/lib/config/files/utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@babel/core/lib/config/files/utils.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/core/lib/config/full.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@babel/core/lib/config/full.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/core/lib/config/helpers/config-api.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@babel/core/lib/config/helpers/config-api.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/core/lib/config/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@babel/core/lib/config/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/core/lib/config/partial.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@babel/core/lib/config/partial.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/core/lib/config/util.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@babel/core/lib/config/util.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/core/lib/config/validation/options.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@babel/core/lib/config/validation/options.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/core/lib/config/validation/plugins.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@babel/core/lib/config/validation/plugins.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/core/lib/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@babel/core/lib/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/core/lib/parse.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@babel/core/lib/parse.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/core/lib/tools/build-external-helpers.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@babel/core/lib/tools/build-external-helpers.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/core/lib/transform-ast.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@babel/core/lib/transform-ast.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/core/lib/transform-file.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@babel/core/lib/transform-file.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/core/lib/transform.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@babel/core/lib/transform.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/core/lib/transformation/block-hoist-plugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@babel/core/lib/transformation/block-hoist-plugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/core/lib/transformation/file/file.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@babel/core/lib/transformation/file/file.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/core/lib/transformation/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@babel/core/lib/transformation/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/core/lib/transformation/normalize-file.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@babel/core/lib/transformation/normalize-file.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/core/lib/transformation/util/missing-plugin-helper.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/core/node_modules/.bin/parser" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@babel/core/node_modules/.bin/parser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/core/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@babel/core/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/helper-builder-binary-assignment-operator-visitor/node_modules/@babel/types/lib/asserts/generated/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@babel/helper-builder-binary-assignment-operator-visitor/node_modules/@babel/types/lib/asserts/generated/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/helper-builder-binary-assignment-operator-visitor/node_modules/@babel/types/lib/builders/generated/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@babel/helper-builder-binary-assignment-operator-visitor/node_modules/@babel/types/lib/builders/generated/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/helper-builder-binary-assignment-operator-visitor/node_modules/@babel/types/lib/definitions/core.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@babel/helper-builder-binary-assignment-operator-visitor/node_modules/@babel/types/lib/definitions/core.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/helper-builder-binary-assignment-operator-visitor/node_modules/@babel/types/lib/definitions/es2015.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/helper-builder-binary-assignment-operator-visitor/node_modules/@babel/types/lib/definitions/experimental.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@babel/helper-builder-binary-assignment-operator-visitor/node_modules/@babel/types/lib/definitions/experimental.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/helper-builder-binary-assignment-operator-visitor/node_modules/@babel/types/lib/definitions/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@babel/helper-builder-binary-assignment-operator-visitor/node_modules/@babel/types/lib/definitions/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/helper-builder-binary-assignment-operator-visitor/node_modules/@babel/types/lib/definitions/typescript.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@babel/helper-builder-binary-assignment-operator-visitor/node_modules/@babel/types/lib/definitions/typescript.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/helper-builder-binary-assignment-operator-visitor/node_modules/@babel/types/lib/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@babel/helper-builder-binary-assignment-operator-visitor/node_modules/@babel/types/lib/index.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/helper-builder-binary-assignment-operator-visitor/node_modules/@babel/types/lib/index.js.flow" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@babel/helper-builder-binary-assignment-operator-visitor/node_modules/@babel/types/lib/index.js.flow" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/helper-builder-binary-assignment-operator-visitor/node_modules/@babel/types/lib/validators/generated/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@babel/helper-builder-binary-assignment-operator-visitor/node_modules/@babel/types/lib/validators/generated/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/helper-builder-binary-assignment-operator-visitor/node_modules/@babel/types/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@babel/helper-builder-binary-assignment-operator-visitor/node_modules/@babel/types/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/helper-define-map/node_modules/@babel/types/lib/asserts/generated/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@babel/helper-define-map/node_modules/@babel/types/lib/asserts/generated/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/helper-define-map/node_modules/@babel/types/lib/builders/generated/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@babel/helper-define-map/node_modules/@babel/types/lib/builders/generated/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/helper-define-map/node_modules/@babel/types/lib/definitions/core.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@babel/helper-define-map/node_modules/@babel/types/lib/definitions/core.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/helper-define-map/node_modules/@babel/types/lib/definitions/es2015.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/helper-define-map/node_modules/@babel/types/lib/definitions/experimental.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@babel/helper-define-map/node_modules/@babel/types/lib/definitions/experimental.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/helper-define-map/node_modules/@babel/types/lib/definitions/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@babel/helper-define-map/node_modules/@babel/types/lib/definitions/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/helper-define-map/node_modules/@babel/types/lib/definitions/typescript.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@babel/helper-define-map/node_modules/@babel/types/lib/definitions/typescript.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/helper-define-map/node_modules/@babel/types/lib/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@babel/helper-define-map/node_modules/@babel/types/lib/index.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/helper-define-map/node_modules/@babel/types/lib/index.js.flow" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@babel/helper-define-map/node_modules/@babel/types/lib/index.js.flow" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/helper-define-map/node_modules/@babel/types/lib/validators/generated/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@babel/helper-define-map/node_modules/@babel/types/lib/validators/generated/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/helper-define-map/node_modules/@babel/types/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@babel/helper-define-map/node_modules/@babel/types/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/helper-explode-assignable-expression/node_modules/@babel/types/lib/asserts/generated/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@babel/helper-explode-assignable-expression/node_modules/@babel/types/lib/asserts/generated/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/helper-explode-assignable-expression/node_modules/@babel/types/lib/builders/generated/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@babel/helper-explode-assignable-expression/node_modules/@babel/types/lib/builders/generated/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/helper-explode-assignable-expression/node_modules/@babel/types/lib/definitions/core.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@babel/helper-explode-assignable-expression/node_modules/@babel/types/lib/definitions/core.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/helper-explode-assignable-expression/node_modules/@babel/types/lib/definitions/es2015.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/helper-explode-assignable-expression/node_modules/@babel/types/lib/definitions/experimental.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@babel/helper-explode-assignable-expression/node_modules/@babel/types/lib/definitions/experimental.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/helper-explode-assignable-expression/node_modules/@babel/types/lib/definitions/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@babel/helper-explode-assignable-expression/node_modules/@babel/types/lib/definitions/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/helper-explode-assignable-expression/node_modules/@babel/types/lib/definitions/typescript.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@babel/helper-explode-assignable-expression/node_modules/@babel/types/lib/definitions/typescript.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/helper-explode-assignable-expression/node_modules/@babel/types/lib/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@babel/helper-explode-assignable-expression/node_modules/@babel/types/lib/index.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/helper-explode-assignable-expression/node_modules/@babel/types/lib/index.js.flow" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@babel/helper-explode-assignable-expression/node_modules/@babel/types/lib/index.js.flow" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/helper-explode-assignable-expression/node_modules/@babel/types/lib/validators/generated/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@babel/helper-explode-assignable-expression/node_modules/@babel/types/lib/validators/generated/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/helper-explode-assignable-expression/node_modules/@babel/types/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@babel/helper-explode-assignable-expression/node_modules/@babel/types/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/helper-hoist-variables/node_modules/@babel/types/lib/asserts/generated/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@babel/helper-hoist-variables/node_modules/@babel/types/lib/asserts/generated/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/helper-hoist-variables/node_modules/@babel/types/lib/builders/generated/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@babel/helper-hoist-variables/node_modules/@babel/types/lib/builders/generated/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/helper-hoist-variables/node_modules/@babel/types/lib/definitions/core.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@babel/helper-hoist-variables/node_modules/@babel/types/lib/definitions/core.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/helper-hoist-variables/node_modules/@babel/types/lib/definitions/es2015.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/helper-hoist-variables/node_modules/@babel/types/lib/definitions/experimental.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@babel/helper-hoist-variables/node_modules/@babel/types/lib/definitions/experimental.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/helper-hoist-variables/node_modules/@babel/types/lib/definitions/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@babel/helper-hoist-variables/node_modules/@babel/types/lib/definitions/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/helper-hoist-variables/node_modules/@babel/types/lib/definitions/typescript.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@babel/helper-hoist-variables/node_modules/@babel/types/lib/definitions/typescript.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/helper-hoist-variables/node_modules/@babel/types/lib/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@babel/helper-hoist-variables/node_modules/@babel/types/lib/index.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/helper-hoist-variables/node_modules/@babel/types/lib/index.js.flow" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@babel/helper-hoist-variables/node_modules/@babel/types/lib/index.js.flow" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/helper-hoist-variables/node_modules/@babel/types/lib/validators/generated/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@babel/helper-hoist-variables/node_modules/@babel/types/lib/validators/generated/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/helper-hoist-variables/node_modules/@babel/types/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@babel/helper-hoist-variables/node_modules/@babel/types/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/helper-remap-async-to-generator/node_modules/@babel/types/lib/asserts/generated/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@babel/helper-remap-async-to-generator/node_modules/@babel/types/lib/asserts/generated/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/helper-remap-async-to-generator/node_modules/@babel/types/lib/builders/generated/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@babel/helper-remap-async-to-generator/node_modules/@babel/types/lib/builders/generated/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/helper-remap-async-to-generator/node_modules/@babel/types/lib/definitions/core.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@babel/helper-remap-async-to-generator/node_modules/@babel/types/lib/definitions/core.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/helper-remap-async-to-generator/node_modules/@babel/types/lib/definitions/es2015.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/helper-remap-async-to-generator/node_modules/@babel/types/lib/definitions/experimental.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@babel/helper-remap-async-to-generator/node_modules/@babel/types/lib/definitions/experimental.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/helper-remap-async-to-generator/node_modules/@babel/types/lib/definitions/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@babel/helper-remap-async-to-generator/node_modules/@babel/types/lib/definitions/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/helper-remap-async-to-generator/node_modules/@babel/types/lib/definitions/typescript.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@babel/helper-remap-async-to-generator/node_modules/@babel/types/lib/definitions/typescript.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/helper-remap-async-to-generator/node_modules/@babel/types/lib/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@babel/helper-remap-async-to-generator/node_modules/@babel/types/lib/index.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/helper-remap-async-to-generator/node_modules/@babel/types/lib/index.js.flow" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@babel/helper-remap-async-to-generator/node_modules/@babel/types/lib/index.js.flow" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/helper-remap-async-to-generator/node_modules/@babel/types/lib/validators/generated/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@babel/helper-remap-async-to-generator/node_modules/@babel/types/lib/validators/generated/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/helper-remap-async-to-generator/node_modules/@babel/types/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@babel/helper-remap-async-to-generator/node_modules/@babel/types/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/helper-wrap-function/node_modules/@babel/types/lib/asserts/generated/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@babel/helper-wrap-function/node_modules/@babel/types/lib/asserts/generated/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/helper-wrap-function/node_modules/@babel/types/lib/builders/generated/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@babel/helper-wrap-function/node_modules/@babel/types/lib/builders/generated/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/helper-wrap-function/node_modules/@babel/types/lib/definitions/core.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@babel/helper-wrap-function/node_modules/@babel/types/lib/definitions/core.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/helper-wrap-function/node_modules/@babel/types/lib/definitions/es2015.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/helper-wrap-function/node_modules/@babel/types/lib/definitions/experimental.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@babel/helper-wrap-function/node_modules/@babel/types/lib/definitions/experimental.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/helper-wrap-function/node_modules/@babel/types/lib/definitions/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@babel/helper-wrap-function/node_modules/@babel/types/lib/definitions/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/helper-wrap-function/node_modules/@babel/types/lib/definitions/typescript.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@babel/helper-wrap-function/node_modules/@babel/types/lib/definitions/typescript.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/helper-wrap-function/node_modules/@babel/types/lib/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@babel/helper-wrap-function/node_modules/@babel/types/lib/index.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/helper-wrap-function/node_modules/@babel/types/lib/index.js.flow" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@babel/helper-wrap-function/node_modules/@babel/types/lib/index.js.flow" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/helper-wrap-function/node_modules/@babel/types/lib/validators/generated/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@babel/helper-wrap-function/node_modules/@babel/types/lib/validators/generated/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/helper-wrap-function/node_modules/@babel/types/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@babel/helper-wrap-function/node_modules/@babel/types/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/helpers/node_modules/@babel/types/lib/asserts/generated/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@babel/helpers/node_modules/@babel/types/lib/asserts/generated/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/helpers/node_modules/@babel/types/lib/builders/generated/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@babel/helpers/node_modules/@babel/types/lib/builders/generated/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/helpers/node_modules/@babel/types/lib/definitions/core.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@babel/helpers/node_modules/@babel/types/lib/definitions/core.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/helpers/node_modules/@babel/types/lib/definitions/es2015.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/helpers/node_modules/@babel/types/lib/definitions/experimental.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@babel/helpers/node_modules/@babel/types/lib/definitions/experimental.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/helpers/node_modules/@babel/types/lib/definitions/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@babel/helpers/node_modules/@babel/types/lib/definitions/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/helpers/node_modules/@babel/types/lib/definitions/typescript.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@babel/helpers/node_modules/@babel/types/lib/definitions/typescript.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/helpers/node_modules/@babel/types/lib/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@babel/helpers/node_modules/@babel/types/lib/index.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/helpers/node_modules/@babel/types/lib/index.js.flow" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@babel/helpers/node_modules/@babel/types/lib/index.js.flow" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/helpers/node_modules/@babel/types/lib/validators/generated/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@babel/helpers/node_modules/@babel/types/lib/validators/generated/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/helpers/node_modules/@babel/types/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@babel/helpers/node_modules/@babel/types/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-block-scoping/lib/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-block-scoping/lib/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-block-scoping/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-block-scoping/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-spread/lib/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-spread/lib/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-spread/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-spread/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/preset-env/data/shipped-proposals.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@babel/preset-env/data/shipped-proposals.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/preset-env/lib/available-plugins.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@babel/preset-env/lib/available-plugins.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/preset-env/lib/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@babel/preset-env/lib/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/preset-env/lib/normalize-options.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@babel/preset-env/lib/normalize-options.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/preset-env/lib/options.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@babel/preset-env/lib/options.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/preset-env/lib/plugins-compat-data.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@babel/preset-env/lib/plugins-compat-data.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/preset-env/lib/polyfills/corejs3/usage-plugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@babel/preset-env/lib/polyfills/corejs3/usage-plugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/preset-env/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@babel/preset-env/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/cacache/node_modules/.bin/rimraf" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/cacache/node_modules/.bin/rimraf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/copy-concurrently/node_modules/.bin/rimraf" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/copy-concurrently/node_modules/.bin/rimraf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/move-concurrently/node_modules/.bin/rimraf" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/move-concurrently/node_modules/.bin/rimraf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/rimraf/bin.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/rimraf/bin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/rimraf/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/rimraf/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/rimraf/rimraf.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/rimraf/rimraf.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/terser-webpack-plugin/node_modules/cacache/node_modules/.bin/rimraf" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/terser-webpack-plugin/node_modules/cacache/node_modules/.bin/rimraf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../react-reducer-example/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../react-reducer-example/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../reactCourse" beforeDir="false" afterPath="$PROJECT_DIR$/../reactCourse" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../router-project-dogs" beforeDir="false" afterPath="$PROJECT_DIR$/../router-project-dogs" afterDir="false" />
@@ -93,22 +270,31 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/components/PersonalInformationForm.js">
+        <entry file="file://$PROJECT_DIR$/server.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="20" column="41" selection-start-line="20" selection-start-column="41" selection-end-line="20" selection-end-column="41" />
-              <folding>
-                <element signature="e#0#61#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="335">
+              <caret line="40" column="39" selection-start-line="40" selection-start-column="39" selection-end-line="40" selection-end-column="39" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/reducers/form.reducer.js">
+        <entry file="file://$PROJECT_DIR$/serviceAccount.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="48" selection-start-line="6" selection-start-column="48" selection-end-line="6" selection-end-column="48" />
+            <state relative-caret-position="180">
+              <caret line="12" selection-start-line="12" selection-end-line="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/components/MonthlyExpensesForm.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="208">
+              <caret line="434" column="42" selection-start-line="434" selection-start-column="42" selection-end-line="434" selection-end-column="42" />
+              <folding>
+                <element signature="e#0#61#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -117,13 +303,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>setLifeInsurance</find>
-      <find>onClick</find>
-      <find>No</find>
-      <find>non</find>
-      <find>onclick</find>
-      <find>router</find>
-      <find>home equi</find>
       <find>push</find>
       <find>formapp</find>
       <find>setCurrentBalance</find>
@@ -147,6 +326,13 @@
       <find>e.targ</find>
       <find>console.</find>
       <find>uui</find>
+      <find>axios</find>
+      <find>localstorage.getitem</find>
+      <find>input</find>
+      <find>value</find>
+      <find>FORM===&gt;</find>
+      <find>server</find>
+      <find>form</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -155,17 +341,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/components/ChildrenForm.module.css" />
-        <option value="$PROJECT_DIR$/components/SecondaryEducationForm.module.css" />
-        <option value="$PROJECT_DIR$/node_modules/react-datepicker/dist/react-datepicker.css" />
-        <option value="$PROJECT_DIR$/components/Dob.js" />
-        <option value="$PROJECT_DIR$/components/Dob.module.css" />
-        <option value="$PROJECT_DIR$/pages/gender.js" />
-        <option value="$PROJECT_DIR$/pages/dob.js" />
-        <option value="$PROJECT_DIR$/components/DobForm.module.css" />
-        <option value="$PROJECT_DIR$/components/GenderForm.module.css" />
-        <option value="$PROJECT_DIR$/global.css" />
-        <option value="$PROJECT_DIR$/components/TobaccoForm.module.css" />
         <option value="$PROJECT_DIR$/pages/tobacco.js" />
         <option value="$PROJECT_DIR$/components/SecondaryEducationForm.js" />
         <option value="$PROJECT_DIR$/components/TobaccoForm.js" />
@@ -203,9 +378,20 @@
         <option value="$PROJECT_DIR$/components/SpouseForm.js" />
         <option value="$PROJECT_DIR$/components/FamilyIncomeForm.js" />
         <option value="$PROJECT_DIR$/components/ChildrenForm.js" />
-        <option value="$PROJECT_DIR$/components/MonthlyExpensesForm.js" />
         <option value="$PROJECT_DIR$/components/PersonalInformationForm.js" />
         <option value="$PROJECT_DIR$/reducers/form.reducer.js" />
+        <option value="$PROJECT_DIR$/pages/api/firebase.js" />
+        <option value="$PROJECT_DIR$/pages/api/quoteEngine/firebase.js" />
+        <option value="$PROJECT_DIR$/lib/firebase.js" />
+        <option value="$PROJECT_DIR$/next.config.js" />
+        <option value="$PROJECT_DIR$/public/firebase.json" />
+        <option value="$PROJECT_DIR$/serviceAccount.json" />
+        <option value="$PROJECT_DIR$/firebase.json" />
+        <option value="$PROJECT_DIR$/database.rules.json" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/.firebaserc" />
+        <option value="$PROJECT_DIR$/components/MonthlyExpensesForm.js" />
+        <option value="$PROJECT_DIR$/server.js" />
       </list>
     </option>
   </component>
@@ -239,22 +425,12 @@
             <path>
               <item name="react-next" type="b2602c69:ProjectViewProjectNode" />
               <item name="react-next" type="462c0819:PsiDirectoryNode" />
-              <item name="contexts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="react-next" type="b2602c69:ProjectViewProjectNode" />
-              <item name="react-next" type="462c0819:PsiDirectoryNode" />
-              <item name="hooks" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="react-next" type="b2602c69:ProjectViewProjectNode" />
-              <item name="react-next" type="462c0819:PsiDirectoryNode" />
               <item name="pages" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="react-next" type="b2602c69:ProjectViewProjectNode" />
               <item name="react-next" type="462c0819:PsiDirectoryNode" />
-              <item name="reducers" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -274,11 +450,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/pages/api/quoteEngine" />
       <recent name="$PROJECT_DIR$/public" />
       <recent name="$PROJECT_DIR$/assets" />
       <recent name="$PROJECT_DIR$/hooks" />
       <recent name="$PROJECT_DIR$/contexts" />
-      <recent name="$PROJECT_DIR$/reducers" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -306,12 +482,12 @@
       <workItem from="1595450232905" duration="16885000" />
       <workItem from="1596042210599" duration="109000" />
       <workItem from="1596042935114" duration="731000" />
-      <workItem from="1596049029317" duration="77966000" />
+      <workItem from="1596049029317" duration="85282000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="95691000" />
+    <option name="totallyTimeSpent" value="103007000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -388,108 +564,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pages/secondaryEducation.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="31" selection-end-line="8" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/SecondaryEducationForm.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="26" selection-start-column="26" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/MainNavbar.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" selection-start-line="11" selection-end-line="12" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/TobaccoForm.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="47" column="17" selection-end-line="69" />
-          <folding>
-            <element signature="e#0#52#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/familyIncome.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="60" selection-start-line="1" selection-start-column="60" selection-end-line="1" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/DobForm.module.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/GenderForm.module.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" lean-forward="true" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/children.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="11" lean-forward="true" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/contexts/FormContext.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="20" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#43#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/DobForm.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="40" column="60" selection-start-line="40" selection-start-column="60" selection-end-line="40" selection-end-column="60" />
-          <folding>
-            <element signature="e#0#52#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/SecondaryEducationForm.module.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.babelrc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="30" selection-start-line="3" selection-start-column="30" selection-end-line="3" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/components/HealthConditionForm.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="810">
@@ -775,28 +849,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/components/MonthlyExpensesForm.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" selection-start-line="27" selection-end-line="27" />
-          <folding>
-            <element signature="e#0#61#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/yarn.lock">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="28" column="8" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="8" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/components/PersonalInformationForm.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -812,6 +866,110 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="6" column="48" selection-start-line="6" selection-start-column="48" selection-end-line="6" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/insurdinary-a02d7-firebase-adminsdk-54k5e-6dc83de9b9.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/insurdinary-a02d7-firebase-adminsdk-54k5e-6dc83de9b9 (1).json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="34" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/insurdinary-a02d7-firebase-adminsdk-54k5e-4da624ce8d.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" lean-forward="true" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/next.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="26" selection-start-line="1" selection-start-column="26" selection-end-line="1" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/firebase.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="1" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/api/quoteEngine/firebase.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="40" selection-start-column="40" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/firebase.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="40" selection-start-line="3" selection-start-column="40" selection-end-line="3" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/firebase.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database.rules.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="21" selection-start-column="21" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.firebaserc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="33" selection-start-line="2" selection-start-column="33" selection-end-line="2" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="15" column="10" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/MonthlyExpensesForm.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="434" column="42" selection-start-line="434" selection-start-column="42" selection-end-line="434" selection-end-column="42" />
+          <folding>
+            <element signature="e#0#61#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="335">
+          <caret line="40" column="39" selection-start-line="40" selection-start-column="39" selection-end-line="40" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/serviceAccount.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
         </state>
       </provider>
     </entry>

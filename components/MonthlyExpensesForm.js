@@ -9,6 +9,7 @@ import { FormContext } from "../contexts/FormContext";
 import ProgressBar from "react-bootstrap/ProgressBar";
 import InputGroup from "react-bootstrap/InputGroup";
 import FormControl from "react-bootstrap/FormControl";
+import axios from 'axios';
 
 export default function MonthlyExpensesForm() {
     // localstorage keys
@@ -45,6 +46,7 @@ export default function MonthlyExpensesForm() {
     let total = expenseMortgageAndRent + expenseHousingBillsUtilities + expenseGroceriesRestaurantsAlcohol + expensePhoneInternetCable + expenseShoppingFitnessGrooming + expenseCarsTaxisPublicTransit + expenseChildcareEducation + expenseDiscretionaryTravelRecGifts + expenseOther;
     // use total as default state
     const [expenseTotal, setExpenseTotal] = useState(total);
+    // console.log('FORM===>', form);
 
     //effects for context api
     useEffect(() => {
@@ -409,7 +411,7 @@ export default function MonthlyExpensesForm() {
                             placeholder=""
                             aria-label=""
                             aria-describedby="basic-addon2"
-                            defaultValue={form.expenseTotal}
+                            // defaultValue={form.expenseTotal}
                         />
                     </InputGroup>
                 </Col>
@@ -425,7 +427,21 @@ export default function MonthlyExpensesForm() {
                         style={{ width: "100%" }}
                         variant="outline-primary"
                         size="lg"
-                        onClick={()=> {}}
+                        onClick={()=> {
+                            axios({
+                                method: 'post',
+                                url: '/form',
+                                data: {
+                                    form: form
+                                }
+                            })
+                                .then(function (response) {
+                                    console.log(response);
+                                })
+                                .catch(function (error) {
+                                    console.log(error);
+                                });
+                        }}
                     >
                         Next
                     </Button>{" "}
