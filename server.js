@@ -1,5 +1,4 @@
-// app.js
-
+// server.js
 const express = require("express");
 const next = require("next");
 
@@ -15,26 +14,20 @@ admin.initializeApp({
     databaseURL: "https://insurdinary-a02d7.firebaseio.com"
 });
 
+let db = admin.database();
+let date = new Date();
+let dateToString = date.toString();
+let formStore = db.ref("formStore");
 
 app.prepare().then(() => {
-    let db = admin.database();
-    let date = new Date();
-    let dateToString = date.toString();
-    let formStore = db.ref("formStore");
-
-
-    const app = express();
-    app.use(express.json());
-
-    app.get("/", (req, res) => {
+    const server = express();
+    server.get("/", (req, res) => {
         app.render(req, res, "/");
     });
-
-    app.get("*", (req, res) => {
+    server.get("*", (req, res) => {
         return handle(req, res)
     });
-
-    app.post("/form", (req, res) => {
+    server.post("/form", (req, res) => {
         let pageRefFormStore = formStore.child('form/' + dateToString);
         req.body;
         console.log('req==>', req.body);
@@ -42,10 +35,8 @@ app.prepare().then(() => {
         // console.log('res===>', res)
         pageRefFormStore.set(req.body);
     });
-
-    app.listen(3000, err => {
+    server.listen(3000, err => {
         if (err) throw err;
         console.log("now serving localhost:3000")
-
     })
 });
