@@ -203,7 +203,7 @@ export default function rentOrOwnForm() {
                                         style={{ width: "100%" }}
                                         variant="outline-primary"
                                         size="lg"
-                                        onClick={()=>sush('/lifeInsurance')}
+                                        onClick={()=>router.push('/lifeInsurance')}
                                     >
                                         Next
                                     </Button>{" "}
