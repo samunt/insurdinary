@@ -29,9 +29,11 @@ app.prepare().then(() => {
     app.get("/", (req, res) => {
         app.render(req, res, "/");
     });
+
     app.get("*", (req, res) => {
         return handle(req, res)
     });
+
     app.post("/form", (req, res) => {
         let pageRefFormStore = formStore.child('form/' + dateToString);
         req.body;

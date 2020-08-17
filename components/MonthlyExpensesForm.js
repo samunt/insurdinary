@@ -131,7 +131,7 @@ export default function MonthlyExpensesForm() {
                     md={{ span: 6 }}
                     lg={{ span: 6 }}
                 >
-                    <InputGroup className="mb-3">
+                    <InputGroup className="mb-3" bsPrefix="">
                         <InputGroup.Prepend>
                             <InputGroup.Text>$</InputGroup.Text>
                         </InputGroup.Prepend>
