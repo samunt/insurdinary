@@ -10,7 +10,6 @@ import FormControl from "react-bootstrap/FormControl";
 import InputGroup from "react-bootstrap/InputGroup";
 import ProgressBar from "react-bootstrap/ProgressBar";
 import Form from "react-bootstrap/Form";
-import {MDBCol, MDBContainer, MDBInput, MDBRow} from "mdbreact";
 
 function SpouseForm() {
     let [hasSpouse, updateHasSpouse] = useState('');
@@ -101,36 +100,20 @@ function SpouseForm() {
                             router.push("/children");
                         }}
                     >
-                        {/*<Row>*/}
-                        {/*    <Col xs={12} md={12} lg={{ span: 6, offset: 3 }}>*/}
-                        {/*        <InputGroup className="mb-3">*/}
-                        {/*            <InputGroup.Prepend>*/}
-                        {/*                <InputGroup.Text>Age</InputGroup.Text>*/}
-                        {/*            </InputGroup.Prepend>*/}
-                        {/*            <FormControl*/}
-                        {/*                onChange={(e) => {*/}
-                        {/*                    updateSpouseAge(parseInt(e.target.value));*/}
-                        {/*                }}*/}
-                        {/*            />*/}
-                        {/*        </InputGroup>*/}
-                        {/*    </Col>*/}
-                        {/*</Row>*/}
-                        <MDBRow>
-                                <MDBCol xs="12" md="12" lg="6" className="offset-lg-3">
-                                    <form>
-                                        <div className="grey-text">
-                                            <MDBInput label="Spouse age"
-                                                      group type="text"
-                                                      validate error="wrong"
-                                                      success="right"
-                                                      onChange={(e) => {
-                                                          updateSpouseAge(parseInt(e.target.value));
-                                                      }}
-                                            />
-                                        </div>
-                                    </form>
-                                </MDBCol>
-                            </MDBRow>
+                        <Row>
+                            <Col xs={12} md={12} lg={{ span: 6, offset: 3 }}>
+                                <InputGroup className="mb-3">
+                                    <InputGroup.Prepend>
+                                        <InputGroup.Text>Age</InputGroup.Text>
+                                    </InputGroup.Prepend>
+                                    <FormControl
+                                        onChange={(e) => {
+                                            updateSpouseAge(e.target.value);
+                                        }}
+                                    />
+                                </InputGroup>
+                            </Col>
+                        </Row>
                         <Row>
                             <Col xs={12} md={12} lg={{ span: 6, offset: 3 }}>
                                 <Button
