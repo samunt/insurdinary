@@ -7,14 +7,20 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import { DispatchContext } from "../contexts/FormContext";
 import ProgressBar from "react-bootstrap/ProgressBar";
+import {QuestionCircle} from "react-bootstrap-icons";
+import Modal from "react-bootstrap/Modal";
 
 
 export default function GenderForm() {
     const router = useRouter();
     const dispatch = useContext(DispatchContext);
     const [sex, setSex] = useState();
+    const [showSex, setShowSex] = useState(false);
+    const handleCloseSex = () => setShowSex(false);
+
     const now = 40;
     const progressInstance = <ProgressBar style={{height: '0.5rem'}} now={now} />;
+
     useEffect(() => {
         dispatch({ type: "SEX", sex: sex });
     }, [sex]);
@@ -65,7 +71,29 @@ export default function GenderForm() {
                         </Button>{" "}
                     </Col>
                 </Row>
+                <Row>
+                    <Col xs={{span: 8, offset: 2}} md={{ span: 6, offset: 3 }} lg={{ span: 6, offset: 3 }}
+                         onClick={() => {setShowSex(true)}}>
+                        <h5 className={styles.header}><u>Why do we ask about your sex?</u></h5>
+                    </Col>
+                    <Col xs={1} md={1} lg={1}>
+                        <QuestionCircle
+                            size={30}
+                            onClick={() => {setShowSex(true)}}
+                            style={{position: 'relative', top: '10px', right: '100%'}}
+                        />
+                    </Col>
+                </Row>
             </Container>
+            {/*ask about sex*/}
+            <Modal show={showSex} onHide={handleCloseSex}>
+                <Modal.Body>Men and women have different life expectancies, and therefore, insurers take gender into account when pricing life insurance policies.</Modal.Body>
+                <Modal.Footer>
+                    <Button variant="outline-primary" onClick={handleCloseSex}>
+                        Close
+                    </Button>
+                </Modal.Footer>
+            </Modal>
         </div>
 
 )
