@@ -20,11 +20,11 @@
     "/_polyfills": [
       "static/runtime/polyfills.js"
     ],
-    "/children": [
+    "/dob": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
-    "/spouseForm": [
+    "/secondaryEducation": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ]

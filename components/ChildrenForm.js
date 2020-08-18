@@ -29,8 +29,6 @@ export default function ChildrenForm() {
     const [showPlanningOnKids, setShowPlanningOnKids] = useState(false);
     const handleClosePlanningOnKids = () => setShowPlanningOnKids(false);
 
-
-
     const now = 15;
     const progressInstance = <ProgressBar style={{height: '0.5rem'}} now={now} />;
     const dispatch = useContext(DispatchContext);

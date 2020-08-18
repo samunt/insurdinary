@@ -36,10 +36,16 @@
       <change beforePath="$PROJECT_DIR$/../react-context/src/styles/NavBarStyles.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../react-hooks/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../react-hooks/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/server/static/development/pages/children.js" beforeDir="false" afterPath="$PROJECT_DIR$/.next/server/static/development/pages/children.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/development/pages/children.js" beforeDir="false" afterPath="$PROJECT_DIR$/.next/static/development/pages/children.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/build-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/.next/build-manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/server/pages-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/.next/server/pages-manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/server/static/development/pages/children.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/server/static/development/pages/spouseForm.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/development/pages/children.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/development/pages/spouseForm.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.next/static/runtime/webpack.js" beforeDir="false" afterPath="$PROJECT_DIR$/.next/static/runtime/webpack.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/ChildrenForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/ChildrenForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/DobForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/DobForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/SecondaryEducationForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/SecondaryEducationForm.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../react-reducer-example/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../react-reducer-example/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../reactCourse" beforeDir="false" afterPath="$PROJECT_DIR$/../reactCourse" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../router-project-dogs" beforeDir="false" afterPath="$PROJECT_DIR$/../router-project-dogs" afterDir="false" />
@@ -102,13 +108,34 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/components/ChildrenForm.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="128">
-              <caret line="166" column="97" selection-start-line="166" selection-start-column="97" selection-end-line="166" selection-end-column="97" />
+            <state relative-caret-position="242">
+              <caret line="29" column="73" selection-start-line="29" selection-start-column="73" selection-end-line="29" selection-end-column="73" />
               <folding>
                 <element signature="e#0#63#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/components/SecondaryEducationForm.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" column="19" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/components/DobForm.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="305">
+              <caret line="81" column="70" selection-start-line="81" selection-start-column="70" selection-end-line="81" selection-end-column="70" />
+              <folding>
+                <element signature="e#0#52#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -118,7 +145,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>server</find>
       <find>form</find>
       <find>serviceaccount</find>
       <find>firebaseservice</find>
@@ -148,6 +174,7 @@
       <find>when</find>
       <find>setshowaskaboutchildren</find>
       <find>showHowOld</find>
+      <find>why</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -192,7 +219,6 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/components/MonthlyExpensesForm.module.css" />
         <option value="$PROJECT_DIR$/pages/_app.js" />
-        <option value="$PROJECT_DIR$/components/DobForm.js" />
         <option value="$PROJECT_DIR$/components/GenderForm.js" />
         <option value="$PROJECT_DIR$/components/TobaccoForm.js" />
         <option value="$PROJECT_DIR$/components/HealthConditionForm.js" />
@@ -200,13 +226,14 @@
         <option value="$PROJECT_DIR$/components/LifeInsuranceForm.js" />
         <option value="$PROJECT_DIR$/components/SavingsForm.js" />
         <option value="$PROJECT_DIR$/components/DebtForm.js" />
-        <option value="$PROJECT_DIR$/components/SecondaryEducationForm.js" />
         <option value="$PROJECT_DIR$/server.js" />
         <option value="$PROJECT_DIR$/components/RentOrOwnForm.js" />
         <option value="$PROJECT_DIR$/components/PersonalInformationForm.js" />
         <option value="$PROJECT_DIR$/components/MonthlyExpensesForm.js" />
         <option value="$PROJECT_DIR$/components/SpouseForm.js" />
         <option value="$PROJECT_DIR$/components/ChildrenForm.js" />
+        <option value="$PROJECT_DIR$/components/SecondaryEducationForm.js" />
+        <option value="$PROJECT_DIR$/components/DobForm.js" />
       </list>
     </option>
   </component>
@@ -297,7 +324,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="122129000" />
+    <option name="totallyTimeSpent" value="123079000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -576,13 +603,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/components/DobForm.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="18" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/components/FamilyIncomeForm.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="129">
@@ -623,16 +643,6 @@
           <caret line="73" column="40" selection-start-line="73" selection-start-column="32" selection-end-line="73" selection-end-column="40" />
           <folding>
             <element signature="e#0#61#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/SecondaryEducationForm.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="41" column="40" selection-start-line="41" selection-start-column="32" selection-end-line="41" selection-end-column="40" />
-          <folding>
-            <element signature="e#0#42#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -730,10 +740,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/components/ChildrenForm.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="166" column="97" selection-start-line="166" selection-start-column="97" selection-end-line="166" selection-end-column="97" />
+        <state relative-caret-position="242">
+          <caret line="29" column="73" selection-start-line="29" selection-start-column="73" selection-end-line="29" selection-end-column="73" />
           <folding>
             <element signature="e#0#63#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/SecondaryEducationForm.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="19" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/DobForm.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="305">
+          <caret line="81" column="70" selection-start-line="81" selection-start-column="70" selection-end-line="81" selection-end-column="70" />
+          <folding>
+            <element signature="e#0#52#0" expanded="true" />
           </folding>
         </state>
       </provider>
