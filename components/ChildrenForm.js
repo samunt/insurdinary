@@ -10,7 +10,8 @@ import FormControl from "react-bootstrap/FormControl";
 import InputGroup from "react-bootstrap/InputGroup";
 import ProgressBar from "react-bootstrap/ProgressBar";
 import Form from "react-bootstrap/Form";
-import {Trash} from 'react-bootstrap-icons';
+import {QuestionCircle, Trash} from 'react-bootstrap-icons';
+import Modal from "react-bootstrap/Modal";
 
 
 export default function ChildrenForm() {
@@ -18,6 +19,13 @@ export default function ChildrenForm() {
     const [numberOfChildren, updateNumberOfChildren] = useState([
         { id: 1, age: undefined }
     ]);
+    // modal stuff
+    const [showTitle, setShowTitle] = useState(false);
+    const handleCloseTitle = () => setShowTitle(false);
+    const [showHowOld, setShowHowOld] = useState(false);
+    const handleCloseHowOld = () => setShowHowOld(false);
+
+
     const now = 15;
     const progressInstance = <ProgressBar style={{height: '0.5rem'}} now={now} />;
     const dispatch = useContext(DispatchContext);
@@ -90,7 +98,18 @@ export default function ChildrenForm() {
                 }}
             >
                 <br />
-                <h2 className={styles.header}>Do you have children?</h2>
+                <Row>
+                    <Col xs={{span: 6, offset: 3}} md={{ span: 6, offset: 3 }} lg={{ span: 6, offset: 3 }}>
+                        <h2 className={styles.header}>Do you have children?</h2>
+                    </Col>
+                    <Col xs={1} md={1} lg={1}>
+                        <QuestionCircle
+                            size={30}
+                            onClick={() => {setShowTitle(true)}}
+                            style={{position: 'relative', top: '15px', right: '100%'}}
+                        />
+                    </Col>
+                </Row>
                 <Container>
                     <Row>
                         <Col xs={6} md={{ span: 6 }} lg={{ span: 3, offset: 3 }}>
@@ -140,11 +159,18 @@ export default function ChildrenForm() {
                     <br />
                     <Row>
                         <Col
-                            xs={{ span: 12 }}
+                            xs={{ span: 11 }}
                             md={{ span: 6, offset: 3 }}
                             lg={{ span: 6, offset: 3 }}
                         >
-                            <h2 className={styles.header}>How old are your children?</h2>
+                            <h3 className={styles.header}>How old are your children?</h3>
+                        </Col>
+                        <Col xs={1} md={1} lg={1}>
+                            <QuestionCircle
+                                size={30}
+                                onClick={() => {setShowHowOld(true)}}
+                                style={{position: 'relative', top: '15px', right: '100%'}}
+                            />
                         </Col>
                     </Row>
                     <Row>
@@ -242,6 +268,24 @@ export default function ChildrenForm() {
                     </Row>
                 </Form>
             )}
+            {/*title modal*/}
+            <Modal show={showTitle} onHide={handleCloseTitle}>
+                <Modal.Body>Select “Yes” if you have children or are currently expecting. Select “No” if you don’t have children or all of your children are out of your household and more or less financially independent.</Modal.Body>
+                <Modal.Footer>
+                    <Button variant="outline-primary" onClick={handleCloseTitle}>
+                        Close
+                    </Button>
+                </Modal.Footer>
+            </Modal>
+            {/*how odla re ur children modal*/}
+            <Modal show={showHowOld} onHide={handleCloseHowOld}>
+                <Modal.Body>Only include children who you are financially supporting (usually 25 and younger). Make sure to incorporate your children when we ask about your finances and expenses.</Modal.Body>
+                <Modal.Footer>
+                    <Button variant="outline-primary" onClick={handleCloseHowOld}>
+                        Close
+                    </Button>
+                </Modal.Footer>
+            </Modal>
         </div>
     );
 }
