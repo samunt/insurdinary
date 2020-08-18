@@ -9,10 +9,6 @@
     "static/development/_ssgManifest.js"
   ],
   "pages": {
-    "/": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
-    ],
     "/_app": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
@@ -24,55 +20,11 @@
     "/_polyfills": [
       "static/runtime/polyfills.js"
     ],
-    "/children": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
-    ],
-    "/debt": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
-    ],
-    "/dob": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
-    ],
-    "/familyIncome": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
-    ],
-    "/gender": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
-    ],
-    "/healthCondition": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
-    ],
-    "/index": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
-    ],
-    "/lifeInsurance": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
-    ],
     "/monthlyExpenses": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
-    "/rentOrOwn": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
-    ],
-    "/savings": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
-    ],
-    "/secondaryEducation": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
-    ],
-    "/tobacco": [
+    "/spouseForm": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ]

@@ -35,10 +35,81 @@
       <change beforePath="$PROJECT_DIR$/../react-context/src/styles/FormStyles.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../react-context/src/styles/NavBarStyles.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../react-hooks/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../react-hooks/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.next/build-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/.next/build-manifest.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.next/server/pages-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/.next/server/pages-manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/server/static/development/pages/children.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/server/static/development/pages/debt.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/server/static/development/pages/dob.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/server/static/development/pages/familyIncome.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/server/static/development/pages/gender.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/server/static/development/pages/healthCondition.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/server/static/development/pages/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/server/static/development/pages/lifeInsurance.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/server/static/development/pages/monthlyExpenses.js" beforeDir="false" afterPath="$PROJECT_DIR$/.next/server/static/development/pages/monthlyExpenses.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/server/static/development/pages/rentOrOwn.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/server/static/development/pages/savings.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/server/static/development/pages/secondaryEducation.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/server/static/development/pages/tobacco.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/development/pages/children.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/development/pages/debt.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/development/pages/dob.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/development/pages/familyIncome.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/development/pages/gender.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/development/pages/healthCondition.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/development/pages/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/development/pages/lifeInsurance.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/development/pages/monthlyExpenses.js" beforeDir="false" afterPath="$PROJECT_DIR$/.next/static/development/pages/monthlyExpenses.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/development/pages/rentOrOwn.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/development/pages/savings.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/development/pages/secondaryEducation.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/development/pages/tobacco.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.next/static/runtime/webpack.js" beforeDir="false" afterPath="$PROJECT_DIR$/.next/static/runtime/webpack.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/RentOrOwnForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/RentOrOwnForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/webpack/015e3bcd02ab9c66b969.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/webpack/121ee403b7a7547a122d.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/webpack/15f04daacb8b43a078a8.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/webpack/2c9fb99afd49c018eb3a.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/webpack/35a41daaf37d2cebade7.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/webpack/3b4d7c0bd6f62da39b40.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/webpack/3fa4e21245f11f4dfa63.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/webpack/4a4045051a910a2b3fbb.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/webpack/4ddef9fa431df6e7f46d.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/webpack/52ca91ba49b6a5c5f748.hot-update.json" beforeDir="false" afterPath="$PROJECT_DIR$/.next/static/webpack/52ca91ba49b6a5c5f748.hot-update.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/webpack/61f7cadea93b3af06226.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/webpack/656f733355e6f34b09a0.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/webpack/66217e9813752a203473.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/webpack/6b9d6b4f55cf0221ade7.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/webpack/72e1a089224807b403c2.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/webpack/8605bb2cb771c51a01fd.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/webpack/8a34410fff1f8a7bbab8.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/webpack/8c1369ffbf51421edaec.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/webpack/8d8a89d842bee85e3d32.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/webpack/9547a33774aac2c25061.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/webpack/a755b1e09dd3e85d0805.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/webpack/ab7e059b0e2aac705e3f.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/webpack/b99f3f86fd1f4597c153.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/webpack/be6de0f3ebb2cfdcee6e.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/webpack/c55241aa483086095c06.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/webpack/d8eac70319f6896318f2.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/webpack/de39cf0e6e816403d305.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/webpack/e97b48394b8eb137f821.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/webpack/ed0c81f3dabe1f274422.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/webpack/static/development/pages/children.js.15f04daacb8b43a078a8.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/webpack/static/development/pages/children.js.6b9d6b4f55cf0221ade7.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/webpack/static/development/pages/children.js.8605bb2cb771c51a01fd.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/webpack/static/development/pages/children.js.9547a33774aac2c25061.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/webpack/static/development/pages/children.js.ab7e059b0e2aac705e3f.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/webpack/static/development/pages/children.js.be6de0f3ebb2cfdcee6e.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/webpack/static/development/pages/children.js.d8eac70319f6896318f2.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/webpack/static/development/pages/children.js.de39cf0e6e816403d305.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/webpack/static/development/pages/index.js.121ee403b7a7547a122d.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/webpack/static/development/pages/index.js.a755b1e09dd3e85d0805.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/webpack/static/development/pages/rentOrOwn.js.015e3bcd02ab9c66b969.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/webpack/static/development/pages/spouseForm.js.66217e9813752a203473.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/ChildrenForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/ChildrenForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/MonthlyExpensesForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/MonthlyExpensesForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/PersonalInformationForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/PersonalInformationForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/SpouseForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/SpouseForm.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../react-reducer-example/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../react-reducer-example/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../reactCourse" beforeDir="false" afterPath="$PROJECT_DIR$/../reactCourse" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../router-project-dogs" beforeDir="false" afterPath="$PROJECT_DIR$/../router-project-dogs" afterDir="false" />
@@ -89,44 +160,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/components/SpouseForm.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1725">
-              <caret line="115" column="30" selection-start-line="115" selection-start-column="26" selection-end-line="115" selection-end-column="30" />
-              <folding>
-                <element signature="e#0#61#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/components/PersonalInformationForm.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" selection-start-line="4" selection-end-line="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/components/ChildrenForm.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-681">
-              <caret line="53" column="18" selection-start-line="53" selection-start-column="18" selection-end-line="53" selection-end-column="18" />
-              <folding>
-                <element signature="e#0#63#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/components/RentOrOwnForm.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="164">
-              <caret line="207" column="44" lean-forward="true" selection-start-line="207" selection-start-column="44" selection-end-line="207" selection-end-column="44" />
+            <state relative-caret-position="128">
+              <caret line="101" column="79" selection-start-line="101" selection-start-column="79" selection-end-line="101" selection-end-column="79" />
               <folding>
                 <element signature="e#0#61#0" expanded="true" />
               </folding>
@@ -138,17 +176,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>alco</find>
-      <find>other</find>
-      <find>total</find>
-      <find>e.target.value</find>
-      <find>e.tar</find>
-      <find>e.targ</find>
-      <find>console.</find>
-      <find>uui</find>
-      <find>axios</find>
-      <find>localstorage.getitem</find>
-      <find>input</find>
       <find>value</find>
       <find>FORM===&gt;</find>
       <find>server</find>
@@ -165,9 +192,20 @@
       <find>updateSpouseAge</find>
       <find>update</find>
       <find>, {shallow: true}</find>
-      <find>router</find>
       <find>shallow:true</find>
       <find>shallow</find>
+      <find>mortgageCombined</find>
+      <find>expenseMortgageAndRent</find>
+      <find>form.</find>
+      <find>childcare</find>
+      <find>total</find>
+      <find>router</find>
+      <find>icon</find>
+      <find>react-bootstrap-icons</find>
+      <find>handleShowTitle</find>
+      <find>handleclose</find>
+      <find>Choose</find>
+      <find>when</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -210,7 +248,6 @@
         <option value="$PROJECT_DIR$/.firebaserc" />
         <option value="$PROJECT_DIR$/firebaseServiceAccount.json" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/components/MonthlyExpensesForm.js" />
         <option value="$PROJECT_DIR$/components/MonthlyExpensesForm.module.css" />
         <option value="$PROJECT_DIR$/pages/_app.js" />
         <option value="$PROJECT_DIR$/components/DobForm.js" />
@@ -223,17 +260,18 @@
         <option value="$PROJECT_DIR$/components/DebtForm.js" />
         <option value="$PROJECT_DIR$/components/SecondaryEducationForm.js" />
         <option value="$PROJECT_DIR$/server.js" />
-        <option value="$PROJECT_DIR$/components/ChildrenForm.js" />
-        <option value="$PROJECT_DIR$/components/SpouseForm.js" />
-        <option value="$PROJECT_DIR$/components/PersonalInformationForm.js" />
         <option value="$PROJECT_DIR$/components/RentOrOwnForm.js" />
+        <option value="$PROJECT_DIR$/components/PersonalInformationForm.js" />
+        <option value="$PROJECT_DIR$/components/ChildrenForm.js" />
+        <option value="$PROJECT_DIR$/components/MonthlyExpensesForm.js" />
+        <option value="$PROJECT_DIR$/components/SpouseForm.js" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="13" />
     <option name="y" value="23" />
-    <option name="width" value="876" />
+    <option name="width" value="1153" />
     <option name="height" value="777" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -256,6 +294,32 @@
               <item name="react-next" type="b2602c69:ProjectViewProjectNode" />
               <item name="react-next" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="react-next" type="b2602c69:ProjectViewProjectNode" />
+              <item name="react-next" type="462c0819:PsiDirectoryNode" />
+              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="react-next" type="b2602c69:ProjectViewProjectNode" />
+              <item name="react-next" type="462c0819:PsiDirectoryNode" />
+              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
+              <item name="react-bootstrap-icons" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="react-next" type="b2602c69:ProjectViewProjectNode" />
+              <item name="react-next" type="462c0819:PsiDirectoryNode" />
+              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
+              <item name="react-bootstrap-icons" type="462c0819:PsiDirectoryNode" />
+              <item name="dist" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="react-next" type="b2602c69:ProjectViewProjectNode" />
+              <item name="react-next" type="462c0819:PsiDirectoryNode" />
+              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
+              <item name="react-bootstrap-icons" type="462c0819:PsiDirectoryNode" />
+              <item name="dist" type="462c0819:PsiDirectoryNode" />
+              <item name="icons" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="react-next" type="b2602c69:ProjectViewProjectNode" />
@@ -317,7 +381,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="114940000" />
+    <option name="totallyTimeSpent" value="119659000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -329,10 +393,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="13" y="23" width="876" height="777" extended-state="0" />
+    <frame x="13" y="23" width="1153" height="777" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23157895" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17491166" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -344,7 +408,7 @@
       <window_info anchor="bottom" id="TODO" order="6" weight="0.329927" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.329927" />
+      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.329927" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="TypeScript" order="11" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -393,13 +457,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/components/DebtForm.module.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pages/personalInfo.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -674,16 +731,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/components/MonthlyExpensesForm.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="28" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="28" />
-          <folding>
-            <element signature="e#0#61#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pages/_app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -718,10 +765,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/components/SpouseForm.js">
+    <entry file="file://$PROJECT_DIR$/components/RentOrOwnForm.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1725">
-          <caret line="115" column="30" selection-start-line="115" selection-start-column="26" selection-end-line="115" selection-end-column="30" />
+        <state relative-caret-position="541">
+          <caret line="207" column="44" selection-start-line="207" selection-start-column="44" selection-end-line="207" selection-end-column="44" />
           <folding>
             <element signature="e#0#61#0" expanded="true" />
           </folding>
@@ -730,25 +777,45 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/components/PersonalInformationForm.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        <state relative-caret-position="226">
+          <caret line="75" column="40" selection-start-line="75" selection-start-column="40" selection-end-line="75" selection-end-column="40" />
+          <folding>
+            <element signature="e#0#61#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/components/ChildrenForm.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-681">
-          <caret line="53" column="18" selection-start-line="53" selection-start-column="18" selection-end-line="53" selection-end-column="18" />
+        <state relative-caret-position="128">
+          <caret line="115" column="53" selection-start-line="115" selection-start-column="53" selection-end-line="115" selection-end-column="53" />
           <folding>
             <element signature="e#0#63#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/components/RentOrOwnForm.js">
+    <entry file="file://$PROJECT_DIR$/components/MonthlyExpensesForm.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="207" column="44" lean-forward="true" selection-start-line="207" selection-start-column="44" selection-end-line="207" selection-end-column="44" />
+        <state relative-caret-position="46">
+          <caret line="400" column="17" selection-start-line="400" selection-start-column="17" selection-end-line="400" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#61#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/react-bootstrap-icons/dist/icons/question-circle.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="8" column="18" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/SpouseForm.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="101" column="79" selection-start-line="101" selection-start-column="79" selection-end-line="101" selection-end-column="79" />
           <folding>
             <element signature="e#0#61#0" expanded="true" />
           </folding>

@@ -14,7 +14,7 @@ import {Trash} from 'react-bootstrap-icons';
 
 
 export default function ChildrenForm() {
-    const [hasChildren, updateHasChildren] = useState(false);
+    const [hasChildren, updateHasChildren] = useState();
     const [numberOfChildren, updateNumberOfChildren] = useState([
         { id: 1, age: undefined }
     ]);
@@ -27,6 +27,10 @@ export default function ChildrenForm() {
         dispatch({ type: "CHILDREN_AGE_ARRAY", childrenAgeArray: numberOfChildren });
         dispatch({ type: "NUMBER_OF_CHILDREN", numberOfChildren: numberOfChildren.length - 1 });
     }, [numberOfChildren]);
+
+    useEffect(() => {
+        dispatch({ type: "HAS_CHILDREN", hasChildren: false });
+    }, [hasChildren]);
 
     // Update numberOfChildren state
     function updateData(e) {
@@ -107,10 +111,8 @@ export default function ChildrenForm() {
                         <Col xs={6} md={{ span: 6 }} lg={{ span: 3 }}>
                             <Button
                                 className="align-button"
-                                onClick={async e => {
-                                    e.preventDefault();
-                                    await updateHasChildren(false);
-                                    dispatch({ type: "HAS_CHILDREN", hasChildren: false });
+                                onClick={() => {
+                                    updateHasChildren(false);
                                     router.push('/dob')
                                 }}
                                 style={{ width: "100%" }}

@@ -73,6 +73,7 @@ export default function PersonalInformationForm() {
                                 placeholder="First name"
                                 aria-label="First name"
                                 aria-describedby="basic-addon2"
+                                required
                                 onChange={(e) => {
                                     setNameFirst(e.target.value)
                                 }}

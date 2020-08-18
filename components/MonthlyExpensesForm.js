@@ -50,7 +50,18 @@ export default function MonthlyExpensesForm() {
     //effects for context api
     useEffect(() => {
         setExpenseTotal(expenseMortgageAndRent + expenseHousingBillsUtilities + expenseGroceriesRestaurantsAlcohol + expensePhoneInternetCable + expenseShoppingFitnessGrooming + expenseCarsTaxisPublicTransit + expenseChildcareEducation + expenseDiscretionaryTravelRecGifts + expenseOther);
-    },[]);
+    });
+    useEffect(() => {
+        setExpenseTotal(expenseMortgageAndRent + expenseHousingBillsUtilities + expenseGroceriesRestaurantsAlcohol + expensePhoneInternetCable + expenseShoppingFitnessGrooming + expenseCarsTaxisPublicTransit + expenseChildcareEducation + expenseDiscretionaryTravelRecGifts + expenseOther);
+    },[expenseOther,
+        expenseDiscretionaryTravelRecGifts,
+        expenseChildcareEducation,
+        expenseCarsTaxisPublicTransit,
+        expenseShoppingFitnessGrooming,
+        expensePhoneInternetCable,
+        expenseGroceriesRestaurantsAlcohol,
+        expenseHousingBillsUtilities,
+        expenseMortgageAndRent]);
 
     useEffect(() => {
         dispatch({ type: "EXPENSE_MORTGAGE_RENT", expenseMortgageAndRent: expenseMortgageAndRent });
@@ -137,7 +148,7 @@ export default function MonthlyExpensesForm() {
                         </InputGroup.Prepend>
                         <FormControl
                             placeholder="Mortgage and rent"
-                            defaultValue={form.expenseMortgageAndRent}
+                            defaultValue={expenseMortgageAndRent}
                             aria-label="Mortgage and rent"
                             aria-describedby="basic-addon2"
                             onChange={(e) => {
@@ -387,7 +398,6 @@ export default function MonthlyExpensesForm() {
                     </InputGroup>
                 </Col>
             </Row>
-            <br/>
             <br/>
             <Row>
                 <Col
