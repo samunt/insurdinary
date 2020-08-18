@@ -24,6 +24,11 @@ export default function ChildrenForm() {
     const handleCloseTitle = () => setShowTitle(false);
     const [showHowOld, setShowHowOld] = useState(false);
     const handleCloseHowOld = () => setShowHowOld(false);
+    const [showAskAboutChildren, setShowAskAboutChildren] = useState(false);
+    const handleCloseAskAboutChildren = () => setShowAskAboutChildren(false);
+    const [showPlanningOnKids, setShowPlanningOnKids] = useState(false);
+    const handleClosePlanningOnKids = () => setShowPlanningOnKids(false);
+
 
 
     const now = 15;
@@ -143,6 +148,32 @@ export default function ChildrenForm() {
                             </Button>{" "}
                         </Col>
                     </Row>
+                    <Row>
+                        <Col xs={{span: 8, offset: 2}} md={{ span: 6, offset: 3 }} lg={{ span: 6, offset: 3 }}
+                             onClick={() => {setShowAskAboutChildren(true)}}>
+                            <h5 className={styles.header}><u>Why do we ask about your children?</u></h5>
+                        </Col>
+                        <Col xs={1} md={1} lg={1}>
+                            <QuestionCircle
+                                size={30}
+                                onClick={() => {setShowAskAboutChildren(true)}}
+                                style={{position: 'relative', top: '15px', right: '100%'}}
+                            />
+                        </Col>
+                    </Row>
+                    <Row>
+                        <Col xs={{span: 8, offset: 2}} md={{ span: 6, offset: 3 }} lg={{ span: 6, offset: 3 }}
+                             onClick={() => {setShowPlanningOnKids(true)}}>
+                            <h5 className={styles.header}><u>What if I'm planning on having kids?</u></h5>
+                        </Col>
+                        <Col xs={1} md={1} lg={1}>
+                            <QuestionCircle
+                                size={30}
+                                onClick={() => {setShowPlanningOnKids(true)}}
+                                style={{position: 'relative', top: '15px', right: '100%'}}
+                            />
+                        </Col>
+                    </Row>
                 </Container>
             </Form>
             {hasChildren === true && (
@@ -169,7 +200,7 @@ export default function ChildrenForm() {
                             <QuestionCircle
                                 size={30}
                                 onClick={() => {setShowHowOld(true)}}
-                                style={{position: 'relative', top: '15px', right: '100%'}}
+                                style={{position: 'relative', top: '15px', right: '50px'}}
                             />
                         </Col>
                     </Row>
@@ -282,6 +313,28 @@ export default function ChildrenForm() {
                 <Modal.Body>Only include children who you are financially supporting (usually 25 and younger). Make sure to incorporate your children when we ask about your finances and expenses.</Modal.Body>
                 <Modal.Footer>
                     <Button variant="outline-primary" onClick={handleCloseHowOld}>
+                        Close
+                    </Button>
+                </Modal.Footer>
+            </Modal>
+            {/*ask about children*/}
+            <Modal show={showAskAboutChildren} onHide={handleCloseHowOld}>
+                <Modal.Body>Life insurance is all about protecting the people you love. If there are people who rely on you for financial support, a life insurance policy will make sure they have enough money if something unexpected happens to you and your income is no longer there.</Modal.Body>
+                <Modal.Footer>
+                    <Button variant="outline-primary" onClick={handleCloseAskAboutChildren}>
+                        Close
+                    </Button>
+                </Modal.Footer>
+            </Modal>
+            {/*ask about children*/}
+            <Modal show={showPlanningOnKids} onHide={handleClosePlanningOnKids}>
+                <Modal.Body>If you’re expecting, first off, congratulations! You should include your expected child (or children if you’re having twins or triplets) and specify “0” when we ask for your children’s ages.
+
+                    However, if you’re merely planning on having children in the future, don’t include them. Until you are certain about if and when you’ll be having children, it’s best to not include them in your needs assessment to ensure you are not paying for coverage that you might not ultimately need.
+
+                    When your family does grow, we recommend revisiting the PolicyMe life insurance checkup to get updated advice and understand how your coverage needs may have changed.</Modal.Body>
+                <Modal.Footer>
+                    <Button variant="outline-primary" onClick={handleClosePlanningOnKids}>
                         Close
                     </Button>
                 </Modal.Footer>
