@@ -2,8 +2,8 @@
 node_modules/
 
 # firebase credentials
-./firebaseServiceAccount.json
+#./firebaseServiceAccount.json
 
-*.service.json
+#*.service.json
 
-**/firebaseService
+#**/firebaseService
