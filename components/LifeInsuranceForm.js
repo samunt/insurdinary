@@ -9,6 +9,8 @@ import { DispatchContext } from "../contexts/FormContext";
 import ProgressBar from "react-bootstrap/ProgressBar";
 import InputGroup from "react-bootstrap/InputGroup";
 import FormControl from "react-bootstrap/FormControl";
+import {QuestionCircle} from "react-bootstrap-icons";
+import Modal from "react-bootstrap/Modal";
 
 export default function rentOrOwnForm() {
     const router = useRouter();
@@ -17,6 +19,11 @@ export default function rentOrOwnForm() {
     //has life insurance
     const [lifeInsuranceEmployer, setLifeInsuranceEmployer] = useState('');
     const [lifeInsurancePersonal, setLifeInsurancePersonal] = useState('');
+    const [showHasLifeInsurance, setShowHasLifeInsurance] = useState(false);
+    const handleCloseHasLifeInsurance = () => setShowHasLifeInsurance(false);
+    const [showExistingLifeInsurance, setShowExistingLifeInsurance] = useState(false);
+    const handleCloseExistingLifeInsurance = () => setShowExistingLifeInsurance(false);
+
     // progress bar
     const now = 75;
     const progressInstance = <ProgressBar style={{height: '0.5rem'}} now={now} />;
@@ -50,7 +57,18 @@ export default function rentOrOwnForm() {
                 </Col>
             </Row>
             <br />
-            <h2 className={styles.header}>Do you have life insurance?</h2>
+            <Row>
+                <Col xs={{span: 8, offset: 2}} md={{ span: 6, offset: 3 }} lg={{ span: 6, offset: 3 }}>
+                    <h2 className={styles.header}>Do you have life insurance?</h2>
+                </Col>
+                <Col xs={1} md={1} lg={1}>
+                    <QuestionCircle
+                        size={30}
+                        onClick={() => {setShowHasLifeInsurance(true)}}
+                        style={{position: 'relative', top: '18px', right: '100%'}}
+                    />
+                </Col>
+            </Row>
             <Container>
                 <Row>
                     <Col xs={6} md={{ span: 6 }} lg={{ span: 3, offset: 3 }}>
@@ -160,7 +178,42 @@ export default function rentOrOwnForm() {
                         </>
                     </When>
                 </Choose>
+                <Row>
+                    <Col
+                        xs={{ span: 11 }}
+                        md={{ span: 6, offset: 3 }}
+                        lg={{ span: 6, offset: 3 }}
+                        onClick={() => {setShowExistingLifeInsurance(true)}}
+                    >
+                        <h5 className={styles.header}><u>Why do you ask about my existing life insurance?</u></h5>
+                    </Col>
+                    <Col xs={1} md={1} lg={1}>
+                        <QuestionCircle
+                            size={25}
+                            onClick={() => {setShowExistingLifeInsurance(true)}}
+                            style={{position: 'relative', top: '12px', right: '35px'}}
+                        />
+                    </Col>
+                </Row>
             </Container>
+            {/*title*/}
+            <Modal show={showHasLifeInsurance} onHide={handleCloseHasLifeInsurance}>
+                <Modal.Body>Select “Yes” if you already have life insurance coverage in place, but select “No” if you don’t have existing life insurance or if your policies are expiring soon. This would include both policies you have through work or policies that you’ve purchased individually through a broker.</Modal.Body>
+                <Modal.Footer>
+                    <Button variant="outline-primary" onClick={handleCloseHasLifeInsurance}>
+                        Close
+                    </Button>
+                </Modal.Footer>
+            </Modal>
+            {/*ask about existing insurance*/}
+            <Modal show={showExistingLifeInsurance} onHide={handleCloseExistingLifeInsurance}>
+                <Modal.Body>If you already have life insurance, we will reduce the coverage amount of your new policy by the amount of coverage already in place. This will make sure that the total amount of coverage between all your policies is in line with your needs.</Modal.Body>
+                <Modal.Footer>
+                    <Button variant="outline-primary" onClick={handleCloseExistingLifeInsurance}>
+                        Close
+                    </Button>
+                </Modal.Footer>
+            </Modal>
         </div>
 
     )
