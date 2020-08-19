@@ -9,6 +9,8 @@ import { DispatchContext } from "../contexts/FormContext";
 import ProgressBar from "react-bootstrap/ProgressBar";
 import InputGroup from "react-bootstrap/InputGroup";
 import FormControl from "react-bootstrap/FormControl";
+import Modal from "react-bootstrap/Modal";
+import {QuestionCircle} from "react-bootstrap-icons";
 
 export default function rentOrOwnForm() {
     const router = useRouter();
@@ -19,6 +21,10 @@ export default function rentOrOwnForm() {
     //owner
     const [currentBalance, setCurrentBalance] = useState('');
     const [monthlyPayment, setMonthlyPayment] = useState('');
+    // modal
+    const [showInTheMarket, setShowInTheMarket] = useState(false);
+    const handleCloseInTheMarket = () => setShowInTheMarket(false);
+
 
     const now = 65;
     const progressInstance = <ProgressBar style={{height: '0.5rem'}} now={now} />;
@@ -213,6 +219,36 @@ export default function rentOrOwnForm() {
                     </When>
                 </Choose>
             </Container>
+            <Row>
+                <Col
+                    xs={{ span: 11 }}
+                    md={{ span: 6, offset: 3 }}
+                    lg={{ span: 6, offset: 3 }}
+                    onClick={() => {setShowInTheMarket(true)}}
+                >
+                    <h5 className={styles.header}><u>What if I'm in the market to buy?</u></h5>
+                </Col>
+                <Col xs={1} md={1} lg={1}>
+                    <QuestionCircle
+                        size={25}
+                        onClick={() => {setShowInTheMarket(true)}}
+                        style={{position: 'relative', top: '12px', right: '35px'}}
+                    />
+                </Col>
+            </Row>
+            {/*ask about in the market to buy*/}
+            <Modal show={showInTheMarket} onHide={handleCloseInTheMarket}>
+                <Modal.Body>First off, fingers crossed that you find your dream home! However, you should select “own” only if you currently own or are in the process of purchasing your place of residence. If you plan to buy a home in the future, but are not currently looking, please don’t select “own.”
+
+                    The time of purchase, sale price and mortgage payments you make can significantly impact your coverage needs. Until you’re certain about these details, it’s best to not include them to ensure you aren’t paying for coverage that you might not ultimately need.
+
+                    When you do buy your home, we recommend revisiting the PolicyMe life insurance checkup to get updated advice and understand how your coverage needs may have changed.</Modal.Body>
+                <Modal.Footer>
+                    <Button variant="outline-primary" onClick={handleCloseInTheMarket}>
+                        Close
+                    </Button>
+                </Modal.Footer>
+            </Modal>
         </div>
 
     )

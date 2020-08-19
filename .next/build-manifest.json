@@ -24,7 +24,7 @@
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
-    "/healthCondition": [
+    "/rentOrOwn": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ]
