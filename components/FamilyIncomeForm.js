@@ -9,6 +9,8 @@ import FormControl from "react-bootstrap/FormControl";
 import InputGroup from "react-bootstrap/InputGroup";
 import ProgressBar from "react-bootstrap/ProgressBar";
 import Form from "react-bootstrap/Form";
+import {QuestionCircle} from "react-bootstrap-icons";
+import Modal from "react-bootstrap/Modal";
 
 export default function FamilyIncomeForm() {
     const now = 55;
@@ -18,6 +20,9 @@ export default function FamilyIncomeForm() {
     const router = useRouter();
     const [yourIncome, setYourIncome] = useState('');
     const [spouseIncome, setSpouseIncome] = useState('');
+    const [showFamilyIncome, setShowFamilyIncome] = useState(false);
+    const handleCloseFamilyIncome = () => setShowFamilyIncome(false);
+
 
     useEffect(() => {
         dispatch({ type: "YOUR_INCOME", yourIncome: yourIncome });
@@ -39,13 +44,17 @@ export default function FamilyIncomeForm() {
                 </Col>
             </Row>
             <br />
+
             <Row>
-                <Col
-                    xs={{ span: 10, offset: 1 }}
-                    md={{ span: 10, offset: 1 }}
-                    lg={{ span: 10, offset: 1 }}
-                >
-                    <h2 className={styles.header}>What is your family's annual income (before taxes)? </h2>
+                <Col xs={{span: 8, offset: 2}} md={{ span: 6, offset: 3 }} lg={{ span: 6, offset: 3 }}>
+                    <h2 className={styles.header}>What is your family's annual income (before taxes)?</h2>
+                </Col>
+                <Col xs={1} md={1} lg={1}>
+                    <QuestionCircle
+                        size={30}
+                        onClick={() => {setShowFamilyIncome(true)}}
+                        style={{position: 'relative', top: '18px', right: '100%'}}
+                    />
                 </Col>
             </Row>
             <Form>
@@ -125,6 +134,15 @@ export default function FamilyIncomeForm() {
                     </Col>
                 </Row>
             </Form>
+            {/*ask about family income*/}
+            <Modal show={showFamilyIncome} onHide={handleCloseFamilyIncome}>
+                <Modal.Body>Give us a ballpark estimate of your annual pre-tax income. Don’t include investments — we’ll get to that soon</Modal.Body>
+                <Modal.Footer>
+                    <Button variant="outline-primary" onClick={handleCloseFamilyIncome}>
+                        Close
+                    </Button>
+                </Modal.Footer>
+            </Modal>
         </div>
     )
 }

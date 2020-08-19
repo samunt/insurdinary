@@ -88,7 +88,7 @@ export default function TobaccoForm() {
                     </Col>
                     <Col xs={1} md={1} lg={1}>
                         <QuestionCircle
-                            size={30}
+                            size={25}
                             onClick={() => {setShowUsedToSmoke(true)}}
                             style={{position: 'relative', top: '12px', right: '75px'}}
                         />
