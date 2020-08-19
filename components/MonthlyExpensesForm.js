@@ -10,6 +10,8 @@ import ProgressBar from "react-bootstrap/ProgressBar";
 import InputGroup from "react-bootstrap/InputGroup";
 import FormControl from "react-bootstrap/FormControl";
 import axios from 'axios';
+import {QuestionCircle} from "react-bootstrap-icons";
+import Modal from "react-bootstrap/Modal";
 
 export default function MonthlyExpensesForm() {
     // localstorage keys
@@ -31,6 +33,28 @@ export default function MonthlyExpensesForm() {
     rent = form.monthlyRent;
     mortgageCombined = mortgageCurr + mortgageMonthly;
 
+    // modal
+    const [showWhyExpensesLookHigh, setShowWhyExpensesLookHigh] = useState(false);
+    const handleCloseWhyExpensesLookHigh = () => setShowWhyExpensesLookHigh(false);
+    const [showExpenseMortgage, setShowExpenseMortgage] = useState(false);
+    const handleCloseShowExpenseMortgage = () => setShowExpenseMortgage(false);
+    const [showExpenseHousing, setShowExpenseHousing] = useState(false);
+    const handleCloseShowExpenseHousing = () => setShowExpenseHousing(false);
+    const [showExpensePhone, setShowExpensePhone] = useState(false);
+    const handleCloseShowExpensePhone = () => setShowExpensePhone(false);
+    const [showExpenseGroceries, setShowExpenseGroceries] = useState(false);
+    const handleCloseShowExpenseGroceries = () => setShowExpenseGroceries(false);
+    const [showExpenseShopping, setShowExpenseShopping] = useState(false);
+    const handleCloseShowExpenseShopping = () => setShowExpenseShopping(false);
+    const [showExpenseCars, setShowExpenseCars] = useState(false);
+    const handleCloseShowExpenseCars = () => setShowExpenseCars(false);
+    const [showChildcare, setShowChildcare] = useState(false);
+    const handleCloseShowChildcare = () => setShowChildcare(false);
+    const [showExpenseDiscretionary, setShowExpenseDiscretionary] = useState(false);
+    const handleCloseShowExpenseDiscretionary = () => setShowExpenseDiscretionary(false);
+    const [showExpenseOther, setShowExpenseOther] = useState(false);
+    const handleCloseShowExpenseOther = () => setShowExpenseOther(false);
+
     // local state setup
     const [expenseMortgageAndRent, setExpenseMortgageAndRent] = useState(rent > 0 ? rent : mortgageCombined);
     const [expenseHousingBillsUtilities, setExpenseHousingBillsUtilities] = useState(1000);
@@ -41,6 +65,7 @@ export default function MonthlyExpensesForm() {
     const [expenseChildcareEducation, setExpenseChildcareEducation] = useState(0);
     const [expenseDiscretionaryTravelRecGifts, setExpenseDiscretionaryTravelRecGifts] = useState(450);
     const [expenseOther, setExpenseOther] = useState(0);
+
 
     // calculate total expenses
     let total = expenseMortgageAndRent + expenseHousingBillsUtilities + expenseGroceriesRestaurantsAlcohol + expensePhoneInternetCable + expenseShoppingFitnessGrooming + expenseCarsTaxisPublicTransit + expenseChildcareEducation + expenseDiscretionaryTravelRecGifts + expenseOther;
@@ -131,7 +156,7 @@ export default function MonthlyExpensesForm() {
             <br/>
             <Row>
                 <Col
-                    xs={{ span: 4, offset: 1 }}
+                    xs={{ span: 4 }}
                     md={{ span: 2, offset: 2 }}
                     lg={{ span: 2, offset: 2 }}
                 >
@@ -157,11 +182,18 @@ export default function MonthlyExpensesForm() {
                         />
                     </InputGroup>
                 </Col>
+                <Col xs={1} md={1} lg={1}>
+                    <QuestionCircle
+                        size={25}
+                        onClick={() => {setShowExpenseMortgage(true)}}
+                        style={{position: 'relative', top: '5px', right: '20px'}}
+                    />
+                </Col>
             </Row>
             <br/>
             <Row>
                 <Col
-                    xs={{ span: 4, offset: 1 }}
+                    xs={{ span: 4 }}
                     md={{ span: 2, offset: 2 }}
                     lg={{ span: 2, offset: 2 }}
                 >
@@ -187,11 +219,18 @@ export default function MonthlyExpensesForm() {
                         />
                     </InputGroup>
                 </Col>
+                <Col xs={1} md={1} lg={1}>
+                    <QuestionCircle
+                        size={25}
+                        onClick={() => {setShowExpenseHousing(true)}}
+                        style={{position: 'relative', top: '5px', right: '20px'}}
+                    />
+                </Col>
             </Row>
             <br/>
             <Row>
                 <Col
-                    xs={{ span: 4, offset: 1 }}
+                    xs={{ span: 4 }}
                     md={{ span: 2, offset: 2 }}
                     lg={{ span: 2, offset: 2 }}
                 >
@@ -217,11 +256,18 @@ export default function MonthlyExpensesForm() {
                         />
                     </InputGroup>
                 </Col>
+                <Col xs={1} md={1} lg={1}>
+                    <QuestionCircle
+                        size={25}
+                        onClick={() => {setShowExpensePhone(true)}}
+                        style={{position: 'relative', top: '5px', right: '20px'}}
+                    />
+                </Col>
             </Row>
             <br/>
             <Row>
                 <Col
-                    xs={{ span: 4, offset: 1 }}
+                    xs={{ span: 4 }}
                     md={{ span: 2, offset: 2 }}
                     lg={{ span: 2, offset: 2 }}
                 >
@@ -247,11 +293,18 @@ export default function MonthlyExpensesForm() {
                         />
                     </InputGroup>
                 </Col>
+                <Col xs={1} md={1} lg={1}>
+                    <QuestionCircle
+                        size={25}
+                        onClick={() => {setShowExpenseGroceries(true)}}
+                        style={{position: 'relative', top: '5px', right: '20px'}}
+                    />
+                </Col>
             </Row>
             <br/>
             <Row>
                 <Col
-                    xs={{ span: 4, offset: 1 }}
+                    xs={{ span: 4 }}
                     md={{ span: 2, offset: 2 }}
                     lg={{ span: 2, offset: 2 }}
                 >
@@ -277,11 +330,18 @@ export default function MonthlyExpensesForm() {
                         />
                     </InputGroup>
                 </Col>
+                <Col xs={1} md={1} lg={1}>
+                    <QuestionCircle
+                        size={25}
+                        onClick={() => {setShowExpenseShopping(true)}}
+                        style={{position: 'relative', top: '5px', right: '20px'}}
+                    />
+                </Col>
             </Row>
             <br/>
             <Row>
                 <Col
-                    xs={{ span: 4, offset: 1 }}
+                    xs={{ span: 4 }}
                     md={{ span: 2, offset: 2 }}
                     lg={{ span: 2, offset: 2 }}
                 >
@@ -307,11 +367,18 @@ export default function MonthlyExpensesForm() {
                         />
                     </InputGroup>
                 </Col>
+                <Col xs={1} md={1} lg={1}>
+                    <QuestionCircle
+                        size={25}
+                        onClick={() => {setShowExpenseCars(true)}}
+                        style={{position: 'relative', top: '5px', right: '20px'}}
+                    />
+                </Col>
             </Row>
             <br/>
             <Row>
                 <Col
-                    xs={{ span: 4, offset: 1 }}
+                    xs={{ span: 4 }}
                     md={{ span: 2, offset: 2 }}
                     lg={{ span: 2, offset: 2 }}
                 >
@@ -337,11 +404,18 @@ export default function MonthlyExpensesForm() {
                         />
                     </InputGroup>
                 </Col>
+                <Col xs={1} md={1} lg={1}>
+                    <QuestionCircle
+                        size={25}
+                        onClick={() => {setShowChildcare(true)}}
+                        style={{position: 'relative', top: '5px', right: '20px'}}
+                    />
+                </Col>
             </Row>
             <br/>
             <Row>
                 <Col
-                    xs={{ span: 4, offset: 1 }}
+                    xs={{ span: 4 }}
                     md={{ span: 2, offset: 2 }}
                     lg={{ span: 2, offset: 2 }}
                 >
@@ -367,11 +441,18 @@ export default function MonthlyExpensesForm() {
                         />
                     </InputGroup>
                 </Col>
+                <Col xs={1} md={1} lg={1}>
+                    <QuestionCircle
+                        size={25}
+                        onClick={() => {setShowExpenseDiscretionary(true)}}
+                        style={{position: 'relative', top: '5px', right: '20px'}}
+                    />
+                </Col>
             </Row>
             <br/>
             <Row>
                 <Col
-                    xs={{ span: 4, offset: 1 }}
+                    xs={{ span: 4 }}
                     md={{ span: 2, offset: 2 }}
                     lg={{ span: 2, offset: 2 }}
                 >
@@ -397,11 +478,18 @@ export default function MonthlyExpensesForm() {
                         />
                     </InputGroup>
                 </Col>
+                <Col xs={1} md={1} lg={1}>
+                    <QuestionCircle
+                        size={25}
+                        onClick={() => {setShowExpenseOther(true)}}
+                        style={{position: 'relative', top: '5px', right: '20px'}}
+                    />
+                </Col>
             </Row>
             <br/>
             <Row>
                 <Col
-                    xs={{ span: 4, offset: 1 }}
+                    xs={{ span: 4 }}
                     md={{ span: 2, offset: 2 }}
                     lg={{ span: 2, offset: 2 }}
                 >
@@ -426,6 +514,23 @@ export default function MonthlyExpensesForm() {
                 </Col>
             </Row>
             <br/>
+            <Row>
+                <Col
+                    xs={{ span: 11 }}
+                    md={{ span: 6, offset: 3 }}
+                    lg={{ span: 6, offset: 3 }}
+                    onClick={() => {setShowWhyExpensesLookHigh(true)}}
+                >
+                    <h5 className={styles.header}><u>Why do these expenses look high?</u></h5>
+                </Col>
+                <Col xs={1} md={1} lg={1}>
+                    <QuestionCircle
+                        size={25}
+                        onClick={() => {setShowWhyExpensesLookHigh(true)}}
+                        style={{position: 'relative', top: '12px', right: '35px'}}
+                    />
+                </Col>
+            </Row>
             <Row>
                 <Col
                     xs={{ span: 8, offset: 2 }}
@@ -456,7 +561,99 @@ export default function MonthlyExpensesForm() {
                     </Button>{" "}
                 </Col>
             </Row>
-            <br/>
+            {/*ask about other income*/}
+            <Modal show={showWhyExpensesLookHigh} onHide={handleCloseWhyExpensesLookHigh}>
+                <Modal.Body>The truth is, most people tend to underestimate their monthly expenses. When estimating monthly expenses, it’s common for people to remember large recurring items, like mortgage or rent payments, hydro bills, auto payments, cell phone bills, and childcare costs. However, it’s quite common for people to leave out the non-recurring “one-time” costs, like gifts (weddings, birthdays, anniversaries), vacations, recreational activities, tickets to concerts and sports games, taxis/Ubers and nights out with your friends or family.
+
+                    If your expenses looks off, click on the info buttons beside each category to see a description of the items included in that category. Then, feel free to adjust the numbers as you see fit to update your monthly expenses.</Modal.Body>
+                <Modal.Footer>
+                    <Button variant="outline-primary" onClick={handleCloseWhyExpensesLookHigh}>
+                        Close
+                    </Button>
+                </Modal.Footer>
+            </Modal>
+            {/*mortgage and rent*/}
+            <Modal show={showExpenseMortgage} onHide={handleCloseShowExpenseMortgage}>
+                <Modal.Body>We have pre-calculated your rent or mortgage expenses from the previous form.</Modal.Body>
+                <Modal.Footer>
+                    <Button variant="outline-primary" onClick={handleCloseShowExpenseMortgage}>
+                        Close
+                    </Button>
+                </Modal.Footer>
+            </Modal>
+            {/*housing expense*/}
+            <Modal show={showExpenseHousing} onHide={handleCloseShowExpenseHousing}>
+                <Modal.Body>Property tax, condo fees, repairs and maintenance, home insurance, gas/electricity/hydro</Modal.Body>
+                <Modal.Footer>
+                    <Button variant="outline-primary" onClick={handleCloseShowExpenseHousing}>
+                        Close
+                    </Button>
+                </Modal.Footer>
+            </Modal>
+            {/*phone expense*/}
+            <Modal show={showExpensePhone} onHide={handleCloseShowExpensePhone}>
+                <Modal.Body>Cell phones, cable, internet, Netflix, other subscriptions</Modal.Body>
+                <Modal.Footer>
+                    <Button variant="outline-primary" onClick={handleCloseShowExpensePhone}>
+                        Close
+                    </Button>
+                </Modal.Footer>
+            </Modal>
+            {/*grocieres expense*/}
+            <Modal show={showExpenseGroceries} onHide={handleCloseShowExpenseGroceries}>
+                <Modal.Body>Groceries, restaurants, coffee shops, alcohol</Modal.Body>
+                <Modal.Footer>
+                    <Button variant="outline-primary" onClick={handleCloseShowExpenseGroceries}>
+                        Close
+                    </Button>
+                </Modal.Footer>
+            </Modal>
+            {/*shopping expense*/}
+            <Modal show={showExpenseShopping} onHide={handleCloseShowExpenseShopping}>
+                <Modal.Body>Clothes, shoes, salons & hair care, personal hygiene, gym memberships/classes, drycleaning, health, eyeglasses/contacts, dental</Modal.Body>
+                <Modal.Footer>
+                    <Button variant="outline-primary" onClick={handleCloseShowExpenseShopping}>
+                        Close
+                    </Button>
+                </Modal.Footer>
+            </Modal>
+            {/*cars expense*/}
+            <Modal show={showExpenseCars} onHide={handleCloseShowExpenseCars}>
+                <Modal.Body>Car payments, auto insurance, gas, parking, maintenance/repairs, taxis/Ubers, public transit.</Modal.Body>
+                <Modal.Footer>
+                    <Button variant="outline-primary" onClick={handleCloseShowExpenseCars}>
+                        Close
+                    </Button>
+                </Modal.Footer>
+            </Modal>
+            {/*childcare expense*/}
+            <Modal show={showChildcare} onHide={handleCloseShowChildcare}>
+                <Modal.Body>Daycare, nannies, private schools, tutors.</Modal.Body>
+                <Modal.Footer>
+                    <Button variant="outline-primary" onClick={handleCloseShowChildcare}>
+                        Close
+                    </Button>
+                </Modal.Footer>
+            </Modal>
+            {/*discretionary expense*/}
+            <Modal show={showExpenseDiscretionary} onHide={handleCloseShowExpenseDiscretionary}>
+                <Modal.Body>Vacations, entertainment, recreational activities, sports, electronics, gifts (birthdays, holidays, weddings).</Modal.Body>
+                <Modal.Footer>
+                    <Button variant="outline-primary" onClick={handleCloseShowExpenseDiscretionary}>
+                        Close
+                    </Button>
+                </Modal.Footer>
+            </Modal>
+            {/*other expense*/}
+            <Modal show={showExpenseOther} onHide={handleCloseShowExpenseOther}>
+                <Modal.Body>Any monthly expenses you have that don’t fit into one of the above categories.</Modal.Body>
+                <Modal.Footer>
+                    <Button variant="outline-primary" onClick={handleCloseShowExpenseOther}>
+                        Close
+                    </Button>
+                </Modal.Footer>
+            </Modal>
+
         </div>
     )
 }

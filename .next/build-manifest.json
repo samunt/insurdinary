@@ -20,11 +20,11 @@
     "/_polyfills": [
       "static/runtime/polyfills.js"
     ],
-    "/lifeInsurance": [
+    "/debt": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
-    "/savings": [
+    "/monthlyExpenses": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ]

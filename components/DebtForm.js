@@ -9,6 +9,8 @@ import { DispatchContext } from "../contexts/FormContext";
 import ProgressBar from "react-bootstrap/ProgressBar";
 import InputGroup from "react-bootstrap/InputGroup";
 import FormControl from "react-bootstrap/FormControl";
+import {QuestionCircle} from "react-bootstrap-icons";
+import Modal from "react-bootstrap/Modal";
 
 export default function DebtForm() {
     const router = useRouter();
@@ -21,6 +23,9 @@ export default function DebtForm() {
     const [debtLineOfCredit, setDebtLineOfCredit] = useState('');
     const [debtOther, setDebtOther] = useState('');
 
+    // modal
+    const [showTitle, setShowTitle] = useState(false);
+    const handleCloseTitle = () => setShowTitle(false);
 
     const now = 90;
     const progressInstance = <ProgressBar style={{height: '0.5rem'}} now={now} />;
@@ -69,7 +74,18 @@ export default function DebtForm() {
                 </Col>
             </Row>
             <br />
-            <h2 className={styles.header}>Do you have any debt?</h2>
+            <Row>
+                <Col xs={{span: 8, offset: 2}} md={{ span: 6, offset: 3 }} lg={{ span: 6, offset: 3 }}>
+                    <h2 className={styles.header}>Do you have any debt?</h2>
+                </Col>
+                <Col xs={1} md={1} lg={1}>
+                    <QuestionCircle
+                        size={30}
+                        onClick={() => {setShowTitle(true)}}
+                        style={{position: 'relative', top: '18px', right: '100%'}}
+                    />
+                </Col>
+            </Row>
             <Container>
                 <Row>
                     <Col xs={6} md={{ span: 6 }} lg={{ span: 3, offset: 3 }}>
@@ -279,6 +295,15 @@ export default function DebtForm() {
                     </When>
                 </Choose>
             </Container>
+            {/*title*/}
+            <Modal show={showTitle} onHide={handleCloseTitle}>
+                <Modal.Body>Not including a mortgage on your primary residence</Modal.Body>
+                <Modal.Footer>
+                    <Button variant="outline-primary" onClick={handleCloseTitle}>
+                        Close
+                    </Button>
+                </Modal.Footer>
+            </Modal>
         </div>
 
     )
