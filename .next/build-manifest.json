@@ -24,10 +24,6 @@
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
-    "/rentOrOwn": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
-    ],
     "/savings": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
