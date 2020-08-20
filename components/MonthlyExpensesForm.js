@@ -550,7 +550,7 @@ export default function MonthlyExpensesForm() {
                                 }
                             })
                                 .then(function (res) {
-                                    console.log(res);
+                                    router.push('/quotes');
                                 })
                                 .catch(function (error) {
                                     console.log(error);
