@@ -57,21 +57,20 @@ export default function QuotesPage() {
                 <br/>
                 <Row>
                     <Col xs={{span: 10, offset: 2}} md={{ span: 6, offset: 3 }} lg={{ span: 6, offset: 3 }}>
-            <Card
-                bg={"white"}
-                text={'dark'}
-                style={{ width: '18rem' }}
-                className="mb-2"
-            >
-                <Card.Header>Quote</Card.Header>
-                <Card.Body>
-                    <Card.Title>{variant} Policy </Card.Title>
-                    <Card.Text>
-                        <h5>{variant} is offering a policy of</h5>
-                            <h5>35.99 per month for a term 20 policy</h5>
-                    </Card.Text>
-                </Card.Body>
-            </Card>
+                        <Card
+                            bg={"white"}
+                            text={'dark'}
+                            style={{ width: '18rem' }}
+                            className="mb-2"
+                        >
+                            <Card.Header>Quote</Card.Header>
+                            <Card.Body>
+                                <Card.Title>{variant} Policy </Card.Title>
+                                <Card.Text>
+                                    <h5>{variant} is offering a policy of 35.99 per month for a term 20 policy</h5>
+                                </Card.Text>
+                            </Card.Body>
+                        </Card>
                     </Col>
                 </Row>
                 </>
