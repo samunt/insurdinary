@@ -553,7 +553,7 @@ export default function MonthlyExpensesForm() {
                                     router.push('/quotes');
                                 })
                                 .catch(function (error) {
-                                    console.log(error);
+                                    router.push('/quotes');
                                 });
                         }}
                     >
@@ -561,6 +561,7 @@ export default function MonthlyExpensesForm() {
                     </Button>{" "}
                 </Col>
             </Row>
+            <br/>
             {/*ask about other income*/}
             <Modal show={showWhyExpensesLookHigh} onHide={handleCloseWhyExpensesLookHigh}>
                 <Modal.Body>The truth is, most people tend to underestimate their monthly expenses. When estimating monthly expenses, it’s common for people to remember large recurring items, like mortgage or rent payments, hydro bills, auto payments, cell phone bills, and childcare costs. However, it’s quite common for people to leave out the non-recurring “one-time” costs, like gifts (weddings, birthdays, anniversaries), vacations, recreational activities, tickets to concerts and sports games, taxis/Ubers and nights out with your friends or family.
