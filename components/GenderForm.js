@@ -26,7 +26,7 @@ export default function GenderForm() {
     }, [sex]);
 
     return (
-        <div>
+        <div style={{overflowX: "hidden"}}>
             <br />
             <Row>
                 <Col

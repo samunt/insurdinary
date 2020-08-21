@@ -62,7 +62,7 @@ export default function DebtForm() {
 
 
     return (
-        <div>
+        <div style={{overflowX: "hidden"}}>
             <br />
             <Row>
                 <Col

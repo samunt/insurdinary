@@ -52,7 +52,7 @@ export default function SavingsForm() {
     }, [hasNonRetirementSavings]);
 
     return (
-        <div>
+        <div style={{overflowX: "hidden"}}>
             <br />
             <Row>
                 <Col

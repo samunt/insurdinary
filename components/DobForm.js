@@ -23,7 +23,7 @@ export default function DobForm() {
     const progressInstance = <ProgressBar style={{height: '0.5rem'}} now={now} />;
     const [startDate, setStartDate] = useState(new Date());
     return (
-        <div>
+        <div style={{overflowX: "hidden"}}>
             <br />
             <Row>
                 <Col

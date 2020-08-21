@@ -129,7 +129,7 @@ export default function MonthlyExpensesForm() {
     }, [expenseTotal]);
 
     return (
-        <div>
+        <div style={{overflowX: "hidden"}}>
             <br />
             <Row>
                 <Col

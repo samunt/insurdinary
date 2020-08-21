@@ -21,7 +21,7 @@ export default function QuotesPage() {
     const progressInstance = <ProgressBar style={{height: '0.5rem'}} now={now} />;
 
     return (
-        <div>
+        <div style={{overflowX: "hidden"}}>
             <br />
             <Row>
                 <Col

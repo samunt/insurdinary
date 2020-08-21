@@ -83,7 +83,7 @@ export default function ChildrenForm() {
     }
 
     return (
-        <div>
+        <div style={{overflowX: "hidden"}}>
             <br />
             <Row>
                 <Col

@@ -36,7 +36,7 @@ export default function FamilyIncomeForm() {
     }, [spouseIncome]);
 
     return (
-        <div>
+        <div style={{overflowX: "hidden"}}>
             <br />
             <Row>
                 <Col

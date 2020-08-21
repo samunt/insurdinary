@@ -45,7 +45,7 @@ export default function rentOrOwnForm() {
     }, [lifeInsurancePersonal]);
 
     return (
-        <div>
+        <div style={{overflowX: "hidden"}}>
             <br />
             <Row>
                 <Col

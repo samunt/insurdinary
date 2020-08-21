@@ -50,7 +50,7 @@ export default function rentOrOwnForm() {
     }, [monthlyPayment]);
 
     return (
-        <div>
+        <div style={{overflowX: "hidden"}}>
             <br />
             <Row>
                 <Col

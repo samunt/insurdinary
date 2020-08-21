@@ -33,7 +33,7 @@ function SpouseForm() {
         }, [hasSpouse]);
 
     return (
-        <div>
+        <div style={{overflowX: "hidden"}}>
             <br />
             <Row>
                 <Col

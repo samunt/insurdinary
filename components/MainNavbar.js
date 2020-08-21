@@ -7,7 +7,7 @@ function MainNavbar() {
     const router = useRouter();
 
     return (
-        <div className="root">
+        <div className="root" style={{overflowX: "hidden"}}>
             <Navbar bg="light" variant="light">
                 <ArrowLeftCircleFill size={40} onClick={() => {router.back()}}/>
                 <Navbar.Brand href="#home" style={{position: 'relative', left: '50px'}}>
