@@ -37,7 +37,7 @@ export default function DobForm() {
             <br />
             <Row>
                 <Col>
-                    <h2 className={styles.header}>What is your date of birth?</h2>
+                    <h3 className={styles.header}>What is your date of birth?</h3>
                 </Col>
             </Row>
             <Container>
@@ -71,7 +71,7 @@ export default function DobForm() {
                         </Col>
                     </Row>
                     <Row>
-                        <Col xs={{span: 8, offset: 2}} md={{ span: 6, offset: 3 }} lg={{ span: 6, offset: 3 }}
+                        <Col xs={{span: 10, offset: 1}} md={{ span: 6, offset: 3 }} lg={{ span: 6, offset: 3 }}
                              onClick={() => {setShowDob(true)}}>
                             <h5 className={styles.header}><u>Why do we ask about your date of birth?</u></h5>
                         </Col>
@@ -79,7 +79,7 @@ export default function DobForm() {
                             <QuestionCircle
                                 size={30}
                                 onClick={() => {setShowDob(true)}}
-                                style={{position: 'relative', top: '10px', right: '100%'}}
+                                style={{position: 'relative', top: '10px', right: '2em'}}
                             />
                         </Col>
                     </Row>

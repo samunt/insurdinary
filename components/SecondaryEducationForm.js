@@ -34,7 +34,7 @@ export default function SecondaryEducationForm() {
             <br />
             <Row>
                 <Col>
-                    <h2 className={styles.header}>Do you plan on paying for your children's post secondary education?</h2>
+                    <h3 className={styles.header}>Do you plan on paying for your children's post secondary education?</h3>
                 </Col>
             </Row>
             <Container>

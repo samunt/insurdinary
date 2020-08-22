@@ -30,9 +30,7 @@ app.prepare().then(() => {
     server.post("/form", (req, res) => {
         let pageRefFormStore = formStore.child('form/' + dateToString);
         req.body;
-        console.log('req==>', req.body);
         res.json(req.body);
-        // console.log('res===>', res)
         pageRefFormStore.set(req.body);
     });
     server.listen(3000, err => {

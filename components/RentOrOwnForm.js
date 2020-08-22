@@ -62,7 +62,7 @@ export default function rentOrOwnForm() {
                 </Col>
             </Row>
             <br />
-            <h2 className={styles.header}>Do you rent or own your primary resident?</h2>
+            <h3 className={styles.header}>Do you rent or own your primary resident?</h3>
             <Container>
                 <Row>
                     <Col xs={6} md={{ span: 6 }} lg={{ span: 3, offset: 3 }}>

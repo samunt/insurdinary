@@ -53,7 +53,7 @@ export default function PersonalInformationForm() {
                 </Col>
             </Row>
             <br />
-            <h2 className={styles.header}>Please enter some information in case we get disconnected</h2>
+            <h3 className={styles.header}>Please enter some information in case we get disconnected</h3>
 
                 <Row>
                     <Col

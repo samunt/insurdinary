@@ -102,14 +102,14 @@ export default function ChildrenForm() {
             >
                 <br />
                 <Row>
-                    <Col xs={{span: 6, offset: 3}} md={{ span: 6, offset: 3 }} lg={{ span: 6, offset: 3 }}>
-                        <h2 className={styles.header}>Do you have children?</h2>
+                    <Col xs={{span: 10, offset: 1}} md={{ span: 6, offset: 3 }} lg={{ span: 6, offset: 3 }}>
+                        <h3 className={styles.header}>Do you have children?</h3>
                     </Col>
                     <Col xs={1} md={1} lg={1}>
                         <QuestionCircle
                             size={30}
                             onClick={() => {setShowTitle(true)}}
-                            style={{position: 'relative', top: '15px', right: '100%'}}
+                            style={{position: 'relative', top: '15px', right: '3em'}}
                         />
                     </Col>
                 </Row>
@@ -147,7 +147,7 @@ export default function ChildrenForm() {
                         </Col>
                     </Row>
                     <Row>
-                        <Col xs={{span: 8, offset: 2}} md={{ span: 6, offset: 3 }} lg={{ span: 6, offset: 3 }}
+                        <Col xs={{span: 10, offset: 1}} md={{ span: 6, offset: 3 }} lg={{ span: 6, offset: 3 }}
                              onClick={() => {setShowAskAboutChildren(true)}}>
                             <h5 className={styles.header}><u>Why do we ask about your children?</u></h5>
                         </Col>
@@ -155,12 +155,12 @@ export default function ChildrenForm() {
                             <QuestionCircle
                                 size={30}
                                 onClick={() => {setShowAskAboutChildren(true)}}
-                                style={{position: 'relative', top: '15px', right: '100%'}}
+                                style={{position: 'relative', top: '15px', right: '3em'}}
                             />
                         </Col>
                     </Row>
                     <Row>
-                        <Col xs={{span: 8, offset: 2}} md={{ span: 6, offset: 3 }} lg={{ span: 6, offset: 3 }}
+                        <Col xs={{span: 10, offset: 1}} md={{ span: 6, offset: 3 }} lg={{ span: 6, offset: 3 }}
                              onClick={() => {setShowPlanningOnKids(true)}}>
                             <h5 className={styles.header}><u>What if I'm planning on having kids?</u></h5>
                         </Col>
@@ -168,7 +168,7 @@ export default function ChildrenForm() {
                             <QuestionCircle
                                 size={30}
                                 onClick={() => {setShowPlanningOnKids(true)}}
-                                style={{position: 'relative', top: '15px', right: '100%'}}
+                                style={{position: 'relative', top: '15px', right: '3em'}}
                             />
                         </Col>
                     </Row>

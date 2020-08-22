@@ -38,7 +38,7 @@ export default function GenderForm() {
                 </Col>
             </Row>
             <br />
-            <h2 className={styles.header}>What is your sex?</h2>
+            <h3 className={styles.header}>What is your sex?</h3>
             <Container>
                 <Row>
                     <Col xs={6} md={{ span: 6 }} lg={{ span: 3, offset: 3 }}>

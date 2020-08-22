@@ -36,7 +36,7 @@ export default function TobaccoForm() {
             <br />
             <Row>
                 <Col xs={{span: 8, offset: 2}} md={{ span: 6, offset: 3 }} lg={{ span: 6, offset: 3 }}>
-                    <h2 className={styles.header}>Do you smoke or use nicotine products?</h2>
+                    <h3 className={styles.header}>Do you smoke or use nicotine products?</h3>
                 </Col>
                 <Col xs={1} md={1} lg={1}>
                     <QuestionCircle

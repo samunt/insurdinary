@@ -51,7 +51,7 @@ export default function FamilyIncomeForm() {
 
             <Row>
                 <Col xs={{span: 8, offset: 2}} md={{ span: 6, offset: 3 }} lg={{ span: 6, offset: 3 }}>
-                    <h2 className={styles.header}>What is your family's annual income (before taxes)?</h2>
+                    <h3 className={styles.header}>What is your family's annual income (before taxes)?</h3>
                 </Col>
                 <Col xs={1} md={1} lg={1}>
                     <QuestionCircle

@@ -55,8 +55,8 @@ function SpouseForm() {
             >
                 <br />
                 <Row>
-                    <Col xs={{span: 6, offset: 3}} md={{ span: 6, offset: 3 }} lg={{ span: 6, offset: 3 }}>
-                        <h2 className={styles.header}>Do you have a spouse or partner?</h2>
+                    <Col xs={{span: 8, offset: 2}} md={{ span: 6, offset: 3 }} lg={{ span: 6, offset: 3 }}>
+                        <h3 className={styles.header}>Do you have a spouse or partner?</h3>
                     </Col>
                     <Col xs={1} md={1} lg={1}>
                         <QuestionCircle
@@ -102,7 +102,7 @@ function SpouseForm() {
                         <When condition={hasSpouse === false || hasSpouse === ''}>
                             <br/>
                             <Row onClick={() => {setShowWhyWeAsk(true)}}>
-                                <Col xs={{span: 6, offset: 3}} md={{ span: 6, offset: 3 }} lg={{ span: 6, offset: 3 }}>
+                                <Col xs={{span: 10, offset: 1}} md={{ span: 6, offset: 3 }} lg={{ span: 6, offset: 3 }}>
                                     <h5 className={styles.header}>Why do we ask about your spouse?</h5>
                                 </Col>
                                 <Col xs={1} md={1} lg={1}>

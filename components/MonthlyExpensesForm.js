@@ -147,10 +147,10 @@ export default function MonthlyExpensesForm() {
                     md={{ span: 8, offset: 3 }}
                     lg={{ span: 8, offset: 2 }}
                 >
-                    <h2 className={styles.header}>What are your monthly expenses?</h2>
+                    <h3 className={styles.header}>What are your monthly expenses?</h3>
                     <br/>
-                    <h4>Below, we’ve estimated your family’s expenses based on the spending patterns of millions of Canadians.
-                        If any of these estimates seem too high or too low, please edit them.</h4>
+                    <h5>Below, we’ve estimated your family’s expenses based on the spending patterns of millions of Canadians.
+                        If any of these estimates seem too high or too low, please edit them.</h5>
                 </Col>
             </Row>
             <br/>
