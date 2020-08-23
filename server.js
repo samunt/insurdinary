@@ -21,6 +21,7 @@ let formStore = db.ref("formStore");
 
 app.prepare().then(() => {
     const server = express();
+    server.use(express.json());
     server.get("/", (req, res) => {
         app.render(req, res, "/");
     });
@@ -28,10 +29,15 @@ app.prepare().then(() => {
         return handle(req, res)
     });
     server.post("/form", (req, res) => {
-        let pageRefFormStore = formStore.child('form/' + dateToString);
+        let pageRefFormStore = formStore.child('form/' + req.body.form.id);
         req.body;
         res.json(req.body);
-        pageRefFormStore.set(req.body);
+        try {
+            pageRefFormStore.set(req.body.form);
+        } catch(error) {
+            console.log('ERROR===>', error)
+        }
+
     });
     server.listen(3000, err => {
         if (err) throw err;

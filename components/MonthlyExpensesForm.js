@@ -546,7 +546,8 @@ export default function MonthlyExpensesForm() {
                                 method: 'post',
                                 url: '/form',
                                 data: {
-                                    form: form
+                                    form: form,
+                                    formId: form.id
                                 }
                             })
                                 .then(function (res) {
