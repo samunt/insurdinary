@@ -28,17 +28,17 @@ app.prepare().then(() => {
     server.get("*", (req, res) => {
         return handle(req, res)
     });
-    server.post("/form", (req, res) => {
-        let pageRefFormStore = formStore.child('form/' + req.body.form.id);
-        req.body;
-        res.json(req.body);
-        try {
-            pageRefFormStore.set(req.body.form);
-        } catch(error) {
-            console.log('ERROR===>', error)
-        }
-
-    });
+    // server.post("/form", (req, res) => {
+    //     let pageRefFormStore = formStore.child('form/' + req.body.form.id + '__' + dateToString);
+    //     req.body;
+    //     res.json(req.body);
+    //     try {
+    //         pageRefFormStore.set(req.body.form);
+    //     } catch(error) {
+    //         console.log('ERROR===>', error)
+    //     }
+    //
+    // });
     server.listen(3000, err => {
         if (err) throw err;
         console.log("now serving localhost:3000")

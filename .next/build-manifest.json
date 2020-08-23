@@ -23,10 +23,6 @@
     "/monthlyExpenses": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
-    ],
-    "/quotes": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
     ]
   }
 }

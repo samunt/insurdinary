@@ -544,7 +544,7 @@ export default function MonthlyExpensesForm() {
                         onClick={()=> {
                             axios({
                                 method: 'post',
-                                url: '/form',
+                                url: '/api/form',
                                 data: {
                                     form: form,
                                     formId: form.id
@@ -554,7 +554,7 @@ export default function MonthlyExpensesForm() {
                                     router.push('/quotes');
                                 })
                                 .catch(function (error) {
-                                    router.push('/quotes');
+                                    console.log(error)
                                 });
                         }}
                     >
