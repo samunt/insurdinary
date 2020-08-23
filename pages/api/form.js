@@ -17,6 +17,7 @@ export default (req, res) => {
     if (req.method === 'POST') {
         let pageRefFormStore = formStore.child('form/' + req.body.form.id + '__' + dateToString);
         req.body;
+        console.log('REQBODY===>', req.body)
         res.json(req.body);
         try {
             pageRefFormStore.set(req.body.form);
