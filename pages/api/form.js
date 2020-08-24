@@ -45,6 +45,17 @@ export default (req, res) => {
         try {
             // push the data to the database
             pageRefFormStore.set(req.body.form);
+            // winquote
+            const httpCall = axios({
+                method: 'post',
+                url: destinationUrl,
+                constructedBody
+            });
+
+            httpCall.then(function (resp) {
+                res.json(resp);
+                console.log('RESP===>', resp);
+            });
             // respond to the client
             res.setHeader('Content-Type', 'application/json');
             res.json(req.body);
@@ -52,21 +63,7 @@ export default (req, res) => {
         } catch(error) {
             console.log('ERROR===>', error)
         }
-        try {
-            const httpCall = axios({
-                method: 'post',
-                url: destinationUrl,
-                constructedBody
-            })
 
-            httpCall.then(function (resp) {
-                res.json(resp);
-                console.log('RESP===>', resp);
-            })
-
-        } catch(error) {
-            console.log(error)
-        }
     } else {
         res.setHeader('Content-Type', 'application/json');
         res.end(JSON.stringify({ response: 'Invalid Request Method' }))
