@@ -1,13 +1,3 @@
-const admin = require('firebase-admin');
-const serviceAccount = require("../../firebaseService/firebaseServiceAccount.service.json");
-admin.initializeApp({
-    credential: admin.credential.cert(serviceAccount),
-    databaseURL: "https://insurdinary-a02d7.firebaseio.com"
-});
-let db = admin.database();
-let date = new Date();
-let dateToString = date.toString();
-let formStore = db.ref("formStore");
 export const config = {
     api: {
         bodyParser: false,
@@ -15,9 +5,13 @@ export const config = {
 };
 export default (req, res) => {
     if (req.method === 'POST') {
+        let db = admin.database();
+        let date = new Date();
+        let dateToString = date.toString();
+        let formStore = db.ref("formStore");
         let pageRefFormStore = formStore.child('form/' + req.body.form.id + '__' + dateToString);
         req.body;
-        console.log('REQBODY===>', req.body)
+        console.log('REQBODY===>', req.body);
         res.json(req.body);
         try {
             pageRefFormStore.set(req.body.form);

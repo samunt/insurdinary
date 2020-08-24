@@ -14,10 +14,10 @@ admin.initializeApp({
     databaseURL: "https://insurdinary-a02d7.firebaseio.com"
 });
 
-let db = admin.database();
-let date = new Date();
-let dateToString = date.toString();
-let formStore = db.ref("formStore");
+// let db = admin.database();
+// let date = new Date();
+// let dateToString = date.toString();
+// let formStore = db.ref("formStore");
 
 app.prepare().then(() => {
     const server = express();
