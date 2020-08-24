@@ -20,10 +20,12 @@ export default (req, res) => {
     let formStore = db.ref("formStore");
     let jsonBody = bodyParser.json(req.body);
     console.log('JSONBODY====>', jsonBody);
+    console.log('REQ====>', req)
+    console.log('REQBODY===>', req.body);
+
     let pageRefFormStore = formStore.child('form/' + jsonBody.form.id + '__' + dateToString);
 
     if (req.method === 'POST') {
-        console.log('REQBODY===>', req.body);
         res.json(req.body);
         try {
             pageRefFormStore.set(req.body.form);
