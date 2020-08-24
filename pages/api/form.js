@@ -1,3 +1,5 @@
+import bodyParser from "body-parser";
+
 export const config = {
     api: {
         bodyParser: false,
@@ -16,10 +18,11 @@ export default (req, res) => {
     let date = new Date();
     let dateToString = date.toString();
     let formStore = db.ref("formStore");
-    let pageRefFormStore = formStore.child('form/' + req.body.form.id + '__' + dateToString);
+    let jsonBody = bodyParser.json(req.body);
+    console.log('JSONBODY====>', jsonBody);
+    let pageRefFormStore = formStore.child('form/' + jsonBody.form.id + '__' + dateToString);
 
     if (req.method === 'POST') {
-        req.body;
         console.log('REQBODY===>', req.body);
         res.json(req.body);
         try {
@@ -29,20 +32,8 @@ export default (req, res) => {
         }
 
     } else {
-        res.setHeader('Content-Type', 'application/json')
-        res.end(JSON.stringify({ name: 'John Doe' }))
+        res.setHeader('Content-Type', 'application/json');
+        res.end(JSON.stringify({ response: 'Invalid Request' }))
         console.log('not a post')
     }
 }
-
-// server.post("/form", (req, res) => {
-//     let pageRefFormStore = formStore.child('form/' + req.body.form.id + '__' + dateToString);
-//     req.body;
-//     res.json(req.body);
-//     try {
-//         pageRefFormStore.set(req.body.form);
-//     } catch(error) {
-//         console.log('ERROR===>', error)
-//     }
-//
-// });
