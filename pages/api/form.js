@@ -5,19 +5,20 @@ export const config = {
 };
 export default (req, res) => {
     const serviceAccount = require("../../firebaseService/firebaseServiceAccount.service.json");
+    const admin = require('firebase-admin');
 
     admin.initializeApp({
         credential: admin.credential.cert(serviceAccount),
         databaseURL: "https://insurdinary-a02d7.firebaseio.com"
     });
 
+    let db = admin.database();
+    let date = new Date();
+    let dateToString = date.toString();
+    let formStore = db.ref("formStore");
+    let pageRefFormStore = formStore.child('form/' + req.body.form.id + '__' + dateToString);
+
     if (req.method === 'POST') {
-        const admin = require('firebase-admin');
-        let db = admin.database();
-        let date = new Date();
-        let dateToString = date.toString();
-        let formStore = db.ref("formStore");
-        let pageRefFormStore = formStore.child('form/' + req.body.form.id + '__' + dateToString);
         req.body;
         console.log('REQBODY===>', req.body);
         res.json(req.body);
