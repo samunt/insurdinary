@@ -5,6 +5,7 @@ export const config = {
 };
 export default (req, res) => {
     if (req.method === 'POST') {
+        const admin = require('firebase-admin');
         let db = admin.database();
         let date = new Date();
         let dateToString = date.toString();
