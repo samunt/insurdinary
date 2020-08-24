@@ -57,7 +57,7 @@ export default (req, res) => {
                 console.log('RESP===>', resp);
             });
             // respond to the client
-            res.setHeader('Content-Type', 'application/json');
+            // res.setHeader('Content-Type', 'application/json');
             res.json(req.body);
 
         } catch(error) {
