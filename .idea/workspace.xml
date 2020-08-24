@@ -313,7 +313,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="151173000" />
+    <option name="totallyTimeSpent" value="151789000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -326,7 +326,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="13" y="23" width="1153" height="777" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17491166" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
