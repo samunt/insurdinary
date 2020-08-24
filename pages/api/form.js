@@ -53,11 +53,17 @@ export default (req, res) => {
             console.log('ERROR===>', error)
         }
         try {
-            axios({
+            const httpCall = axios({
                 method: 'post',
                 url: destinationUrl,
                 constructedBody
             })
+
+            httpCall.then(function (resp) {
+                res.json(resp);
+                console.log('RESP===>', resp);
+            })
+
         } catch(error) {
             console.log(error)
         }
