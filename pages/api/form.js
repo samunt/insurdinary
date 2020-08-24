@@ -1,10 +1,10 @@
-import bodyParser from "body-parser";
-
-export const config = {
-    api: {
-        bodyParser: false,
-    },
-};
+// import bodyParser from "body-parser";
+//
+// export const config = {
+//     api: {
+//         bodyParser: false,
+//     },
+// };
 export default (req, res) => {
     const serviceAccount = require("../../firebaseService/firebaseServiceAccount.service.json");
     const admin = require('firebase-admin');
@@ -18,12 +18,8 @@ export default (req, res) => {
     let date = new Date();
     let dateToString = date.toString();
     let formStore = db.ref("formStore");
-    let jsonBody = bodyParser.json(req.body);
-    console.log('JSONBODY====>', jsonBody);
-    console.log('REQ====>', req)
-    console.log('REQBODY===>', req.body);
 
-    let pageRefFormStore = formStore.child('form/' + jsonBody.form.id + '__' + dateToString);
+    let pageRefFormStore = formStore.child('form/' + req.body.form.id + '__' + dateToString);
 
     if (req.method === 'POST') {
         res.json(req.body);
