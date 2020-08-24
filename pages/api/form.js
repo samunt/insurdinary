@@ -40,14 +40,6 @@ export default (req, res) => {
     const middleOfUrl = "First+Client+Plan+Type+OT=0&First+Client+Plan+Type+LB=0&" ;
     const endOfUrl = "type=single&co_code=ca1122573208&co_name=WinQuote&report_type=rank&version_code=ca%3Ase%3A1.3&lang_code=en";
     const constructedBody = monthUrl + dayUrl + yearUrl + genderUrl + tobaccoUrl + smokerCigaretteUrl + smokerCigarUrl + smokerPipeUrl + smokerSnuffUrl + smokerCigarelloUrl + smokerChewUrl + smokerMarijuanaUrl + prescriptionMarijuanaUrl + provinceUrl + premiumUrl + coverageTypeUrl + middleOfUrl + underwritingRiskUrl + endOfUrl;
-    const httpOptions = {
-        headers: new HttpHeaders({
-            contentType: "text/html",
-            'Access-Control-Allow-Origin': '*',
-            'Access-Control-Allow-Headers': 'Origin, X-Requested-With, Content-Type, Accept'
-        }),
-        mode: "cors",
-    };
 
     if (req.method === 'POST') {
         try {
@@ -64,8 +56,7 @@ export default (req, res) => {
             axios({
                 method: 'post',
                 url: destinationUrl,
-                constructedBody,
-                httpOptions
+                constructedBody
             })
         } catch(error) {
             console.log(error)
