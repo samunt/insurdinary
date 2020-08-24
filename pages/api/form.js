@@ -42,7 +42,6 @@ export default (req, res) => {
     const constructedBody = monthUrl + dayUrl + yearUrl + genderUrl + tobaccoUrl + smokerCigaretteUrl + smokerCigarUrl + smokerPipeUrl + smokerSnuffUrl + smokerCigarelloUrl + smokerChewUrl + smokerMarijuanaUrl + prescriptionMarijuanaUrl + provinceUrl + premiumUrl + coverageTypeUrl + middleOfUrl + underwritingRiskUrl + endOfUrl;
 
     if (req.method === 'POST') {
-        try {
             // push the data to the database
             pageRefFormStore.set(req.body.form);
             // winquote
@@ -55,17 +54,15 @@ export default (req, res) => {
             httpCall.then(function (resp) {
                 res.json(resp);
                 console.log('RESP===>', resp);
+            }).catch(err => {
+                console.log(err)
             });
             // respond to the client
             // res.setHeader('Content-Type', 'application/json');
             res.json(req.body);
 
-        } catch(error) {
-            console.log('ERROR===>', error)
-        }
-
     } else {
-        res.setHeader('Content-Type', 'application/json');
+        // res.setHeader('Content-Type', 'application/json');
         res.end(JSON.stringify({ response: 'Invalid Request Method' }))
     }
 }
