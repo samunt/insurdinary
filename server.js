@@ -6,13 +6,7 @@ const dev = process.env.NODE_ENV !== 'production';
 const app = next({ dev });
 const handle = app.getRequestHandler();
 
-const admin = require('firebase-admin');
-const serviceAccount = require("./firebaseService/firebaseServiceAccount.service.json");
-
-admin.initializeApp({
-    credential: admin.credential.cert(serviceAccount),
-    databaseURL: "https://insurdinary-a02d7.firebaseio.com"
-});
+// const admin = require('firebase-admin');
 
 // let db = admin.database();
 // let date = new Date();

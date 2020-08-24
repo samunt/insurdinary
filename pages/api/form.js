@@ -4,6 +4,13 @@ export const config = {
     },
 };
 export default (req, res) => {
+    const serviceAccount = require("../../firebaseService/firebaseServiceAccount.service.json");
+
+    admin.initializeApp({
+        credential: admin.credential.cert(serviceAccount),
+        databaseURL: "https://insurdinary-a02d7.firebaseio.com"
+    });
+
     if (req.method === 'POST') {
         const admin = require('firebase-admin');
         let db = admin.database();
