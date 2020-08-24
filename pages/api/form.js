@@ -1,13 +1,13 @@
+// initialize firebase
+// get database info for firebase
+const admin = require('firebase-admin');
+const serviceAccount = require("../../firebaseService/firebaseServiceAccount.service.json");
+admin.initializeApp({
+    credential: admin.credential.cert(serviceAccount),
+    databaseURL: "https://insurdinary-a02d7.firebaseio.com"
+});
 
 export default (req, res) => {
-    // get database info for firebase
-    const serviceAccount = require("../../firebaseService/firebaseServiceAccount.service.json");
-    const admin = require('firebase-admin');
-    // initialize firebase
-    admin.initializeApp({
-        credential: admin.credential.cert(serviceAccount),
-        databaseURL: "https://insurdinary-a02d7.firebaseio.com"
-    });
     // set up database references
     let db = admin.database();
     let date = new Date();
@@ -20,6 +20,7 @@ export default (req, res) => {
         try {
             // push the data to the database
             pageRefFormStore.set(req.body.form);
+            // respond to the client
             res.setHeader('Content-Type', 'application/json');
             res.json(req.body);
 
@@ -28,6 +29,6 @@ export default (req, res) => {
         }
     } else {
         res.setHeader('Content-Type', 'application/json');
-        res.end(JSON.stringify({ response: 'Invalid Request' }))
+        res.end(JSON.stringify({ response: 'Invalid Request Method' }))
     }
 }
