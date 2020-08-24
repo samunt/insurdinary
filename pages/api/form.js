@@ -59,7 +59,7 @@ export default (req, res) => {
             });
             // respond to the client
             // res.setHeader('Content-Type', 'application/json');
-            res.json(req.body);
+            // res.json(req.body);
 
     } else {
         // res.setHeader('Content-Type', 'application/json');
